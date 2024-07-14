@@ -7,23 +7,23 @@
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#9351d1",
+    "light": "#9351d1",
+    "dark": "#9351d1",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#9351d1",
+      "to": "#b78edd"
     }
   },
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:support@xylex.ai"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://app.xylex.ai"
   },
   "tabs": [
     {
