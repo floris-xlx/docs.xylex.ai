@@ -1,0 +1,28 @@
+metadata:
+    enabled: true
+    name: xylex_api_frontend
+    description: Xylex API Public
+    version: 1.0.0
+    base_url: https://api.v2.xylex.ai/
+    docs_url: https://nightly.docs.xylex.ai/
+
+github_self:
+    repo_url: https://github.com/floris-xlx/docs.xylex.ai
+    repo_branch: main
+
+github_target:
+    repo_url: https://github.com/floris-xlx/xylex
+    repo_branch: main
+    repo_watch_for_change_url: https://github.com/floris-xlx/xylex/tree/main/services/xylex_api_frontend
+    repo_watch_for_change_path: /services/xylex_api_frontend
+
+open_ai:
+    open_ai_model: gpt-4o-2024-08-06
+    open_ai_max_tokens: 4096
+    open_ai_temperature: 0.75
+
+env:
+    discord_webhook_url: XLX_DOCS_XYLEX_AI_BUILD_LOGS_DISCORD_WEBHOOK_URL
+    open_ai_key: XLX_DOCS_XYLEX_AI_OPENAI_KEY
+    github_token: XLX_DOCS_XYLEX_AI_GITHUB_TOKEN
+    xylex_api_key: XLX_DOCS_XYLEX_AI_XYLEX_API_KEY
