@@ -39,23 +39,40 @@ async def update_mdx_files_with_parameters(file_list):
 
         print(f"Updated MDX file: {mdx_filepath}")
 
+
 def extract_parameters_from_rust(rust_content):
-    # This function should parse the Rust content and extract parameters
-    # For simplicity, let's assume it returns a list of parameter names
-    # In a real implementation, you would parse the Rust code to find parameters
-    return ["param1", "param2"]  # Example parameters
+    # Use the prompt_openai_model to extract parameters from the Rust content
+    print("Extracting parameters from Rust content...")
+    print(rust_content)
+
+    prompt = "Extract the parameters from the following Rust content, usually they will be in the struct:\n\n"
+    parameters = prompt_openai_model(prompt + rust_content)
+
+    print("Extracted parameters:")
+    print(parameters)
+
+    if parameters is not None:
+        parameters = parameters.replace("```json", "").replace("```", "").strip()
+    else:
+        parameters = ""
+    # Parse the extracted parameters
+    try:
+        # Attempt to parse the JSON string into a Python object
+        parameters_list = json.loads(parameters)
+    except (TypeError, json.JSONDecodeError):
+        # If there's an error in decoding, print an error message and return an empty list
+        print("Failed to decode JSON parameters or parameters is None.")
+        return []
+    return parameters_list
 
 def format_parameters_for_mdx(parameters):
     # Format the parameters for MDX
     param_fields = ""
     for param in parameters:
-        param_fields += f'<ParamField path="{param}" type="string">\n  An example of a parameter field\n</ParamField>\n'
+        param_fields += f'<ParamField name="{param["name"]}" type="{param["type"]}">\n  An example of a parameter field\n</ParamField>\n'
     return param_fields
 
+
 def insert_parameters_into_mdx(mdx_content, param_fields):
-    # Insert the parameter fields into the MDX content
-    # Assuming we insert after the header
-    header_end_index = mdx_content.find('---', mdx_content.find('---') + 1) + 3
-    return mdx_content[:header_end_index] + "\n" + param_fields + mdx_content[header_end_index:]
-
-
+    # Just paste it under the existing content with 4 new lines above
+    return mdx_content + "\n\n\n\n" + param_fields

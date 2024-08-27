@@ -27,35 +27,85 @@
     },
     "anchors": [
         {
-            "name": "Documentation",
-            "icon": "book-open-cover",
+            "name": "Open a ticket",
+            "icon": "ticket",
             "url": "https://nightly.docs.xylex.ai"
         },
         {
-            "name": "Community",
-            "icon": "slack",
-            "url": "https://mintlify.com/community"
-        },
-        {
-            "name": "Blog",
-            "icon": "newspaper",
-            "url": "https://mintlify.com/blog"
+            "name": "Support discord",
+            "icon": "discord",
+            "url": "https://discord.gg/xylex"
         }
     ],
     "navigation": [
         {
             "group": "Get Started",
-            "pages": ["introduction", "quickstart", "development"]
+            "pages": [
+                "introduction",
+                "quickstart",
+                "development"
+            ]
         },
         {
-            "group": "Essentials",
+            "group": "Authenticator API",
             "pages": [
-                "essentials/markdown",
-                "essentials/code",
-                "essentials/images",
-                "essentials/settings",
-                "essentials/navigation",
-                "essentials/reusable-snippets"
+                "pages/authenticator/verify_code_secret",
+                "pages/authenticator/qr_code_svg",
+                "pages/authenticator/generate_secret",
+                "pages/authenticator/qr_code_url",
+                "pages/authenticator/get_code_secret",
+                "pages/authenticator/verify_code_user_id",
+                "pages/authenticator/get_code_user_id"
+            ]
+        },
+        {
+            "group": "Organization API",
+            "pages": [
+                "pages/organization/organization_all_trades",
+                "pages/organization/organization_available",
+                "pages/organization/organization_create"
+            ]
+        },
+        {
+            "group": "Public API",
+            "pages": [
+                "pages/public/get_user_profile"
+            ]
+        },
+        {
+            "group": "Strategies API",
+            "pages": [
+                "pages/strategies/strategy_available",
+                "pages/strategies/strategy_create",
+                "pages/strategies/strategy_equity_pnl",
+                "pages/strategies/strategy_statistics",
+                "pages/strategies/strategy_metadata"
+            ]
+        },
+        {
+            "group": "Trades API",
+            "pages": [
+                "pages/trades/trade_status",
+                "pages/trades/weekly_trades",
+                "pages/trades/user_trade_metadata",
+                "pages/trades/trade_metadata"
+            ]
+        },
+        {
+            "group": "User API",
+            "pages": [
+                "pages/user/username_available",
+                "pages/user/user_pfp",
+                "pages/user/username_create",
+                "pages/user/organization"
+            ]
+        },
+        {
+            "group": "Organization",
+            "pages": [
+                "pages/organization/organization_available",
+                "pages/organization/organization_all_trades",
+                "pages/organization/organization_create"
             ]
         }
     ],
@@ -64,7 +114,9 @@
         "github": "https://github.com/xylex-ai"
     },
     "api": {
-        "auth": { "name": "ApiKey" },
+        "auth": {
+            "name": "ApiKey"
+        },
         "baseUrl": "https://api.v2.xylex.api",
         "playground": {
             "mode": "show"
@@ -75,7 +127,11 @@
         "maintainOrder": true,
         "request": {
             "example": {
-                "languages": ["bash", "javascript", "python"],
+                "languages": [
+                    "bash",
+                    "javascript",
+                    "python"
+                ],
                 "showOptionalParams": true
             }
         }
