@@ -5,23 +5,23 @@ api: 'GET https://api.v2.xylex.ai/get_trades_weekly_org'
 
 
 
-<Card title="Endpoint Description" icon="info" horizontal >Fetches weekly trades for a specified user, organization, and algorithm. Validates user organization and retrieves trades excluding `unapproved` or `invalid` statuses. Returns trades data or error details as a JSON response.</Card>
+<Card title="Endpoint Description" icon="info" horizontal >Fetches weekly trades for a given user, organization, and algorithm ID. Validates user organization before proceeding. Returns trades excluding those with `unapproved` or `invalid` statuses.</Card>
 
 
 
 
 
-<ParamField query="user_id" type="String" required  children="The unique identifier for the user requesting the trades.">
-  User identifier
+<ParamField query="user_id" type="String" required  children="A unique string that specifies the user requesting the data.">
+  Identifier for the user
 </ParamField>
-<ParamField query="organization" type="String" required  children="The name of the organization to which the user belongs or is querying trades for.">
-  Organization name
+<ParamField query="organization" type="String" required  children="A string representing the organization the user is associated with.">
+  Name of the organization
 </ParamField>
-<ParamField query="week_nr" type="Option<i64>"  children="The specific week number for which the trades are requested; if not provided, defaults to the current week number.">
+<ParamField query="week_nr" type="Option<i64>"  children="An optional integer representing the specific week number for which to fetch trades. If not provided, defaults to the current week.">
   Week number
 </ParamField>
-<ParamField query="algorithm_id" type="String" required  children="The unique identifier for the algorithm associated with the requested trades.">
-  Algorithm identifier
+<ParamField query="algorithm_id" type="String" required  children="A unique string that specifies the algorithm being queried.">
+  Identifier for the algorithm
 </ParamField>
 
 

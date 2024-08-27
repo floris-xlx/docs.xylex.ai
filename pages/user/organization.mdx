@@ -5,12 +5,12 @@ api: 'GET https://api.v2.xylex.ai/user/organization'
 
 
 
-<Card title="Endpoint Description" icon="info" horizontal >Fetches the organization linked to a specified user ID, returning the organization data or an error message if retrieval fails.</Card>
+<Card title="Endpoint Description" icon="info" horizontal >Fetches the organization associated with a given user ID and returns it in the response.</Card>
 
 
 
 
 
-<ParamField query="user_id" type="String" required  children="The 'user_id' parameter is used to identify a specific user in the system. This identifier is required to fetch the corresponding organization associated with the user.">
-  The unique identifier for a user.
+<ParamField query="user_id" type="String" required  children="The unique identifier for the user whose organization information is being requested.">
+  The ID of the user.
 </ParamField>
