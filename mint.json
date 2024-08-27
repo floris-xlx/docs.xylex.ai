@@ -61,12 +61,41 @@
                 "essentials/navigation",
                 "essentials/reusable-snippets"
             ]
+        },
+        {
+            "group": "Authenticator API",
+            "pages": [
+                "authenticator/generate_secret.rs",
+                "authenticator/get_code.rs",
+                "authenticator/secret_qr.rs",
+                "authenticator/utils.rs",
+                "authenticator/verify_code.rs"
+            ]
+        },
+        {
+            "group": "Organization API",
+            "pages": []
+        },
+        {
+            "group": "Public API",
+            "pages": []
+        },
+        {
+            "group": "Strategies API",
+            "pages": []
+        },
+        {
+            "group": "Trades API",
+            "pages": []
+        },
+        {
+            "group": "User API",
+            "pages": []
         }
     ],
     "footerSocials": {
-        "discord": "https://discord.com/xylex",
+        "discord": "https://discord.gg/xylex",
         "github": "https://github.com/xylex-ai"
-
     },
     "api": {
         "baseUrl": "https://api.v2.xylex.api",
