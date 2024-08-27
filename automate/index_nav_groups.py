@@ -168,6 +168,7 @@ def update_navigation(data, group_key, group, endpoint_path):
             if page_entry not in nav_group['pages']:
                 nav_group['pages'].append(page_entry)
 
+
 def generate_template_header(file_path, api_endpoint):
     """
     Generates a template header for a given file path.
@@ -177,10 +178,14 @@ def generate_template_header(file_path, api_endpoint):
     :return: A string containing the template header.
     """
     # Extract the title from the API endpoint
-    endpoint_path = api_endpoint.split('/')[-1]
-    title = endpoint_path.replace('-', ' ').title()
+    endpoint_path_raw = api_endpoint.split('/')[-1]
+
+    title = endpoint_path_raw.replace('-', ' ').replace('_', ' ').title()
 
     print("Generate template file header for", file_path)
+
+    # clean the endpoint path to turn spaces to _
+
 
     # Create the template header
     template_header = f"""---\ntitle: '{title}'\napi: '{api_endpoint}'\n---"""
