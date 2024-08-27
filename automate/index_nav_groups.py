@@ -106,44 +106,83 @@ async def update_navigation_groups():
 
     print(f"Updated navigation groups in {MINT_CONFIG} with: {unique_folders}")
 
-    await create_group_folders_and_pages(top_level_folders)
+    await create_group_folders_and_pages(top_level_folders, data)
 
     return unique_folders
 
 
-async def create_group_folders_and_pages(top_level_folders):
+async def create_group_folders_and_pages(top_level_folders, data):
     for group, pages in top_level_folders.items():
         if group.lower() not in BANNED_PATHS:
             group_folder = os.path.join(os.getcwd(), 'pages', group)
             os.makedirs(group_folder, exist_ok=True)
             for page in pages:
                 page_path = os.path.join(group_folder, f"{page}.mdx")
-                with open(page_path, 'w') as page_file:
-                    template_header = generate_template_header(page_path)
-                    page_file.write(template_header +
-                                    "\n\nContent for {page} page.")
+                api_endpoints = extract_endpoints_from_rs_file(page_path)
+                if api_endpoints is None:
+                    print(f"No endpoints found for {page_path}. Skipping.")
+                    continue
+                create_mdx_files_and_update_navigation(group, page,
+                                                       api_endpoints,
+                                                       group_folder, data)
 
 
-def generate_template_header(file_path):
+def create_mdx_files_and_update_navigation(group, page, api_endpoints,
+                                           group_folder, data):
+    group_key = f"{group.capitalize()} API"
+    ensure_group_exists_in_navigation(data, group_key)
+
+    for api_endpoint in api_endpoints:
+        endpoint_path = derive_filename_from_endpoint(api_endpoint)
+        page_path = os.path.join(group_folder, f"{endpoint_path}.mdx")
+        write_mdx_file(page_path, api_endpoint)
+        update_navigation(data, group_key, group, endpoint_path)
+
+    # Ensure all .mdx files in the group folder are added to the navigation
+    for mdx_file in os.listdir(group_folder):
+        if mdx_file.endswith('.mdx'):
+            page_entry = f"pages/{group}/{mdx_file.replace('.mdx', '')}"
+            update_navigation(data, group_key, group, page_entry)
+
+
+def ensure_group_exists_in_navigation(data, group_key):
+    if not any(nav_group['group'] == group_key
+               for nav_group in data['navigation']):
+        data['navigation'].append({"group": group_key, "pages": []})
+
+
+def derive_filename_from_endpoint(api_endpoint):
+    return api_endpoint.split('/')[-1].replace('-', '_')
+
+
+def write_mdx_file(page_path, api_endpoint):
+    with open(page_path, 'w') as page_file:
+        template_header = generate_template_header(page_path, api_endpoint)
+        page_file.write(template_header + "\n\nContent for {page} page.")
+
+
+def update_navigation(data, group_key, group, endpoint_path):
+    for nav_group in data['navigation']:
+        if nav_group['group'] == group_key:
+            page_entry = f"pages/{group}/{endpoint_path}"
+            if page_entry not in nav_group['pages']:
+                nav_group['pages'].append(page_entry)
+
+def generate_template_header(file_path, api_endpoint):
     """
     Generates a template header for a given file path.
 
     :param file_path: The path of the file.
+    :param api_endpoint: The API endpoint to include in the header.
     :return: A string containing the template header.
     """
-    # Extract the file name from the path
-    file_name = os.path.basename(file_path)
-    # Remove the file extension
-    title = file_name.replace('_', ' ').rsplit('.', 1)[0].title()
+    # Extract the title from the API endpoint
+    endpoint_path = api_endpoint.split('/')[-1]
+    title = endpoint_path.replace('-', ' ').title()
 
     print("Generate template file header for", file_path)
 
-    # Extract API endpoints from the Rust file
-    api_endpoints = extract_endpoints_from_rs_file(file_path)
-    api_endpoint = api_endpoints[
-        0] if api_endpoints else "GET /endpoint-unavailable"
-
+    # Create the template header
     template_header = f"""---\ntitle: '{title}'\napi: '{api_endpoint}'\n---"""
-
 
     return template_header
