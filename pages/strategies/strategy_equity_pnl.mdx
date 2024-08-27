@@ -2,3 +2,12 @@
 title: 'Equity Pnl'
 api: 'GET https://api.v2.xylex.ai/strategies/equity_pnl'
 ---
+
+
+
+<ParamField query="strategy_id" type="String" required  children="The 'strategy_id' is a string that uniquely identifies the strategy whose equity PnL data is being fetched. It is a mandatory parameter for the endpoint to function correctly.">
+  Unique identifier for the strategy.
+</ParamField>
+<ParamField query="data_length" type="String"  children="The 'data_length' parameter specifies the period for which equity PnL data is required. It is optional and defaults to '12_months' if not provided. Valid options include '12_months', '30_days', '7_days', and '24_hours'.">
+  Desired data length period.
+</ParamField>

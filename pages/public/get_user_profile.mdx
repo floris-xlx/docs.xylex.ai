@@ -1,11 +1,10 @@
 ---
 title: 'User'
-api: 'GET https://api.v2.xylex.ai/user'
+api: 'GET https://api.v2.xylex.ai/public/user'
 ---
 
 
 
-
-
-
-
+<ParamField query="username" type="String" required  children="This parameter is used to identify the user in the system whose profile information needs to be retrieved. It is provided as part of the query string in the request.">
+  The username of the user whose profile is to be fetched.
+</ParamField>

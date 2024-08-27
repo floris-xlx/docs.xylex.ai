@@ -2,3 +2,16 @@
 title: 'Statistics'
 api: 'GET https://api.v2.xylex.ai/strategy/statistics'
 ---
+
+
+
+<ParamField query="strategy_id" type="String" required  children="A unique identifier for the strategy whose statistics are being requested.">
+  ID of the strategy
+</ParamField>
+
+
+
+
+<ParamField query="strategy_id" type="String" required  children="The 'strategy_id' is a string parameter that uniquely identifies the strategy for which statistics are being fetched or updated. This ID is used to query and retrieve relevant trades associated with the strategy in order to compute the necessary statistics.">
+  The unique identifier for the strategy.
+</ParamField>

@@ -2,3 +2,15 @@
 title: 'Name Create'
 api: 'POST https://api.v2.xylex.ai/strategy/name_create'
 ---
+
+
+
+<ParamField query="strategy_name" type="String" required  children="The strategy name is a unique identifier for the strategy within the organization.">
+  Name of the strategy.
+</ParamField>
+<ParamField query="strategy_id" type="String" required  children="The strategy ID is a unique string used to identify the strategy.">
+  Identifier for the strategy.
+</ParamField>
+<ParamField query="organization_id" type="String" required  children="The organization ID is a unique string that identifies the organization to which the strategy belongs.">
+  Identifier for the organization.
+</ParamField>
