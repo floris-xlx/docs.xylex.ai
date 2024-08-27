@@ -1697,3 +1697,216 @@ Adding query to seen: strategy_name
 Found card title: Endpoint Description
 Duplicate card title found: Endpoint Description, skipping line.
 Skipping line: 
+[main 6f349df] Generated API docs
+ 19 files changed, 1879 insertions(+)
+ create mode 100644 nohup.out
+ create mode 100644 pages/public/ping.mdx
+To https://github.com/floris-xlx/docs.xylex.ai.git
+   e058708..6f349df  main -> main
+Found query: strategy_name
+Duplicate query found: strategy_name, skipping line.
+Skipping line: Name of the strategy to check for availability.
+Removing excess </ParamField> at the end of the file to balance tags.
+Writing unique lines back to file: pages/strategies/strategy_available.mdx
+Opening file: pages/strategies/strategy_metadata.mdx
+Found card title: Endpoint Description
+Adding card title to seen: Endpoint Description
+Found query: strategy_id
+Adding query to seen: strategy_id
+Found query: organization
+Adding query to seen: organization
+Found card title: Endpoint Description
+Duplicate card title found: Endpoint Description, skipping line.
+Skipping line: 
+Found query: strategy_id
+Duplicate query found: strategy_id, skipping line.
+Skipping line: Strategy ID for fetching metadata
+Found query: organization
+Duplicate query found: organization, skipping line.
+Skipping line: Organization for fetching metadata
+Found card title: Endpoint Description
+Duplicate card title found: Endpoint Description, skipping line.
+Skipping line: 
+Found query: strategy_id
+Duplicate query found: strategy_id, skipping line.
+Skipping line: The unique identifier for the strategy.
+Found query: organization
+Duplicate query found: organization, skipping line.
+Skipping line: The name of the organization.
+Removing excess </ParamField> at the end of the file to balance tags.
+Removing excess </ParamField> at the end of the file to balance tags.
+Writing unique lines back to file: pages/strategies/strategy_metadata.mdx
+Opening file: pages/strategies/strategy_metadata.mdx
+Found card title: Endpoint Description
+Adding card title to seen: Endpoint Description
+Found query: strategy_id
+Adding query to seen: strategy_id
+Found query: organization
+Adding query to seen: organization
+Writing unique lines back to file: pages/strategies/strategy_metadata.mdx
+Opening file: pages/strategies/strategy_statistics.mdx
+Found card title: Endpoint Description
+Adding card title to seen: Endpoint Description
+Found query: strategy_id
+Adding query to seen: strategy_id
+Found card title: Endpoint Description
+Duplicate card title found: Endpoint Description, skipping line.
+Skipping line: 
+Found query: strategy_id
+Duplicate query found: strategy_id, skipping line.
+Skipping line: The ID of the strategy.
+Found card title: Endpoint Description
+Duplicate card title found: Endpoint Description, skipping line.
+Skipping line: 
+Found query: strategy_id
+Duplicate query found: strategy_id, skipping line.
+Skipping line: The ID of the strategy.
+Removing excess </ParamField> at the end of the file to balance tags.
+Writing unique lines back to file: pages/strategies/strategy_statistics.mdx
+Opening file: pages/strategies/strategy_statistics.mdx
+Found card title: Endpoint Description
+Adding card title to seen: Endpoint Description
+Found query: strategy_id
+Adding query to seen: strategy_id
+Writing unique lines back to file: pages/strategies/strategy_statistics.mdx
+Opening file: pages/strategies/strategy_equity_pnl.mdx
+Found card title: Endpoint Description
+Adding card title to seen: Endpoint Description
+Found query: strategy_id
+Adding query to seen: strategy_id
+Found query: data_length
+Adding query to seen: data_length
+Found card title: Endpoint Description
+Duplicate card title found: Endpoint Description, skipping line.
+Skipping line: 
+Found query: strategy_id
+Duplicate query found: strategy_id, skipping line.
+Skipping line: The unique identifier for the strategy.
+Found query: data_length
+Duplicate query found: data_length, skipping line.
+Skipping line: The time period for fetching data, defaults to '12_months'.
+Removing excess </ParamField> at the end of the file to balance tags.
+Removing excess </ParamField> at the end of the file to balance tags.
+Writing unique lines back to file: pages/strategies/strategy_equity_pnl.mdx
+Opening file: pages/strategies/strategy_create.mdx
+Found card title: Endpoint Description
+Adding card title to seen: Endpoint Description
+Found query: strategy_name
+Adding query to seen: strategy_name
+Found query: strategy_id
+Adding query to seen: strategy_id
+Found query: organization_id
+Adding query to seen: organization_id
+Found card title: Endpoint Description
+Duplicate card title found: Endpoint Description, skipping line.
+Skipping line: 
+Found query: strategy_name
+Duplicate query found: strategy_name, skipping line.
+Skipping line: Name of the strategy.
+Found query: strategy_id
+Duplicate query found: strategy_id, skipping line.
+Skipping line: ID of the strategy.
+Found query: organization_id
+Duplicate query found: organization_id, skipping line.
+Skipping line: ID of the organization.
+Removing excess </ParamField> at the end of the file to balance tags.
+Removing excess </ParamField> at the end of the file to balance tags.
+Removing excess </ParamField> at the end of the file to balance tags.
+Writing unique lines back to file: pages/strategies/strategy_create.mdx
+Opening file: pages/organization/organization_all_trades.mdx
+Found card title: Endpoint Description
+Adding card title to seen: Endpoint Description
+Found query: organization_id
+Adding query to seen: organization_id
+Found card title: Endpoint Description
+Duplicate card title found: Endpoint Description, skipping line.
+Skipping line: 
+Found query: organization_id
+Duplicate query found: organization_id, skipping line.
+Skipping line: The ID of the organization.
+Removing excess </ParamField> at the end of the file to balance tags.
+Writing unique lines back to file: pages/organization/organization_all_trades.mdx
+Opening file: pages/organization/organization_available.mdx
+Found card title: Endpoint Description
+Adding card title to seen: Endpoint Description
+Found query: organization_name
+Adding query to seen: organization_name
+Found card title: Endpoint Description
+Duplicate card title found: Endpoint Description, skipping line.
+Skipping line: 
+Found query: organization_name
+Duplicate query found: organization_name, skipping line.
+Skipping line: The name of the organization to check for availability.
+Removing excess </ParamField> at the end of the file to balance tags.
+Writing unique lines back to file: pages/organization/organization_available.mdx
+Opening file: pages/organization/organization_create.mdx
+Found card title: Endpoint Description
+Adding card title to seen: Endpoint Description
+Found query: organization_name
+Adding query to seen: organization_name
+Found query: organization_id
+Adding query to seen: organization_id
+Found card title: Endpoint Description
+Duplicate card title found: Endpoint Description, skipping line.
+Skipping line: 
+Found query: organization_name
+Duplicate query found: organization_name, skipping line.
+Skipping line: The name of the organization.
+Found query: organization_id
+Duplicate query found: organization_id, skipping line.
+Skipping line: The ID of the organization.
+Removing excess </ParamField> at the end of the file to balance tags.
+Removing excess </ParamField> at the end of the file to balance tags.
+Writing unique lines back to file: pages/organization/organization_create.mdx
+[1m[92mSuccessfully generated API docs![0m
+[1m[92mPushing changes to the repository...[0m
+eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MjQ3OTkwMzgsImV4cCI6MTcyNDc5OTYzOCwiaXNzIjoiSXYyM2xpd0RwZ2w5RG8xeFJXbFMifQ.ddmJSPJlNysbJ3s9y1-MermDYpP835koHpsDwHiIuX6iIYQIIr2_zScxiuRjBujCp1UeLNDmp_gFAuIKXVRc2j3hrPK1J_x06G88-r3xeGhsif02Pv1D5CMYex5EQA3_qvq5cjMWffEjb6tnZBoqVmyLYWg-vlhZacwwRYUAeVwu8bFm6llpCjOackw8cgN9zzkXhsBqLt2ZsL8O7yfOSTM8OTgR03PZXhhTPy0JEW8x207VaEfr0Ilo1Ysr-5GXSmQ8ZzFLmwB0NAe_pB44vxe6z4zMFpTUYJ54-CTEddmLfM7S8isk7YAMHIhwfQg_nzrMqrUp3GhkoCaa1A9p0w
+ghs_2lR5H8kIt5MPomtnbHacS9QDEeyPVq4GQz6L
+Commit Message: push ping endpoint
+SHA: ac84b8465059f019b28dc3dc5e97cb8a66c755cf
+Committer: floris-xlx
+{"url":"https://api.github.com/repos/floris-xlx/xylex/comments/145917539","html_url":"https://github.com/floris-xlx/xylex/commit/ac84b8465059f019b28dc3dc5e97cb8a66c755cf#commitcomment-145917539","id":145917539,"node_id":"CC_kwDOKGs-3M4IsoZj","user":{"login":"xylex-buildpack[bot]","id":179610044,"node_id":"BOT_kgDOCrShvA","avatar_url":"https://avatars.githubusercontent.com/in/980627?v=4","gravatar_id":"","url":"https://api.github.com/users/xylex-buildpack%5Bbot%5D","html_url":"https://github.com/apps/xylex-buildpack","followers_url":"https://api.github.com/users/xylex-buildpack%5Bbot%5D/followers","following_url":"https://api.github.com/users/xylex-buildpack%5Bbot%5D/following{/other_user}","gists_url":"https://api.github.com/users/xylex-buildpack%5Bbot%5D/gists{/gist_id}","starred_url":"https://api.github.com/users/xylex-buildpack%5Bbot%5D/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/xylex-buildpack%5Bbot%5D/subscriptions","organizations_url":"https://api.github.com/users/xylex-buildpack%5Bbot%5D/orgs","repos_url":"https://api.github.com/users/xylex-buildpack%5Bbot%5D/repos","events_url":"https://api.github.com/users/xylex-buildpack%5Bbot%5D/events{/privacy}","received_events_url":"https://api.github.com/users/xylex-buildpack%5Bbot%5D/received_events","type":"Bot","site_admin":false},"position":null,"line":null,"path":null,"commit_id":"ac84b8465059f019b28dc3dc5e97cb8a66c755cf","created_at":"2024-08-27T23:01:38Z","updated_at":"2024-08-27T23:01:38Z","author_association":"NONE","body":"Successfully built the documentation for commit ac84b846 by floris-xlx, View the documentation at [https://nightly.docs.xylex.ai/](https://nightly.docs.xylex.ai/)","reactions":{"url":"https://api.github.com/repos/floris-xlx/xylex/comments/145917539/reactions","total_count":0,"+1":0,"-1":0,"laugh":0,"hooray":0,"confused":0,"heart":0,"rocket":0,"eyes":0}}
+INFO:     127.0.0.1:60434 - "GET /build-docs?api_key=123 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/uvicorn/protocols/http/h11_impl.py", line 394, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/usr/local/lib/python3.10/dist-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/floris-xlx/.local/lib/python3.10/site-packages/fastapi/applications.py", line 289, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/floris-xlx/.local/lib/python3.10/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/floris-xlx/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/floris-xlx/.local/lib/python3.10/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/floris-xlx/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/floris-xlx/.local/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/floris-xlx/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/home/floris-xlx/.local/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/home/floris-xlx/.local/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/floris-xlx/.local/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/floris-xlx/.local/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/floris-xlx/.local/lib/python3.10/site-packages/fastapi/routing.py", line 273, in app
+    raw_response = await run_endpoint_function(
+  File "/home/floris-xlx/.local/lib/python3.10/site-packages/fastapi/routing.py", line 190, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/home/floris-xlx/docs.xylex.ai/./api.py", line 126, in build_docs
+    await handle_commit_messaging()
+  File "/home/floris-xlx/docs.xylex.ai/./api.py", line 120, in handle_commit_messaging
+    post_commit_status_with_jwt(sha)
+  File "/home/floris-xlx/docs.xylex.ai/automate/add_commit_status.py", line 40, in post_commit_status_with_jwt
+    install_token = generate_installation_token(jwt_key)
+  File "/home/floris-xlx/docs.xylex.ai/automate/github_jwt_key.py", line 56, in generate_installation_token
+    response.raise_for_status()
+  File "/usr/local/lib/python3.10/dist-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://api.github.com/app/installations/54214692/access_tokens

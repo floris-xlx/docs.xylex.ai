@@ -119,6 +119,7 @@ async def handle_commit_messaging():
     # Post a commit status using the full SHA
     post_commit_status_with_jwt(sha)
 
+
 @app.get("/build-docs")
 async def build_docs(api_key: str):
     api_key = get_api_key(APIKeyHeader(api_key=api_key))
