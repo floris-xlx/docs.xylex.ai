@@ -9,6 +9,8 @@ BANNED_PATHS = [
     'images'
 ]
 
+from automate.parse_api_endpoint import extract_endpoints_from_rs_file
+
 
 def check_directory_exists(path):
     if not os.path.exists(path):
@@ -66,7 +68,7 @@ async def get_top_level_folders_excluding_mod_rs():
 
 def generate_pages_path(new_group, unique_folders_and_files):
     return [
-        f"{new_group.lower()}/{file}"
+        f"pages/{new_group.lower()}/{file}"
         for file in unique_folders_and_files[new_group.lower()]
     ]
 
@@ -102,9 +104,7 @@ async def update_navigation_groups():
     with open(MINT_CONFIG, 'w') as file:
         json.dump(data, file, indent=4)
 
-    print(
-        f"Updated navigation groups in {MINT_CONFIG} with: {unique_folders}"
-    )
+    print(f"Updated navigation groups in {MINT_CONFIG} with: {unique_folders}")
 
     await create_group_folders_and_pages(top_level_folders)
 
@@ -114,11 +114,36 @@ async def update_navigation_groups():
 async def create_group_folders_and_pages(top_level_folders):
     for group, pages in top_level_folders.items():
         if group.lower() not in BANNED_PATHS:
-            group_folder = os.path.join(os.getcwd(), group)
+            group_folder = os.path.join(os.getcwd(), 'pages', group)
             os.makedirs(group_folder, exist_ok=True)
             for page in pages:
                 page_path = os.path.join(group_folder, f"{page}.mdx")
                 with open(page_path, 'w') as page_file:
-                    page_file.write(
-                        f"# {page.replace('_', ' ').title()}\n\nContent for {page} page."
-                    )
+                    template_header = generate_template_header(page_path)
+                    page_file.write(template_header +
+                                    "\n\nContent for {page} page.")
+
+
+def generate_template_header(file_path):
+    """
+    Generates a template header for a given file path.
+
+    :param file_path: The path of the file.
+    :return: A string containing the template header.
+    """
+    # Extract the file name from the path
+    file_name = os.path.basename(file_path)
+    # Remove the file extension
+    title = file_name.replace('_', ' ').rsplit('.', 1)[0].title()
+
+    print("Generate template file header for", file_path)
+
+    # Extract API endpoints from the Rust file
+    api_endpoints = extract_endpoints_from_rs_file(file_path)
+    api_endpoint = api_endpoints[
+        0] if api_endpoints else "GET /endpoint-unavailable"
+
+    template_header = f"""---\ntitle: '{title}'\napi: '{api_endpoint}'\n---"""
+
+
+    return template_header
