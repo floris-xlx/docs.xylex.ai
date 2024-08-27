@@ -9,6 +9,7 @@ from automate.sync_nav_tags import sync_nav_tags
 from automate.endpoint_router import find_and_extract_endpoints
 from automate.content_framer import update_mdx_files_with_parameters
 from automate.deduplicator import remove_duplicates_from_mdx
+from automate.github_jwt_key import generate_jwt
 
 
 async def main():
@@ -52,15 +53,18 @@ async def main():
 
     load_dotenv()  # Load environment variables from .env file
 
-    # username = "floris-xlx"
-    # token = os.getenv("XLX_DOCS_GITHUB_TOKEN")
+
 
     # Set up the remote URL with authentication
 
-    # Add changes, commit, and push
+    # Add changes, commit, and push with JWT authentication
+    jwt_key = generate_jwt()
+    repo_url = "https://github.com/floris-xlx/docs.xylex.ai"
+    remote_url = f"https://x-access-token:{jwt_key}@{repo_url.split('https://')[1]}"
+    
     subprocess.run("git add .", shell=True, check=True)
     subprocess.run('git commit -m "Generated API docs"', shell=True, check=True)
-    subprocess.run(f"git push --force origin main", shell=True, check=True)
+    subprocess.run(f"git push --force {remote_url} main", shell=True, check=True)
 
 
 if __name__ == '__main__':

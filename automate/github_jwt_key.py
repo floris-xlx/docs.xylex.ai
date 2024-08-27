@@ -4,21 +4,24 @@ import time
 
 import jwt
 
-# Get PEM file path
-if len(sys.argv) > 1:
-    pem = sys.argv[1]
-else:
-    pem = input("Enter path of private PEM file: ")
+from dotenv import load_dotenv
+import os
 
-# Get the Client ID
-if len(sys.argv) > 2:
-    client_id = sys.argv[2]
-else:
-    client_id = input("Enter your Client ID: ")
+load_dotenv()
 
+# Get PEM file path from environment variable
+pem = os.getenv('XLX_DOCS_BUILD_PACK_TOKEN_PATH')
+client_id = os.getenv('XLX_DOCS_GITHUB_APP_CLIENT_ID')
+if not client_id:
+    raise ValueError("GitHub App Client ID is not set in the environment variable.")
 # Open PEM
-with open(pem, "rb") as pem_file:
-    signing_key = pem_file.read()
+
+
+if pem is not None:
+    with open(pem, "rb") as pem_file:
+        signing_key = pem_file.read()
+else:
+    raise ValueError("PEM file path is not set in the environment variable.")
 
 payload = {
     # Issued at time
@@ -32,4 +35,5 @@ payload = {
 # Create JWT
 encoded_jwt = jwt.encode(payload, signing_key, algorithm="RS256")
 
-print(f"JWT:  {encoded_jwt}")
+def generate_jwt():
+    return encoded_jwt
