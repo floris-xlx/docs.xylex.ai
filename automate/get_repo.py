@@ -23,12 +23,11 @@ async def clone_and_checkout():
         os.makedirs(cache_dir)
 
     commands = [
-        "cd cache",
-        f"git clone --filter=blob:none --no-checkout --depth 1 {repo_url}",
+        f"git clone --filter=blob:none --no-checkout --depth 1 {repo_url} {repo_dir}",
         f"cd {repo_dir}",
         "git sparse-checkout set --cone",
         "git checkout main",
-        "git sparse-checkout set services/xylex_api_frontend/src/api",
+        "git sparse-checkout set services/xylex_api_frontend/src",
     ]
 
     full_command = " && ".join(commands)
