@@ -1,5 +1,4 @@
 import json
-
 import asyncio
 from automate.clear_cache import clear_cache
 from automate.get_repo import clone_and_checkout
@@ -13,33 +12,33 @@ from automate.github_jwt_key import generate_jwt, generate_installation_token
 
 
 async def main():
-    # await clear_cache()
-    # await clone_and_checkout()
-    # await list_folders_in_cache_api()
-    # await get_navigation_groups()
-    # await update_navigation_groups()
-    # await fetch_latest_commit()
-    # sync_nav_tags()
+    await clear_cache()
+    await clone_and_checkout()
+    await list_folders_in_cache_api()
+    await get_navigation_groups()
+    await update_navigation_groups()
+    await fetch_latest_commit()
+    sync_nav_tags()
 
-    # endpoints = find_and_extract_endpoints()
-    # print(json.dumps(endpoints, indent=4))
+    endpoints = find_and_extract_endpoints()
+    print(json.dumps(endpoints, indent=4))
 
-    # import concurrent.futures
+    import concurrent.futures
 
-    # def update_mdx_files_with_parameters_thread(endpoint):
-    #     print(f"Starting thread for endpoint: {endpoint['endpoint']}")
-    #     asyncio.run(update_mdx_files_with_parameters([endpoint]))
-    #     print(f"Finished thread for endpoint: {endpoint['endpoint']}")
+    def update_mdx_files_with_parameters_thread(endpoint):
+        print(f"Starting thread for endpoint: {endpoint['endpoint']}")
+        asyncio.run(update_mdx_files_with_parameters([endpoint]))
+        print(f"Finished thread for endpoint: {endpoint['endpoint']}")
 
-    # with concurrent.futures.ThreadPoolExecutor() as executor:
-    #     print("Starting ThreadPoolExecutor for updating MDX files with parameters.")
-    #     executor.map(update_mdx_files_with_parameters_thread, endpoints)
-    #     print("Completed all threads for updating MDX files with parameters.")
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+        print("Starting ThreadPoolExecutor for updating MDX files with parameters.")
+        executor.map(update_mdx_files_with_parameters_thread, endpoints)
+        print("Completed all threads for updating MDX files with parameters.")
 
-    # for endpoint in endpoints:
-    #     mdx_filepath = endpoint.get("mdx_filepath")
-    #     if mdx_filepath:
-    #         await remove_duplicates_from_mdx(mdx_filepath)
+    for endpoint in endpoints:
+        mdx_filepath = endpoint.get("mdx_filepath")
+        if mdx_filepath:
+            await remove_duplicates_from_mdx(mdx_filepath)
 
     # print in bold green success message and then git add . && git commit -m "Generated API docs" && git push --force
     print("\033[1m\033[92mSuccessfully generated API docs!\033[0m")

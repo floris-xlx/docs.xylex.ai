@@ -28,7 +28,9 @@ async def fetch_latest_commit():
             # Extract the required information
             commit_message = response_json[0]['commit']['message']
             sha = response_json[0]['sha']
+            sha_short = sha[:8]  # Get the first 8 characters of sha
             committer_login = response_json[0]['committer']['login']
-            print(f"Commit Message: {commit_message}\nSHA: {sha}\nCommitter: {committer_login}")
-            return commit_message, sha, committer_login
-
+            print(
+                f"Commit Message: {commit_message}\nSHA: {sha}\nCommitter: {committer_login}"
+            )
+            return commit_message, sha, committer_login, sha_short
