@@ -1,0 +1,1699 @@
+INFO:     Started server process [4189411]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:3398 (Press CTRL+C to quit)
+INFO:     127.0.0.1:37182 - "POST /build-docs?api_key=123 HTTP/1.1" 405 Method Not Allowed
+Cloning into 'cache/xylex'...
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+Cleared the contents of the 'cache' directory.
+Cloned and checked out the repository to 'cache/api'.
+Deleted the directory 'cache/xylex'.
+Navigation indexes in 'cache/api': ['user', 'public', 'trades', 'strategies', 'organization', 'authenticator']
+Navigation groups in mint.json: ['Get Started', 'Authenticator API', 'Organization API', 'Public API', 'Strategies API', 'Trades API', 'User API', 'Organization']
+Top-level folders and files (excluding 'mod.rs') in 'cache/api': {'user': ['username_available', 'organization', 'user_pfp', 'username_create'], 'public': ['get_user_profile', 'ping'], 'trades': ['user_trade_metadata', 'weekly_trades', 'trade_metadata', 'trade_status'], 'strategies': ['strategy_available', 'strategy_metadata', 'strategy_statistics', 'strategy_equity_pnl', 'strategy_create'], 'organization': ['organization_all_trades', 'organization_available', 'organization_create'], 'authenticator': ['generate_secret', 'secret_qr', 'get_code', 'utils', 'verify_code']}
+top_level_folders: {'user': ['username_available', 'organization', 'user_pfp', 'username_create'], 'public': ['get_user_profile', 'ping'], 'trades': ['user_trade_metadata', 'weekly_trades', 'trade_metadata', 'trade_status'], 'strategies': ['strategy_available', 'strategy_metadata', 'strategy_statistics', 'strategy_equity_pnl', 'strategy_create'], 'organization': ['organization_all_trades', 'organization_available', 'organization_create'], 'authenticator': ['generate_secret', 'secret_qr', 'get_code', 'utils', 'verify_code']}
+Updated navigation groups in mint.json with: []
+[34mOriginal file path: /home/floris-xlx/docs.xylex.ai/pages/user/username_available.mdx[0m
+[33mAdjusted file path for leading slash: ./home/floris-xlx/docs.xylex.ai/pages/user/username_available.mdx[0m
+[32mTransformed file path: /cache/api/user/username_available.rs[0m
+[31mFile or directory does not exist. Returning None.[0m
+No endpoints found for /home/floris-xlx/docs.xylex.ai/pages/user/username_available.mdx. Skipping.
+[34mOriginal file path: /home/floris-xlx/docs.xylex.ai/pages/user/organization.mdx[0m
+[33mAdjusted file path for leading slash: ./home/floris-xlx/docs.xylex.ai/pages/user/organization.mdx[0m
+[32mTransformed file path: /cache/api/user/organization.rs[0m
+[31mFile or directory does not exist. Returning None.[0m
+No endpoints found for /home/floris-xlx/docs.xylex.ai/pages/user/organization.mdx. Skipping.
+[34mOriginal file path: /home/floris-xlx/docs.xylex.ai/pages/user/user_pfp.mdx[0m
+[33mAdjusted file path for leading slash: ./home/floris-xlx/docs.xylex.ai/pages/user/user_pfp.mdx[0m
+[32mTransformed file path: /cache/api/user/user_pfp.rs[0m
+[31mFile or directory does not exist. Returning None.[0m
+No endpoints found for /home/floris-xlx/docs.xylex.ai/pages/user/user_pfp.mdx. Skipping.
+[34mOriginal file path: /home/floris-xlx/docs.xylex.ai/pages/user/username_create.mdx[0m
+[33mAdjusted file path for leading slash: ./home/floris-xlx/docs.xylex.ai/pages/user/username_create.mdx[0m
+[32mTransformed file path: /cache/api/user/username_create.rs[0m
+[31mFile or directory does not exist. Returning None.[0m
+No endpoints found for /home/floris-xlx/docs.xylex.ai/pages/user/username_create.mdx. Skipping.
+[34mOriginal file path: /home/floris-xlx/docs.xylex.ai/pages/public/get_user_profile.mdx[0m
+[33mAdjusted file path for leading slash: ./home/floris-xlx/docs.xylex.ai/pages/public/get_user_profile.mdx[0m
+[32mTransformed file path: /cache/api/public/get_user_profile.rs[0m
+[31mFile or directory does not exist. Returning None.[0m
+No endpoints found for /home/floris-xlx/docs.xylex.ai/pages/public/get_user_profile.mdx. Skipping.
+[34mOriginal file path: /home/floris-xlx/docs.xylex.ai/pages/public/ping.mdx[0m
+[33mAdjusted file path for leading slash: ./home/floris-xlx/docs.xylex.ai/pages/public/ping.mdx[0m
+[32mTransformed file path: /cache/api/public/ping.rs[0m
+[31mFile or directory does not exist. Returning None.[0m
+No endpoints found for /home/floris-xlx/docs.xylex.ai/pages/public/ping.mdx. Skipping.
+[34mOriginal file path: /home/floris-xlx/docs.xylex.ai/pages/trades/user_trade_metadata.mdx[0m
+[33mAdjusted file path for leading slash: ./home/floris-xlx/docs.xylex.ai/pages/trades/user_trade_metadata.mdx[0m
+[32mTransformed file path: /cache/api/trades/user_trade_metadata.rs[0m
+[31mFile or directory does not exist. Returning None.[0m
+No endpoints found for /home/floris-xlx/docs.xylex.ai/pages/trades/user_trade_metadata.mdx. Skipping.
+[34mOriginal file path: /home/floris-xlx/docs.xylex.ai/pages/trades/weekly_trades.mdx[0m
+[33mAdjusted file path for leading slash: ./home/floris-xlx/docs.xylex.ai/pages/trades/weekly_trades.mdx[0m
+[32mTransformed file path: /cache/api/trades/weekly_trades.rs[0m
+[31mFile or directory does not exist. Returning None.[0m
+No endpoints found for /home/floris-xlx/docs.xylex.ai/pages/trades/weekly_trades.mdx. Skipping.
+[34mOriginal file path: /home/floris-xlx/docs.xylex.ai/pages/trades/trade_metadata.mdx[0m
+[33mAdjusted file path for leading slash: ./home/floris-xlx/docs.xylex.ai/pages/trades/trade_metadata.mdx[0m
+[32mTransformed file path: /cache/api/trades/trade_metadata.rs[0m
+[31mFile or directory does not exist. Returning None.[0m
+No endpoints found for /home/floris-xlx/docs.xylex.ai/pages/trades/trade_metadata.mdx. Skipping.
+[34mOriginal file path: /home/floris-xlx/docs.xylex.ai/pages/trades/trade_status.mdx[0m
+[33mAdjusted file path for leading slash: ./home/floris-xlx/docs.xylex.ai/pages/trades/trade_status.mdx[0m
+[32mTransformed file path: /cache/api/trades/trade_status.rs[0m
+[31mFile or directory does not exist. Returning None.[0m
+No endpoints found for /home/floris-xlx/docs.xylex.ai/pages/trades/trade_status.mdx. Skipping.
+[34mOriginal file path: /home/floris-xlx/docs.xylex.ai/pages/strategies/strategy_available.mdx[0m
+[33mAdjusted file path for leading slash: ./home/floris-xlx/docs.xylex.ai/pages/strategies/strategy_available.mdx[0m
+[32mTransformed file path: /cache/api/strategies/strategy_available.rs[0m
+[31mFile or directory does not exist. Returning None.[0m
+No endpoints found for /home/floris-xlx/docs.xylex.ai/pages/strategies/strategy_available.mdx. Skipping.
+[34mOriginal file path: /home/floris-xlx/docs.xylex.ai/pages/strategies/strategy_metadata.mdx[0m
+[33mAdjusted file path for leading slash: ./home/floris-xlx/docs.xylex.ai/pages/strategies/strategy_metadata.mdx[0m
+[32mTransformed file path: /cache/api/strategies/strategy_metadata.rs[0m
+[31mFile or directory does not exist. Returning None.[0m
+No endpoints found for /home/floris-xlx/docs.xylex.ai/pages/strategies/strategy_metadata.mdx. Skipping.
+[34mOriginal file path: /home/floris-xlx/docs.xylex.ai/pages/strategies/strategy_statistics.mdx[0m
+[33mAdjusted file path for leading slash: ./home/floris-xlx/docs.xylex.ai/pages/strategies/strategy_statistics.mdx[0m
+[32mTransformed file path: /cache/api/strategies/strategy_statistics.rs[0m
+[31mFile or directory does not exist. Returning None.[0m
+No endpoints found for /home/floris-xlx/docs.xylex.ai/pages/strategies/strategy_statistics.mdx. Skipping.
+[34mOriginal file path: /home/floris-xlx/docs.xylex.ai/pages/strategies/strategy_equity_pnl.mdx[0m
+[33mAdjusted file path for leading slash: ./home/floris-xlx/docs.xylex.ai/pages/strategies/strategy_equity_pnl.mdx[0m
+[32mTransformed file path: /cache/api/strategies/strategy_equity_pnl.rs[0m
+[31mFile or directory does not exist. Returning None.[0m
+No endpoints found for /home/floris-xlx/docs.xylex.ai/pages/strategies/strategy_equity_pnl.mdx. Skipping.
+[34mOriginal file path: /home/floris-xlx/docs.xylex.ai/pages/strategies/strategy_create.mdx[0m
+[33mAdjusted file path for leading slash: ./home/floris-xlx/docs.xylex.ai/pages/strategies/strategy_create.mdx[0m
+[32mTransformed file path: /cache/api/strategies/strategy_create.rs[0m
+[31mFile or directory does not exist. Returning None.[0m
+No endpoints found for /home/floris-xlx/docs.xylex.ai/pages/strategies/strategy_create.mdx. Skipping.
+[34mOriginal file path: /home/floris-xlx/docs.xylex.ai/pages/organization/organization_all_trades.mdx[0m
+[33mAdjusted file path for leading slash: ./home/floris-xlx/docs.xylex.ai/pages/organization/organization_all_trades.mdx[0m
+[32mTransformed file path: /cache/api/organization/organization_all_trades.rs[0m
+[31mFile or directory does not exist. Returning None.[0m
+No endpoints found for /home/floris-xlx/docs.xylex.ai/pages/organization/organization_all_trades.mdx. Skipping.
+[34mOriginal file path: /home/floris-xlx/docs.xylex.ai/pages/organization/organization_available.mdx[0m
+[33mAdjusted file path for leading slash: ./home/floris-xlx/docs.xylex.ai/pages/organization/organization_available.mdx[0m
+[32mTransformed file path: /cache/api/organization/organization_available.rs[0m
+[31mFile or directory does not exist. Returning None.[0m
+No endpoints found for /home/floris-xlx/docs.xylex.ai/pages/organization/organization_available.mdx. Skipping.
+[34mOriginal file path: /home/floris-xlx/docs.xylex.ai/pages/organization/organization_create.mdx[0m
+[33mAdjusted file path for leading slash: ./home/floris-xlx/docs.xylex.ai/pages/organization/organization_create.mdx[0m
+[32mTransformed file path: /cache/api/organization/organization_create.rs[0m
+[31mFile or directory does not exist. Returning None.[0m
+No endpoints found for /home/floris-xlx/docs.xylex.ai/pages/organization/organization_create.mdx. Skipping.
+[34mOriginal file path: /home/floris-xlx/docs.xylex.ai/pages/authenticator/generate_secret.mdx[0m
+[33mAdjusted file path for leading slash: ./home/floris-xlx/docs.xylex.ai/pages/authenticator/generate_secret.mdx[0m
+[32mTransformed file path: /cache/api/authenticator/generate_secret.rs[0m
+[32mFile exists: ./cache/api/authenticator/generate_secret.rs[0m
+[34mExtracting HTTP methods from file: ./cache/api/authenticator/generate_secret.rs[0m
+[32mOpened file: ./cache/api/authenticator/generate_secret.rs[0m
+[32mFound 1 matches in the file.[0m
+[34mExtracted endpoint: GET https://api.v2.xylex.ai/authenticator/generate-secret[0m
+[34mTotal endpoints extracted: 1[0m
+Generate template file header for /home/floris-xlx/docs.xylex.ai/pages/authenticator/generate_secret.mdx
+[34mOriginal file path: /home/floris-xlx/docs.xylex.ai/pages/authenticator/secret_qr.mdx[0m
+[33mAdjusted file path for leading slash: ./home/floris-xlx/docs.xylex.ai/pages/authenticator/secret_qr.mdx[0m
+[32mTransformed file path: /cache/api/authenticator/secret_qr.rs[0m
+[32mFile exists: ./cache/api/authenticator/secret_qr.rs[0m
+[34mExtracting HTTP methods from file: ./cache/api/authenticator/secret_qr.rs[0m
+[32mOpened file: ./cache/api/authenticator/secret_qr.rs[0m
+[32mFound 2 matches in the file.[0m
+[34mExtracted endpoint: POST https://api.v2.xylex.ai/authenticator/qr-code-url[0m
+[34mExtracted endpoint: POST https://api.v2.xylex.ai/authenticator/qr-code-svg[0m
+[34mTotal endpoints extracted: 2[0m
+Generate template file header for /home/floris-xlx/docs.xylex.ai/pages/authenticator/qr_code_url.mdx
+Generate template file header for /home/floris-xlx/docs.xylex.ai/pages/authenticator/qr_code_svg.mdx
+[34mOriginal file path: /home/floris-xlx/docs.xylex.ai/pages/authenticator/get_code.mdx[0m
+[33mAdjusted file path for leading slash: ./home/floris-xlx/docs.xylex.ai/pages/authenticator/get_code.mdx[0m
+[32mTransformed file path: /cache/api/authenticator/get_code.rs[0m
+[32mFile exists: ./cache/api/authenticator/get_code.rs[0m
+[34mExtracting HTTP methods from file: ./cache/api/authenticator/get_code.rs[0m
+[32mOpened file: ./cache/api/authenticator/get_code.rs[0m
+[32mFound 2 matches in the file.[0m
+[34mExtracted endpoint: POST https://api.v2.xylex.ai/authenticator/get-code-secret[0m
+[34mExtracted endpoint: POST https://api.v2.xylex.ai/authenticator/get-code-user-id[0m
+[34mTotal endpoints extracted: 2[0m
+Generate template file header for /home/floris-xlx/docs.xylex.ai/pages/authenticator/get_code_secret.mdx
+Generate template file header for /home/floris-xlx/docs.xylex.ai/pages/authenticator/get_code_user_id.mdx
+[34mOriginal file path: /home/floris-xlx/docs.xylex.ai/pages/authenticator/utils.mdx[0m
+[33mAdjusted file path for leading slash: ./home/floris-xlx/docs.xylex.ai/pages/authenticator/utils.mdx[0m
+[32mTransformed file path: /cache/api/authenticator/utils.rs[0m
+[32mFile exists: ./cache/api/authenticator/utils.rs[0m
+[34mExtracting HTTP methods from file: ./cache/api/authenticator/utils.rs[0m
+[32mOpened file: ./cache/api/authenticator/utils.rs[0m
+[32mFound 0 matches in the file.[0m
+[34mTotal endpoints extracted: 0[0m
+[34mOriginal file path: /home/floris-xlx/docs.xylex.ai/pages/authenticator/verify_code.mdx[0m
+[33mAdjusted file path for leading slash: ./home/floris-xlx/docs.xylex.ai/pages/authenticator/verify_code.mdx[0m
+[32mTransformed file path: /cache/api/authenticator/verify_code.rs[0m
+[32mFile exists: ./cache/api/authenticator/verify_code.rs[0m
+[34mExtracting HTTP methods from file: ./cache/api/authenticator/verify_code.rs[0m
+[32mOpened file: ./cache/api/authenticator/verify_code.rs[0m
+[32mFound 2 matches in the file.[0m
+[34mExtracted endpoint: POST https://api.v2.xylex.ai/authenticator/verify-code-secret[0m
+[34mExtracted endpoint: POST https://api.v2.xylex.ai/authenticator/verify-code-user-id[0m
+[34mTotal endpoints extracted: 2[0m
+Generate template file header for /home/floris-xlx/docs.xylex.ai/pages/authenticator/verify_code_secret.mdx
+Generate template file header for /home/floris-xlx/docs.xylex.ai/pages/authenticator/verify_code_user_id.mdx
+Commit Message: push ping endpoint
+SHA: ac84b8465059f019b28dc3dc5e97cb8a66c755cf
+Committer: floris-xlx
+[34mExtracting HTTP methods from file: cache/api/user/username_available/endpoint.rs[0m
+[32mOpened file: cache/api/user/username_available/endpoint.rs[0m
+[32mFound 1 matches in the file.[0m
+[34mExtracted endpoint: GET https://api.v2.xylex.ai/user/name_available[0m
+[34mTotal endpoints extracted: 1[0m
+[34mExtracting HTTP methods from file: cache/api/user/organization/endpoint.rs[0m
+[32mOpened file: cache/api/user/organization/endpoint.rs[0m
+[32mFound 1 matches in the file.[0m
+[34mExtracted endpoint: GET https://api.v2.xylex.ai/user/organization[0m
+[34mTotal endpoints extracted: 1[0m
+[34mExtracting HTTP methods from file: cache/api/user/user_pfp/endpoint.rs[0m
+[32mOpened file: cache/api/user/user_pfp/endpoint.rs[0m
+[32mFound 1 matches in the file.[0m
+[34mExtracted endpoint: GET https://api.v2.xylex.ai/user/fetch_user_pfp[0m
+[34mTotal endpoints extracted: 1[0m
+[34mExtracting HTTP methods from file: cache/api/user/username_create/endpoint.rs[0m
+[32mOpened file: cache/api/user/username_create/endpoint.rs[0m
+[32mFound 1 matches in the file.[0m
+[34mExtracted endpoint: POST https://api.v2.xylex.ai/user/name_create[0m
+[34mTotal endpoints extracted: 1[0m
+[34mExtracting HTTP methods from file: cache/api/public/get_user_profile/endpoint.rs[0m
+[32mOpened file: cache/api/public/get_user_profile/endpoint.rs[0m
+[32mFound 1 matches in the file.[0m
+[34mExtracted endpoint: GET https://api.v2.xylex.ai/public/user[0m
+[34mTotal endpoints extracted: 1[0m
+[34mExtracting HTTP methods from file: cache/api/public/ping/endpoint.rs[0m
+[32mOpened file: cache/api/public/ping/endpoint.rs[0m
+[32mFound 1 matches in the file.[0m
+[34mExtracted endpoint: GET https://api.v2.xylex.ai/public/ping[0m
+[34mTotal endpoints extracted: 1[0m
+Generate template file header for ping
+[34mExtracting HTTP methods from file: cache/api/trades/user_trade_metadata/endpoint.rs[0m
+[32mOpened file: cache/api/trades/user_trade_metadata/endpoint.rs[0m
+[32mFound 1 matches in the file.[0m
+[34mExtracted endpoint: GET https://api.v2.xylex.ai/trades/fetch_user_trade_metadata[0m
+[34mTotal endpoints extracted: 1[0m
+[34mExtracting HTTP methods from file: cache/api/trades/weekly_trades/endpoint.rs[0m
+[32mOpened file: cache/api/trades/weekly_trades/endpoint.rs[0m
+[32mFound 2 matches in the file.[0m
+[34mExtracted endpoint: GET https://api.v2.xylex.ai/get_trades_weekly_org[0m
+[34mExtracted endpoint: GET https://api.v2.xylex.ai/get_trades_weekly_algo[0m
+[34mTotal endpoints extracted: 2[0m
+[34mExtracting HTTP methods from file: cache/api/trades/trade_metadata/endpoint.rs[0m
+[32mOpened file: cache/api/trades/trade_metadata/endpoint.rs[0m
+[32mFound 1 matches in the file.[0m
+[34mExtracted endpoint: GET https://api.v2.xylex.ai/trades/fetch_trade_metadata[0m
+[34mTotal endpoints extracted: 1[0m
+[34mExtracting HTTP methods from file: cache/api/trades/trade_status/endpoint.rs[0m
+[32mOpened file: cache/api/trades/trade_status/endpoint.rs[0m
+[32mFound 1 matches in the file.[0m
+[34mExtracted endpoint: GET https://api.v2.xylex.ai/trades/fetch_trade_status[0m
+[34mTotal endpoints extracted: 1[0m
+[34mExtracting HTTP methods from file: cache/api/strategies/strategy_available/endpoint.rs[0m
+[32mOpened file: cache/api/strategies/strategy_available/endpoint.rs[0m
+[32mFound 1 matches in the file.[0m
+[34mExtracted endpoint: GET https://api.v2.xylex.ai/strategy/name_available[0m
+[34mTotal endpoints extracted: 1[0m
+[34mExtracting HTTP methods from file: cache/api/strategies/strategy_metadata/endpoint.rs[0m
+[32mOpened file: cache/api/strategies/strategy_metadata/endpoint.rs[0m
+[32mFound 2 matches in the file.[0m
+[34mExtracted endpoint: GET https://api.v2.xylex.ai/strategies/fetch_strategy_metadata_by_strategy_id[0m
+[34mExtracted endpoint: GET https://api.v2.xylex.ai/strategies/fetch_strategy_metadata_by_organization_id[0m
+[34mTotal endpoints extracted: 2[0m
+[34mExtracting HTTP methods from file: cache/api/strategies/strategy_statistics/endpoint.rs[0m
+[32mOpened file: cache/api/strategies/strategy_statistics/endpoint.rs[0m
+[32mFound 2 matches in the file.[0m
+[34mExtracted endpoint: GET https://api.v2.xylex.ai/strategy/statistics[0m
+[34mExtracted endpoint: GET https://api.v2.xylex.ai/strategy/update_all_strategy_statistics[0m
+[34mTotal endpoints extracted: 2[0m
+[34mExtracting HTTP methods from file: cache/api/strategies/strategy_equity_pnl/endpoint.rs[0m
+[32mOpened file: cache/api/strategies/strategy_equity_pnl/endpoint.rs[0m
+[32mFound 1 matches in the file.[0m
+[34mExtracted endpoint: GET https://api.v2.xylex.ai/strategies/equity_pnl[0m
+[34mTotal endpoints extracted: 1[0m
+[34mExtracting HTTP methods from file: cache/api/strategies/strategy_create/endpoint.rs[0m
+[32mOpened file: cache/api/strategies/strategy_create/endpoint.rs[0m
+[32mFound 1 matches in the file.[0m
+[34mExtracted endpoint: POST https://api.v2.xylex.ai/strategy/name_create[0m
+[34mTotal endpoints extracted: 1[0m
+[34mExtracting HTTP methods from file: cache/api/organization/organization_all_trades/endpoint.rs[0m
+[32mOpened file: cache/api/organization/organization_all_trades/endpoint.rs[0m
+[32mFound 1 matches in the file.[0m
+[34mExtracted endpoint: GET https://api.v2.xylex.ai/trades/fetch_trade_metadata_by_organization_id[0m
+[34mTotal endpoints extracted: 1[0m
+[34mExtracting HTTP methods from file: cache/api/organization/organization_available/endpoint.rs[0m
+[32mOpened file: cache/api/organization/organization_available/endpoint.rs[0m
+[32mFound 1 matches in the file.[0m
+[34mExtracted endpoint: GET https://api.v2.xylex.ai/organization/name_available[0m
+[34mTotal endpoints extracted: 1[0m
+[34mExtracting HTTP methods from file: cache/api/organization/organization_create/endpoint.rs[0m
+[32mOpened file: cache/api/organization/organization_create/endpoint.rs[0m
+[32mFound 1 matches in the file.[0m
+[34mExtracted endpoint: POST https://api.v2.xylex.ai/organization/name_create[0m
+[34mTotal endpoints extracted: 1[0m
+[
+    {
+        "endpoint": "GET https://api.v2.xylex.ai/user/name_available",
+        "file_path": "cache/api/user/username_available/endpoint.rs",
+        "parent_folder": "username_available",
+        "pages_folder": "pages/user/username_available",
+        "mdx_filepath": "pages/user/username_available.mdx"
+    },
+    {
+        "endpoint": "GET https://api.v2.xylex.ai/user/organization",
+        "file_path": "cache/api/user/organization/endpoint.rs",
+        "parent_folder": "organization",
+        "pages_folder": "pages/user/organization",
+        "mdx_filepath": "pages/user/organization.mdx"
+    },
+    {
+        "endpoint": "GET https://api.v2.xylex.ai/user/fetch_user_pfp",
+        "file_path": "cache/api/user/user_pfp/endpoint.rs",
+        "parent_folder": "user_pfp",
+        "pages_folder": "pages/user/user_pfp",
+        "mdx_filepath": "pages/user/user_pfp.mdx"
+    },
+    {
+        "endpoint": "POST https://api.v2.xylex.ai/user/name_create",
+        "file_path": "cache/api/user/username_create/endpoint.rs",
+        "parent_folder": "username_create",
+        "pages_folder": "pages/user/username_create",
+        "mdx_filepath": "pages/user/username_create.mdx"
+    },
+    {
+        "endpoint": "GET https://api.v2.xylex.ai/public/user",
+        "file_path": "cache/api/public/get_user_profile/endpoint.rs",
+        "parent_folder": "get_user_profile",
+        "pages_folder": "pages/public/get_user_profile",
+        "mdx_filepath": "pages/public/get_user_profile.mdx"
+    },
+    {
+        "endpoint": "GET https://api.v2.xylex.ai/public/ping",
+        "file_path": "cache/api/public/ping/endpoint.rs",
+        "parent_folder": "ping",
+        "pages_folder": "pages/public/ping",
+        "mdx_filepath": "pages/public/ping.mdx"
+    },
+    {
+        "endpoint": "GET https://api.v2.xylex.ai/trades/fetch_user_trade_metadata",
+        "file_path": "cache/api/trades/user_trade_metadata/endpoint.rs",
+        "parent_folder": "user_trade_metadata",
+        "pages_folder": "pages/trades/user_trade_metadata",
+        "mdx_filepath": "pages/trades/user_trade_metadata.mdx"
+    },
+    {
+        "endpoint": "GET https://api.v2.xylex.ai/get_trades_weekly_org",
+        "file_path": "cache/api/trades/weekly_trades/endpoint.rs",
+        "parent_folder": "weekly_trades",
+        "pages_folder": "pages/trades/weekly_trades",
+        "mdx_filepath": "pages/trades/weekly_trades.mdx"
+    },
+    {
+        "endpoint": "GET https://api.v2.xylex.ai/get_trades_weekly_algo",
+        "file_path": "cache/api/trades/weekly_trades/endpoint.rs",
+        "parent_folder": "weekly_trades",
+        "pages_folder": "pages/trades/weekly_trades",
+        "mdx_filepath": "pages/trades/weekly_trades.mdx"
+    },
+    {
+        "endpoint": "GET https://api.v2.xylex.ai/trades/fetch_trade_metadata",
+        "file_path": "cache/api/trades/trade_metadata/endpoint.rs",
+        "parent_folder": "trade_metadata",
+        "pages_folder": "pages/trades/trade_metadata",
+        "mdx_filepath": "pages/trades/trade_metadata.mdx"
+    },
+    {
+        "endpoint": "GET https://api.v2.xylex.ai/trades/fetch_trade_status",
+        "file_path": "cache/api/trades/trade_status/endpoint.rs",
+        "parent_folder": "trade_status",
+        "pages_folder": "pages/trades/trade_status",
+        "mdx_filepath": "pages/trades/trade_status.mdx"
+    },
+    {
+        "endpoint": "GET https://api.v2.xylex.ai/strategy/name_available",
+        "file_path": "cache/api/strategies/strategy_available/endpoint.rs",
+        "parent_folder": "strategy_available",
+        "pages_folder": "pages/strategies/strategy_available",
+        "mdx_filepath": "pages/strategies/strategy_available.mdx"
+    },
+    {
+        "endpoint": "GET https://api.v2.xylex.ai/strategies/fetch_strategy_metadata_by_strategy_id",
+        "file_path": "cache/api/strategies/strategy_metadata/endpoint.rs",
+        "parent_folder": "strategy_metadata",
+        "pages_folder": "pages/strategies/strategy_metadata",
+        "mdx_filepath": "pages/strategies/strategy_metadata.mdx"
+    },
+    {
+        "endpoint": "GET https://api.v2.xylex.ai/strategies/fetch_strategy_metadata_by_organization_id",
+        "file_path": "cache/api/strategies/strategy_metadata/endpoint.rs",
+        "parent_folder": "strategy_metadata",
+        "pages_folder": "pages/strategies/strategy_metadata",
+        "mdx_filepath": "pages/strategies/strategy_metadata.mdx"
+    },
+    {
+        "endpoint": "GET https://api.v2.xylex.ai/strategy/statistics",
+        "file_path": "cache/api/strategies/strategy_statistics/endpoint.rs",
+        "parent_folder": "strategy_statistics",
+        "pages_folder": "pages/strategies/strategy_statistics",
+        "mdx_filepath": "pages/strategies/strategy_statistics.mdx"
+    },
+    {
+        "endpoint": "GET https://api.v2.xylex.ai/strategy/update_all_strategy_statistics",
+        "file_path": "cache/api/strategies/strategy_statistics/endpoint.rs",
+        "parent_folder": "strategy_statistics",
+        "pages_folder": "pages/strategies/strategy_statistics",
+        "mdx_filepath": "pages/strategies/strategy_statistics.mdx"
+    },
+    {
+        "endpoint": "GET https://api.v2.xylex.ai/strategies/equity_pnl",
+        "file_path": "cache/api/strategies/strategy_equity_pnl/endpoint.rs",
+        "parent_folder": "strategy_equity_pnl",
+        "pages_folder": "pages/strategies/strategy_equity_pnl",
+        "mdx_filepath": "pages/strategies/strategy_equity_pnl.mdx"
+    },
+    {
+        "endpoint": "POST https://api.v2.xylex.ai/strategy/name_create",
+        "file_path": "cache/api/strategies/strategy_create/endpoint.rs",
+        "parent_folder": "strategy_create",
+        "pages_folder": "pages/strategies/strategy_create",
+        "mdx_filepath": "pages/strategies/strategy_create.mdx"
+    },
+    {
+        "endpoint": "GET https://api.v2.xylex.ai/trades/fetch_trade_metadata_by_organization_id",
+        "file_path": "cache/api/organization/organization_all_trades/endpoint.rs",
+        "parent_folder": "organization_all_trades",
+        "pages_folder": "pages/organization/organization_all_trades",
+        "mdx_filepath": "pages/organization/organization_all_trades.mdx"
+    },
+    {
+        "endpoint": "GET https://api.v2.xylex.ai/organization/name_available",
+        "file_path": "cache/api/organization/organization_available/endpoint.rs",
+        "parent_folder": "organization_available",
+        "pages_folder": "pages/organization/organization_available",
+        "mdx_filepath": "pages/organization/organization_available.mdx"
+    },
+    {
+        "endpoint": "POST https://api.v2.xylex.ai/organization/name_create",
+        "file_path": "cache/api/organization/organization_create/endpoint.rs",
+        "parent_folder": "organization_create",
+        "pages_folder": "pages/organization/organization_create",
+        "mdx_filepath": "pages/organization/organization_create.mdx"
+    }
+]
+Starting ThreadPoolExecutor for updating MDX files with parameters.
+Starting thread for endpoint: GET https://api.v2.xylex.ai/user/name_available
+Starting thread for endpoint: GET https://api.v2.xylex.ai/user/organization
+Starting thread for endpoint: GET https://api.v2.xylex.ai/user/fetch_user_pfp
+Starting thread for endpoint: POST https://api.v2.xylex.ai/user/name_create
+[94mExtracting parameters from Rust endpoints...[0m
+[94mExtracting parameters from Rust endpoints...[0m
+Starting thread for endpoint: GET https://api.v2.xylex.ai/public/user
+[94mExtracting parameters from Rust endpoints...[0m
+[94mExtracting parameters from Rust endpoints...[0m
+Starting thread for endpoint: GET https://api.v2.xylex.ai/public/ping
+[94mExtracting parameters from Rust endpoints...[0m
+Starting thread for endpoint: GET https://api.v2.xylex.ai/trades/fetch_user_trade_metadata
+[94mExtracting parameters from Rust endpoints...[0m
+Starting thread for endpoint: GET https://api.v2.xylex.ai/get_trades_weekly_org
+Starting thread for endpoint: GET https://api.v2.xylex.ai/get_trades_weekly_algo
+[94mExtracting parameters from Rust endpoints...[0m
+Starting thread for endpoint: GET https://api.v2.xylex.ai/trades/fetch_trade_metadata
+Starting thread for endpoint: GET https://api.v2.xylex.ai/trades/fetch_trade_status
+[94mExtracting parameters from Rust endpoints...[0m
+[94mExtracting parameters from Rust endpoints...[0m
+[94mExtracting parameters from Rust endpoints...[0m
+Starting thread for endpoint: GET https://api.v2.xylex.ai/strategy/name_available
+Starting thread for endpoint: GET https://api.v2.xylex.ai/strategies/fetch_strategy_metadata_by_strategy_id
+Starting thread for endpoint: GET https://api.v2.xylex.ai/strategies/fetch_strategy_metadata_by_organization_id
+[94mExtracting parameters from Rust endpoints...[0m
+Starting thread for endpoint: GET https://api.v2.xylex.ai/strategy/statistics
+[94mExtracting parameters from Rust endpoints...[0m
+Starting thread for endpoint: GET https://api.v2.xylex.ai/strategy/update_all_strategy_statistics
+[94mExtracting parameters from Rust endpoints...[0m
+[94mExtracting parameters from Rust endpoints...[0m
+Completed all threads for updating MDX files with parameters.
+[94mExtracting parameters from Rust endpoints...[0m
+Extracted parameters: []
+[94mInserting parameters into MDX content...[0m
+MDX content: ---
+title: 'Ping'
+api: 'GET https://api.v2.xylex.ai/public/ping'
+---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Returns a JSON response indicating the service is healthy with a status of `Healthy` and a message `Pong`.</Card>
+
+
+Parameter fields: 
+[93mUpdated MDX file: pages/public/ping.mdx[0m
+Finished thread for endpoint: GET https://api.v2.xylex.ai/public/ping
+Starting thread for endpoint: GET https://api.v2.xylex.ai/strategies/equity_pnl
+[94mExtracting parameters from Rust endpoints...[0m
+Extracted parameters: [
+    {
+        "name": "strategy_id",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "The ID of the strategy.",
+        "text_explanation_long": "A unique identifier for the strategy for which statistics are being requested or updated."
+    }
+]
+Extracted parameters: [
+    {
+        "name": "user_id",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "The ID of the user.",
+        "text_explanation_long": "The unique identifier for the user whose profile picture is being fetched."
+    }
+]
+Extracted parameters: [
+    {
+        "name": "trade_hash",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "Hash identifier for the trade.",
+        "text_explanation_long": "The trade_hash parameter is a String that serves as a unique identifier for a specific trade. It is used to fetch and verify the status of the trade from the database."
+    }
+]
+Extracted parameters: [
+    {
+        "name": "username",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "The username to be checked for availability.",
+        "text_explanation_long": "This is the username that the user wants to check if it is available or not. It is required to perform the availability check."
+    }
+]
+Extracted parameters: [
+    {
+        "name": "user_id",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "The ID of the user.",
+        "text_explanation_long": "This parameter represents the unique identifier of the user whose organization information is being fetched. It is required for querying the organization associated with the user."
+    }
+]
+Extracted parameters: [
+    {
+        "name": "user_id",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "The unique identifier for the user.",
+        "text_explanation_long": "A string that serves as the unique identifier for the user whose trade metadata is being fetched. It is a required parameter passed in the query."
+    }
+]
+Extracted parameters: [
+    {
+        "name": "strategy_name",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "Name of the strategy to check for availability.",
+        "text_explanation_long": "The strategy_name parameter is a string representing the name of a strategy that the user wants to check for its availability in the database."
+    }
+]
+[94mInserting parameters into MDX content...[0m
+MDX content: ---
+title: 'Fetch User Pfp'
+api: 'GET https://api.v2.xylex.ai/user/fetch_user_pfp'
+---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches a user`s profile picture and username based on the provided user ID, returning their data along with a status indicating data availability.</Card>
+
+
+
+
+
+<ParamField query="user_id" type="String" required  children="A string representing the unique identifier for the user whose profile picture and related data is being fetched.">
+  The unique identifier for the user.
+</ParamField>
+
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches a user`s profile picture and username based on the provided user ID, returning the status along with the data.</Card>
+
+
+Parameter fields: <ParamField query="user_id" type="String" required  children="The unique identifier for the user whose profile picture is being fetched.">
+  The ID of the user.
+</ParamField>
+
+[94mInserting parameters into MDX content...[0m
+MDX content: ---
+title: 'Statistics'
+api: 'GET https://api.v2.xylex.ai/strategy/statistics'
+---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Updates statistics for all strategies by fetching strategy IDs, retrieving trades for each, computing statistics, and populating the database, while logging success and error counts.</Card>
+
+
+
+
+
+<ParamField query="strategy_id" type="String" required  children="A unique identifier for the strategy for which statistics are being fetched or updated.">
+  The ID of the strategy.
+</ParamField>
+
+
+
+
+
+
+
+
+
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Updates statistics for all strategies, processing each strategy ID to compute and populate statistics, and returns the success and error counts.</Card>
+
+
+Parameter fields: <ParamField query="strategy_id" type="String" required  children="A unique identifier for the strategy for which statistics are being requested or updated.">
+  The ID of the strategy.
+</ParamField>
+
+Extracted parameters: [
+    {
+        "name": "strategy_id",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "Strategy ID for fetching metadata",
+        "text_explanation_long": "Unique identifier of the strategy used to fetch associated metadata from the database."
+    },
+    {
+        "name": "organization",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "Organization for fetching metadata",
+        "text_explanation_long": "Name or identifier of the organization used to fetch associated strategy metadata from the database."
+    }
+]
+[93mUpdated MDX file: pages/strategies/strategy_statistics.mdx[0m
+[93mUpdated MDX file: pages/user/user_pfp.mdx[0m
+Finished thread for endpoint: GET https://api.v2.xylex.ai/strategy/update_all_strategy_statistics
+Starting thread for endpoint: POST https://api.v2.xylex.ai/strategy/name_create
+Finished thread for endpoint: GET https://api.v2.xylex.ai/user/fetch_user_pfp
+Starting thread for endpoint: GET https://api.v2.xylex.ai/trades/fetch_trade_metadata_by_organization_id
+[94mExtracting parameters from Rust endpoints...[0m
+[94mExtracting parameters from Rust endpoints...[0m
+[94mInserting parameters into MDX content...[0m
+MDX content: Y»´¡›% /C—˝óÓî‘yŸΩ¢ãÛ≈bøOùæˆ‰ûÂ£)$∫˝DÀdL®¯/võ ∫É---
+title: 'Fetch Trade Status'
+api: 'GET https://api.v2.xylex.ai/trades/fetch_trade_status'
+---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >This endpoint retrieves the status of a trade using a provided `trade_hash`. It logs the trade hash and queries the database to fetch the trade status. The response includes the trade hash and its current status in JSON format.</Card>
+
+
+
+
+
+<ParamField query="trade_hash" type="String" required  children="The trade_hash is a string that serves as a unique identifier for a specific trade, used to fetch the current status of the trade.">
+  The unique identifier for a trade.
+</ParamField>
+
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Retrieves the status of a trade using a provided trade hash. Logs the trade hash being checked. Returns the trade hash and its status in a JSON response.</Card>
+
+
+Parameter fields: <ParamField query="trade_hash" type="String" required  children="The trade_hash parameter is a String that serves as a unique identifier for a specific trade. It is used to fetch and verify the status of the trade from the database.">
+  Hash identifier for the trade.
+</ParamField>
+
+[93mUpdated MDX file: pages/trades/trade_status.mdx[0m
+Finished thread for endpoint: GET https://api.v2.xylex.ai/trades/fetch_trade_status
+Starting thread for endpoint: GET https://api.v2.xylex.ai/organization/name_available
+[94mExtracting parameters from Rust endpoints...[0m
+[94mInserting parameters into MDX content...[0m
+MDX content: ---
+title: 'Name Available'
+api: 'GET https://api.v2.xylex.ai/user/name_available'
+---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Checks username availability by querying a database, then returns a JSON response with the username and its availability status.</Card>
+
+
+
+
+
+<ParamField query="username" type="String" required  children="The 'username' parameter is a string representing the desired username that the user wants to check for availability in the system.">
+  The username to check for availability.
+</ParamField>
+
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Checks if a username is available by querying a database and returns a JSON response with the username and its availability status.</Card>
+
+
+Parameter fields: <ParamField query="username" type="String" required  children="This is the username that the user wants to check if it is available or not. It is required to perform the availability check.">
+  The username to be checked for availability.
+</ParamField>
+
+[93mUpdated MDX file: pages/user/username_available.mdx[0m
+Finished thread for endpoint: GET https://api.v2.xylex.ai/user/name_available
+Starting thread for endpoint: POST https://api.v2.xylex.ai/organization/name_create
+[94mExtracting parameters from Rust endpoints...[0m
+[94mInserting parameters into MDX content...[0m
+MDX content: ---
+title: 'Organization'
+api: 'GET https://api.v2.xylex.ai/user/organization'
+---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches the organization details for a given user ID and returns the information in JSON format.</Card>
+
+
+
+
+
+<ParamField query="user_id" type="String" required  children="The user_id is a string parameter representing the unique identifier of the user for whom the organization information is being fetched.">
+  The ID of the user.
+</ParamField>
+
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches the organization associated with a given user ID, returning a JSON response with user ID and organization details. Logs the process, and handles errors by returning an internal server error message if fetching fails.</Card>
+
+
+Parameter fields: <ParamField query="user_id" type="String" required  children="This parameter represents the unique identifier of the user whose organization information is being fetched. It is required for querying the organization associated with the user.">
+  The ID of the user.
+</ParamField>
+
+[93mUpdated MDX file: pages/user/organization.mdx[0m
+Finished thread for endpoint: GET https://api.v2.xylex.ai/user/organization
+Extracted parameters: [
+    {
+        "name": "trade_hash",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "The hash identifier for a trade.",
+        "text_explanation_long": "The trade_hash is a unique string representing the identifier of a trade. It is required to fetch the trade metadata."
+    }
+]
+[94mInserting parameters into MDX content...[0m
+MDX content: ---
+title: 'Name Available'
+api: 'GET https://api.v2.xylex.ai/strategy/name_available'
+---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Checks if a strategy name is available by querying a database and returns a JSON response indicating availability.</Card>
+
+
+
+
+
+<ParamField query="strategy_name" type="String" required  children="This parameter represents the name of the strategy being checked for availability and must be provided as part of the query.">
+  The name of the strategy.
+</ParamField>
+
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Checks if a strategy name is available and returns its availability status in JSON format.</Card>
+
+
+Parameter fields: <ParamField query="strategy_name" type="String" required  children="The strategy_name parameter is a string representing the name of a strategy that the user wants to check for its availability in the database.">
+  Name of the strategy to check for availability.
+</ParamField>
+
+[93mUpdated MDX file: pages/strategies/strategy_available.mdx[0m
+Finished thread for endpoint: GET https://api.v2.xylex.ai/strategy/name_available
+[94mInserting parameters into MDX content...[0m
+MDX content: ---
+title: 'Fetch User Trade Metadata'
+api: 'GET https://api.v2.xylex.ai/trades/fetch_user_trade_metadata'
+---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches trade metadata for a specific user by user ID and returns a JSON response with status and data.</Card>
+
+
+
+
+
+<ParamField query="user_id" type="String" required  children="The user_id is a mandatory parameter that uniquely identifies a user within the system. It is used to fetch trade metadata associated with the specified user.">
+  The unique identifier for the user.
+</ParamField>
+
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches and returns trade metadata for a specified user based on their user ID, checking the status of the data retrieval.</Card>
+
+
+Parameter fields: <ParamField query="user_id" type="String" required  children="A string that serves as the unique identifier for the user whose trade metadata is being fetched. It is a required parameter passed in the query.">
+  The unique identifier for the user.
+</ParamField>
+
+[93mUpdated MDX file: pages/trades/user_trade_metadata.mdx[0m
+Finished thread for endpoint: GET https://api.v2.xylex.ai/trades/fetch_user_trade_metadata
+[94mInserting parameters into MDX content...[0m
+MDX content: ---
+title: 'Fetch Strategy Metadata By Strategy Id'
+api: 'GET https://api.v2.xylex.ai/strategies/fetch_strategy_metadata_by_strategy_id'
+---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches strategy metadata using a specified strategy ID, returns data and status as `Healthy` or `Unhealthy` based on the presence of metadata.</Card>
+
+
+
+
+
+<ParamField query="strategy_id" type="String" required  children="The unique identifier for a specific strategy to fetch its metadata.">
+  Strategy ID
+</ParamField>
+<ParamField query="organization" type="String" required  children="The name or identifier of the organization to fetch its strategy metadata.">
+  Organization
+</ParamField>
+
+
+
+
+
+
+
+
+
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches strategy metadata based on organization ID. Logs the organization and retrieves metadata from the database. Returns a JSON response with status and metadata.</Card>
+
+
+Parameter fields: <ParamField query="strategy_id" type="String" required  children="Unique identifier of the strategy used to fetch associated metadata from the database.">
+  Strategy ID for fetching metadata
+</ParamField>
+<ParamField query="organization" type="String" required  children="Name or identifier of the organization used to fetch associated strategy metadata from the database.">
+  Organization for fetching metadata
+</ParamField>
+
+[93mUpdated MDX file: pages/strategies/strategy_metadata.mdx[0m
+Finished thread for endpoint: GET https://api.v2.xylex.ai/strategies/fetch_strategy_metadata_by_organization_id
+[94mInserting parameters into MDX content...[0m
+MDX content: ---
+title: 'Fetch Trade Metadata'
+api: 'GET https://api.v2.xylex.ai/trades/fetch_trade_metadata'
+---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches trade metadata using a specified trade hash and returns it with a status indicating health.</Card>
+
+
+
+
+
+<ParamField query="trade_hash" type="String" required  children="A unique identifier for the trade that is used to fetch the associated metadata from the database. It is required to identify which trade's metadata needs to be retrieved.">
+  The hash of the trade to fetch metadata for.
+</ParamField>
+
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches trade metadata using a provided trade hash and returns the data along with a status indicating if the metadata was successfully retrieved.</Card>
+
+
+Parameter fields: <ParamField query="trade_hash" type="String" required  children="The trade_hash is a unique string representing the identifier of a trade. It is required to fetch the trade metadata.">
+  The hash identifier for a trade.
+</ParamField>
+
+[93mUpdated MDX file: pages/trades/trade_metadata.mdx[0m
+Finished thread for endpoint: GET https://api.v2.xylex.ai/trades/fetch_trade_metadata
+Extracted parameters: [
+    {
+        "name": "organization_id",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "The ID of the organization.",
+        "text_explanation_long": "A unique identifier for the organization whose trade metadata is being fetched."
+    }
+]
+Extracted parameters: [
+    {
+        "name": "organization_name",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "The name of the organization to check for availability.",
+        "text_explanation_long": "This parameter specifies the organization name that needs to be checked in the database to determine if it is available."
+    }
+]
+Extracted parameters: [
+    {
+        "name": "username",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "The username for fetching the user profile.",
+        "text_explanation_long": "This parameter represents the username of the individual whose user profile is being requested. It is used to identify and retrieve the corresponding user profile data from either a cache or a database."
+    },
+    {
+        "name": "cache",
+        "type": "SharedCache",
+        "required": true,
+        "text_explanation_short": "The shared cache for storing and retrieving user profiles.",
+        "text_explanation_long": "This parameter represents a shared cache resource that is used to store and retrieve user profile data. It helps in reducing database queries by caching frequently accessed user profiles."
+    }
+]
+Extracted parameters: [
+    {
+        "name": "user_id",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "User identifier",
+        "text_explanation_long": "A unique identifier for the user making the request."
+    },
+    {
+        "name": "organization",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "Organization name",
+        "text_explanation_long": "The name of the organization the user is associated with."
+    },
+    {
+        "name": "week_nr",
+        "type": "Option<i64>",
+        "required": false,
+        "text_explanation_short": "Week number",
+        "text_explanation_long": "The week number for which trades are requested; defaults to the current week if not provided."
+    },
+    {
+        "name": "algorithm_id",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "Algorithm identifier",
+        "text_explanation_long": "A unique identifier for the algorithm used in trades."
+    }
+]
+Extracted parameters: [
+    {
+        "name": "strategy_id",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "The ID of the strategy.",
+        "text_explanation_long": "A unique identifier for the strategy whose statistics are to be retrieved or computed."
+    }
+]
+[94mInserting parameters into MDX content...[0m
+MDX content: ---
+title: 'Name Available'
+api: 'GET https://api.v2.xylex.ai/organization/name_available'
+---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Checks if an organization name is available and returns a JSON response indicating availability.</Card>
+
+
+
+
+
+<ParamField query="organization_name" type="String" required  children="This parameter represents the name of an organization that is being checked for availability in the system. It is a string and must be provided to perform the check.">
+  The name of the organization to check for availability.
+</ParamField>
+
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Checks if the specified organization name is available and returns a JSON response with the organization name and its availability status.</Card>
+
+
+Parameter fields: <ParamField query="organization_name" type="String" required  children="This parameter specifies the organization name that needs to be checked in the database to determine if it is available.">
+  The name of the organization to check for availability.
+</ParamField>
+
+[93mUpdated MDX file: pages/organization/organization_available.mdx[0m
+Finished thread for endpoint: GET https://api.v2.xylex.ai/organization/name_available
+[94mInserting parameters into MDX content...[0m
+MDX content: ---
+title: 'Fetch Trade Metadata By Organization Id'
+api: 'GET https://api.v2.xylex.ai/trades/fetch_trade_metadata_by_organization_id'
+---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches trade metadata for a given organization ID, returning the data and status based on its existence.</Card>
+
+
+
+
+
+<ParamField query="organization_id" type="String" required  children="This parameter represents the unique identifier for an organization, used to fetch trade metadata associated with that organization.">
+  The ID of the organization.
+</ParamField>
+
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches trade metadata for a specific organization using its ID, checks database for relevant data, and returns the metadata along with a health status.</Card>
+
+
+Parameter fields: <ParamField query="organization_id" type="String" required  children="A unique identifier for the organization whose trade metadata is being fetched.">
+  The ID of the organization.
+</ParamField>
+
+[93mUpdated MDX file: pages/organization/organization_all_trades.mdx[0m
+Finished thread for endpoint: GET https://api.v2.xylex.ai/trades/fetch_trade_metadata_by_organization_id
+[94mInserting parameters into MDX content...[0m
+MDX content: ---
+title: 'User'
+api: 'GET https://api.v2.xylex.ai/public/user'
+---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches a user profile by username, checking cache first, then querying the database if needed, and returns profile data with status and time taken.</Card>
+
+
+
+
+
+<ParamField query="username" type="String" required  children="This parameter specifies the username of the user whose profile is being requested. It is used to identify and retrieve the corresponding user profile from the cache or database.">
+  Username of the user profile to fetch.
+</ParamField>
+
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches a user profile by username, checking a cache first before querying the database. Returns a JSON response with the profile data and operation status, including the time taken. If no user is found, returns an error status.</Card>
+
+
+Parameter fields: <ParamField query="username" type="String" required  children="This parameter represents the username of the individual whose user profile is being requested. It is used to identify and retrieve the corresponding user profile data from either a cache or a database.">
+  The username for fetching the user profile.
+</ParamField>
+
+[93mUpdated MDX file: pages/public/get_user_profile.mdx[0m
+Finished thread for endpoint: GET https://api.v2.xylex.ai/public/user
+Extracted parameters: [
+    {
+        "name": "user_id",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "User's unique identifier.",
+        "text_explanation_long": "A unique identifier representing the user making the request, used to verify the user's identity and permissions for accessing data."
+    },
+    {
+        "name": "organization",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "Organization's unique identifier.",
+        "text_explanation_long": "A string representing the organization to which the user belongs, used to verify the user's organization and fetch organization-specific data."
+    },
+    {
+        "name": "week_nr",
+        "type": "Option<i64>",
+        "required": false,
+        "text_explanation_short": "Week number for the query.",
+        "text_explanation_long": "An optional parameter denoting the specific week number for which trades are requested. Defaults to the current week if not provided."
+    },
+    {
+        "name": "algorithm_id",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "Algorithm's unique identifier.",
+        "text_explanation_long": "A string representing the algorithm for which the trades are being queried, used to filter trades specific to an algorithm."
+    }
+]
+[94mInserting parameters into MDX content...[0m
+MDX content: ---
+title: 'Get Trades Weekly Org'
+api: 'GET https://api.v2.xylex.ai/get_trades_weekly_org'
+---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches weekly trade data for a specified user and organization, verifying user organization and returning trades, excluding unapproved or invalid statuses.</Card>
+
+
+
+
+
+<ParamField query="user_id" type="String" required  children="The user_id is a required parameter that uniquely identifies a user within the system and is used to verify user information and access permissions.">
+  The unique identifier for the user.
+</ParamField>
+<ParamField query="organization" type="String" required  children="This is a required parameter that specifies the organization to which the user belongs or the organization associated with the trade request. It is used to verify that the user is accessing the correct organizational data.">
+  The organization associated with the user or trade.
+</ParamField>
+<ParamField query="week_nr" type="Option<i64>"  children="This optional parameter indicates the specific week number for which trades are being requested. If not provided, the current week is assumed by default.">
+  The week number for the trade query.
+</ParamField>
+<ParamField query="algorithm_id" type="String" required  children="The algorithm_id is a required parameter that identifies the specific trading algorithm being queried. It is used to filter trades associated with the given algorithm.">
+  The unique identifier for the algorithm.
+</ParamField>
+
+
+
+
+
+
+
+
+
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches weekly trades based on user ID, organization, and algorithm ID. Validates user`s organization before retrieving approved trades for the specified or current week. Returns trade data in JSON format or an error message if issues occur.</Card>
+
+
+Parameter fields: <ParamField query="user_id" type="String" required  children="A unique identifier for the user making the request.">
+  User identifier
+</ParamField>
+<ParamField query="organization" type="String" required  children="The name of the organization the user is associated with.">
+  Organization name
+</ParamField>
+<ParamField query="week_nr" type="Option<i64>"  children="The week number for which trades are requested; defaults to the current week if not provided.">
+  Week number
+</ParamField>
+<ParamField query="algorithm_id" type="String" required  children="A unique identifier for the algorithm used in trades.">
+  Algorithm identifier
+</ParamField>
+
+[93mUpdated MDX file: pages/trades/weekly_trades.mdx[0m
+Finished thread for endpoint: GET https://api.v2.xylex.ai/get_trades_weekly_algo
+Extracted parameters: [
+    {
+        "name": "strategy_id",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "The unique identifier for the strategy.",
+        "text_explanation_long": "A string representing the unique ID of a strategy, used to fetch associated metadata from the system."
+    },
+    {
+        "name": "organization",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "The name of the organization.",
+        "text_explanation_long": "A string representing the organization, used to fetch associated strategy metadata from the system."
+    }
+]
+Extracted parameters: [
+    {
+        "name": "strategy_name",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "Name of the strategy.",
+        "text_explanation_long": "This parameter specifies the name of the strategy to be created, which is unique to the organization."
+    },
+    {
+        "name": "strategy_id",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "ID of the strategy.",
+        "text_explanation_long": "This parameter represents the unique identifier of the strategy being created."
+    },
+    {
+        "name": "organization_id",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "ID of the organization.",
+        "text_explanation_long": "This parameter identifies the organization to which the strategy belongs."
+    }
+]
+Extracted parameters: [
+  {
+    "name": "strategy_id",
+    "type": "String",
+    "required": true,
+    "text_explanation_short": "The unique identifier for the strategy.",
+    "text_explanation_long": "The strategy_id is a required field that uniquely identifies a trading strategy for which the equity PnL data is being fetched."
+  },
+  {
+    "name": "data_length",
+    "type": "Option<String>",
+    "required": false,
+    "text_explanation_short": "The time period for fetching data, defaults to '12_months'.",
+    "text_explanation_long": "The data_length parameter specifies the desired time period for which the strategy's equity PnL data should be computed. It is optional and defaults to '12_months' if not provided."
+  }
+]
+[94mInserting parameters into MDX content...[0m
+MDX content: ---
+title: 'Statistics'
+api: 'GET https://api.v2.xylex.ai/strategy/statistics'
+---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Updates statistics for all strategies by fetching strategy IDs, retrieving trades for each, computing statistics, and populating the database, while logging success and error counts.</Card>
+
+
+
+
+
+<ParamField query="strategy_id" type="String" required  children="A unique identifier for the strategy for which statistics are being fetched or updated.">
+  The ID of the strategy.
+</ParamField>
+
+
+
+
+
+
+
+
+
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Updates statistics for all strategies, processing each strategy ID to compute and populate statistics, and returns the success and error counts.</Card>
+
+
+
+
+
+<ParamField query="strategy_id" type="String" required  children="A unique identifier for the strategy for which statistics are being requested or updated.">
+  The ID of the strategy.
+</ParamField>
+
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches statistics for a specified strategy by its ID, returning computed metrics on success or an error message on failure.</Card>
+
+
+Parameter fields: <ParamField query="strategy_id" type="String" required  children="A unique identifier for the strategy whose statistics are to be retrieved or computed.">
+  The ID of the strategy.
+</ParamField>
+
+[93mUpdated MDX file: pages/strategies/strategy_statistics.mdx[0m
+Finished thread for endpoint: GET https://api.v2.xylex.ai/strategy/statistics
+[94mInserting parameters into MDX content...[0m
+MDX content: ---
+title: 'Get Trades Weekly Org'
+api: 'GET https://api.v2.xylex.ai/get_trades_weekly_org'
+---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches weekly trade data for a specified user and organization, verifying user organization and returning trades, excluding unapproved or invalid statuses.</Card>
+
+
+
+
+
+<ParamField query="user_id" type="String" required  children="The user_id is a required parameter that uniquely identifies a user within the system and is used to verify user information and access permissions.">
+  The unique identifier for the user.
+</ParamField>
+<ParamField query="organization" type="String" required  children="This is a required parameter that specifies the organization to which the user belongs or the organization associated with the trade request. It is used to verify that the user is accessing the correct organizational data.">
+  The organization associated with the user or trade.
+</ParamField>
+<ParamField query="week_nr" type="Option<i64>"  children="This optional parameter indicates the specific week number for which trades are being requested. If not provided, the current week is assumed by default.">
+  The week number for the trade query.
+</ParamField>
+<ParamField query="algorithm_id" type="String" required  children="The algorithm_id is a required parameter that identifies the specific trading algorithm being queried. It is used to filter trades associated with the given algorithm.">
+  The unique identifier for the algorithm.
+</ParamField>
+
+
+
+
+
+
+
+
+
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches weekly trades based on user ID, organization, and algorithm ID. Validates user`s organization before retrieving approved trades for the specified or current week. Returns trade data in JSON format or an error message if issues occur.</Card>
+
+
+
+
+
+<ParamField query="user_id" type="String" required  children="A unique identifier for the user making the request.">
+  User identifier
+</ParamField>
+<ParamField query="organization" type="String" required  children="The name of the organization the user is associated with.">
+  Organization name
+</ParamField>
+<ParamField query="week_nr" type="Option<i64>"  children="The week number for which trades are requested; defaults to the current week if not provided.">
+  Week number
+</ParamField>
+<ParamField query="algorithm_id" type="String" required  children="A unique identifier for the algorithm used in trades.">
+  Algorithm identifier
+</ParamField>
+
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches weekly trades for a specified user and organization, verifying the user`s organization before returning trade data. Returns trades for the current week if no week number is provided, excluding unapproved or invalid trades. Responds with appropriate errors for mismatched organizations or data fetching issues.</Card>
+
+
+Parameter fields: <ParamField query="user_id" type="String" required  children="A unique identifier representing the user making the request, used to verify the user's identity and permissions for accessing data.">
+  User's unique identifier.
+</ParamField>
+<ParamField query="organization" type="String" required  children="A string representing the organization to which the user belongs, used to verify the user's organization and fetch organization-specific data.">
+  Organization's unique identifier.
+</ParamField>
+<ParamField query="week_nr" type="Option<i64>"  children="An optional parameter denoting the specific week number for which trades are requested. Defaults to the current week if not provided.">
+  Week number for the query.
+</ParamField>
+<ParamField query="algorithm_id" type="String" required  children="A string representing the algorithm for which the trades are being queried, used to filter trades specific to an algorithm.">
+  Algorithm's unique identifier.
+</ParamField>
+
+[93mUpdated MDX file: pages/trades/weekly_trades.mdx[0m
+Finished thread for endpoint: GET https://api.v2.xylex.ai/get_trades_weekly_org
+Extracted parameters: [
+    {
+        "name": "username",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "The desired username to be created.",
+        "text_explanation_long": "This parameter specifies the desired username that the user wants to create. It must be unique and will be checked against the database before being added."
+    },
+    {
+        "name": "user_id",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "The ID of the user creating the username.",
+        "text_explanation_long": "This parameter represents the unique identifier of the user who is attempting to create a new username. It is required for associating the username with the correct user in the database."
+    }
+]
+[94mInserting parameters into MDX content...[0m
+MDX content: ---
+title: 'Fetch Strategy Metadata By Strategy Id'
+api: 'GET https://api.v2.xylex.ai/strategies/fetch_strategy_metadata_by_strategy_id'
+---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches strategy metadata using a specified strategy ID, returns data and status as `Healthy` or `Unhealthy` based on the presence of metadata.</Card>
+
+
+
+
+
+<ParamField query="strategy_id" type="String" required  children="The unique identifier for a specific strategy to fetch its metadata.">
+  Strategy ID
+</ParamField>
+<ParamField query="organization" type="String" required  children="The name or identifier of the organization to fetch its strategy metadata.">
+  Organization
+</ParamField>
+
+
+
+
+
+
+
+
+
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches strategy metadata based on organization ID. Logs the organization and retrieves metadata from the database. Returns a JSON response with status and metadata.</Card>
+
+
+
+
+
+<ParamField query="strategy_id" type="String" required  children="Unique identifier of the strategy used to fetch associated metadata from the database.">
+  Strategy ID for fetching metadata
+</ParamField>
+<ParamField query="organization" type="String" required  children="Name or identifier of the organization used to fetch associated strategy metadata from the database.">
+  Organization for fetching metadata
+</ParamField>
+
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches strategy metadata by strategy ID, logs the action, and returns the metadata with a status of `Healthy` if data is found or `Unhealthy` if not.</Card>
+
+
+Parameter fields: <ParamField query="strategy_id" type="String" required  children="A string representing the unique ID of a strategy, used to fetch associated metadata from the system.">
+  The unique identifier for the strategy.
+</ParamField>
+<ParamField query="organization" type="String" required  children="A string representing the organization, used to fetch associated strategy metadata from the system.">
+  The name of the organization.
+</ParamField>
+
+[93mUpdated MDX file: pages/strategies/strategy_metadata.mdx[0m
+Finished thread for endpoint: GET https://api.v2.xylex.ai/strategies/fetch_strategy_metadata_by_strategy_id
+[94mInserting parameters into MDX content...[0m
+MDX content: ---
+title: 'Name Create'
+api: 'POST https://api.v2.xylex.ai/strategy/name_create'
+---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Creates a unique strategy name for an organization using provided strategy name, strategy ID, and organization ID. Returns a JSON response indicating the strategy name and creation status.</Card>
+
+
+
+
+
+<ParamField query="strategy_name" type="String" required  children="The name of the strategy to be created, which is unique to the organization.">
+  The name of the strategy.
+</ParamField>
+<ParamField query="strategy_id" type="String" required  children="A unique identifier for the strategy being created within the system.">
+  The identifier for the strategy.
+</ParamField>
+<ParamField query="organization_id" type="String" required  children="An identifier representing the organization to which the strategy belongs.">
+  The organization identifier.
+</ParamField>
+
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Creates a unique strategy name for an organization using provided parameters: strategy_name, strategy_id, and organization_id. Validates uniqueness before adding to the database. Responds with JSON indicating the strategy name and creation status.</Card>
+
+
+Parameter fields: <ParamField query="strategy_name" type="String" required  children="This parameter specifies the name of the strategy to be created, which is unique to the organization.">
+  Name of the strategy.
+</ParamField>
+<ParamField query="strategy_id" type="String" required  children="This parameter represents the unique identifier of the strategy being created.">
+  ID of the strategy.
+</ParamField>
+<ParamField query="organization_id" type="String" required  children="This parameter identifies the organization to which the strategy belongs.">
+  ID of the organization.
+</ParamField>
+
+[93mUpdated MDX file: pages/strategies/strategy_create.mdx[0m
+Finished thread for endpoint: POST https://api.v2.xylex.ai/strategy/name_create
+Extracted parameters: [
+    {
+        "name": "organization_name",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "The name of the organization.",
+        "text_explanation_long": "This parameter represents the name of the organization that is being created. It must be unique and will be checked against the database to ensure it does not already exist."
+    },
+    {
+        "name": "organization_id",
+        "type": "String",
+        "required": true,
+        "text_explanation_short": "The ID of the organization.",
+        "text_explanation_long": "This parameter is used to uniquely identify the organization within the system. It is required for the creation of a new organization name."
+    }
+]
+[94mInserting parameters into MDX content...[0m
+MDX content: ---
+title: 'Equity Pnl'
+api: 'GET https://api.v2.xylex.ai/strategies/equity_pnl'
+---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches the equity PnL data for a specified strategy ID over a selected time period, defaulting to 12 months if not specified. Returns strategy data and health status.</Card>
+
+
+
+
+
+<ParamField query="strategy_id" type="String" required  children="A unique identifier for the strategy for which equity P&L data is being fetched.">
+  ID of the strategy
+</ParamField>
+<ParamField query="data_length" type="Option<String>"  children="An optional parameter specifying the length of the data period to consider, such as '12_months', '30_days', etc. Defaults to '12_months' if not provided.">
+  Length of data period
+</ParamField>
+
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches and returns the profit and loss data for a specified trading strategy over a given time period, defaulting to 12 months if not specified. Responds with the strategy`s health status and equity P&L data.</Card>
+
+
+Parameter fields: <ParamField query="strategy_id" type="String" required  children="The strategy_id is a required field that uniquely identifies a trading strategy for which the equity PnL data is being fetched.">
+  The unique identifier for the strategy.
+</ParamField>
+<ParamField query="data_length" type="Option<String>"  children="The data_length parameter specifies the desired time period for which the strategy's equity PnL data should be computed. It is optional and defaults to '12_months' if not provided.">
+  The time period for fetching data, defaults to '12_months'.
+</ParamField>
+
+[93mUpdated MDX file: pages/strategies/strategy_equity_pnl.mdx[0m
+Finished thread for endpoint: GET https://api.v2.xylex.ai/strategies/equity_pnl
+[94mInserting parameters into MDX content...[0m
+MDX content: ---
+title: 'Name Create'
+api: 'POST https://api.v2.xylex.ai/user/name_create'
+---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Creates a username for a user, checking its uniqueness before adding it to the database, and returns whether the username was successfully created.</Card>
+
+
+
+
+
+<ParamField query="username" type="String" required  children="This parameter is the new username that the user wishes to create. It should be unique and will be checked against the database for availability.">
+  The desired username to be created.
+</ParamField>
+<ParamField query="user_id" type="String" required  children="This parameter is the unique identifier of the user who is attempting to create a new username. It is used to associate the username with the correct user account in the database.">
+  The ID of the user making the request.
+</ParamField>
+
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Creates a new username if unique, using provided `username` and `user_id`, and returns a JSON response indicating the creation status.</Card>
+
+
+Parameter fields: <ParamField query="username" type="String" required  children="This parameter specifies the desired username that the user wants to create. It must be unique and will be checked against the database before being added.">
+  The desired username to be created.
+</ParamField>
+<ParamField query="user_id" type="String" required  children="This parameter represents the unique identifier of the user who is attempting to create a new username. It is required for associating the username with the correct user in the database.">
+  The ID of the user creating the username.
+</ParamField>
+
+[93mUpdated MDX file: pages/user/username_create.mdx[0m
+Finished thread for endpoint: POST https://api.v2.xylex.ai/user/name_create
+[94mInserting parameters into MDX content...[0m
+MDX content: ---
+title: 'Name Create'
+api: 'POST https://api.v2.xylex.ai/organization/name_create'
+---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Creates a new organization name by checking its uniqueness and adds it to the database, returning the organization name and creation status.</Card>
+
+
+
+
+
+<ParamField query="organization_name" type="String" required  children="Specifies the name that the organization desires to use, which must be unique.">
+  Name of the organization.
+</ParamField>
+<ParamField query="organization_id" type="String" required  children="A unique identifier corresponding to the organization for which the name is being created.">
+  Identifier for the organization.
+</ParamField>
+
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Creates a new organization name if it`s unique and associates it with an organization ID, returning a JSON response indicating the name and creation status.</Card>
+
+
+Parameter fields: <ParamField query="organization_name" type="String" required  children="This parameter represents the name of the organization that is being created. It must be unique and will be checked against the database to ensure it does not already exist.">
+  The name of the organization.
+</ParamField>
+<ParamField query="organization_id" type="String" required  children="This parameter is used to uniquely identify the organization within the system. It is required for the creation of a new organization name.">
+  The ID of the organization.
+</ParamField>
+
+[93mUpdated MDX file: pages/organization/organization_create.mdx[0m
+Finished thread for endpoint: POST https://api.v2.xylex.ai/organization/name_create
+Opening file: pages/user/username_available.mdx
+Found card title: Endpoint Description
+Adding card title to seen: Endpoint Description
+Found query: username
+Adding query to seen: username
+Found card title: Endpoint Description
+Duplicate card title found: Endpoint Description, skipping line.
+Skipping line: 
+Found query: username
+Duplicate query found: username, skipping line.
+Skipping line: The username to be checked for availability.
+Removing excess </ParamField> at the end of the file to balance tags.
+Writing unique lines back to file: pages/user/username_available.mdx
+Opening file: pages/user/organization.mdx
+Found card title: Endpoint Description
+Adding card title to seen: Endpoint Description
+Found query: user_id
+Adding query to seen: user_id
+Found card title: Endpoint Description
+Duplicate card title found: Endpoint Description, skipping line.
+Skipping line: 
+Found query: user_id
+Duplicate query found: user_id, skipping line.
+Skipping line: The ID of the user.
+Removing excess </ParamField> at the end of the file to balance tags.
+Writing unique lines back to file: pages/user/organization.mdx
+Opening file: pages/user/user_pfp.mdx
+Found card title: Endpoint Description
+Adding card title to seen: Endpoint Description
+Found query: user_id
+Adding query to seen: user_id
+Found card title: Endpoint Description
+Duplicate card title found: Endpoint Description, skipping line.
+Skipping line: 
+Found query: user_id
+Duplicate query found: user_id, skipping line.
+Skipping line: The ID of the user.
+Removing excess </ParamField> at the end of the file to balance tags.
+Writing unique lines back to file: pages/user/user_pfp.mdx
+Opening file: pages/user/username_create.mdx
+Found card title: Endpoint Description
+Adding card title to seen: Endpoint Description
+Found query: username
+Adding query to seen: username
+Found query: user_id
+Adding query to seen: user_id
+Found card title: Endpoint Description
+Duplicate card title found: Endpoint Description, skipping line.
+Skipping line: 
+Found query: username
+Duplicate query found: username, skipping line.
+Skipping line: The desired username to be created.
+Found query: user_id
+Duplicate query found: user_id, skipping line.
+Skipping line: The ID of the user creating the username.
+Removing excess </ParamField> at the end of the file to balance tags.
+Removing excess </ParamField> at the end of the file to balance tags.
+Writing unique lines back to file: pages/user/username_create.mdx
+Opening file: pages/public/get_user_profile.mdx
+Found card title: Endpoint Description
+Adding card title to seen: Endpoint Description
+Found query: username
+Adding query to seen: username
+Found card title: Endpoint Description
+Duplicate card title found: Endpoint Description, skipping line.
+Skipping line: 
+Found query: username
+Duplicate query found: username, skipping line.
+Skipping line: The username for fetching the user profile.
+Removing excess </ParamField> at the end of the file to balance tags.
+Writing unique lines back to file: pages/public/get_user_profile.mdx
+Opening file: pages/public/ping.mdx
+Found card title: Endpoint Description
+Adding card title to seen: Endpoint Description
+Writing unique lines back to file: pages/public/ping.mdx
+Opening file: pages/trades/user_trade_metadata.mdx
+Found card title: Endpoint Description
+Adding card title to seen: Endpoint Description
+Found query: user_id
+Adding query to seen: user_id
+Found card title: Endpoint Description
+Duplicate card title found: Endpoint Description, skipping line.
+Skipping line: 
+Found query: user_id
+Duplicate query found: user_id, skipping line.
+Skipping line: The unique identifier for the user.
+Removing excess </ParamField> at the end of the file to balance tags.
+Writing unique lines back to file: pages/trades/user_trade_metadata.mdx
+Opening file: pages/trades/weekly_trades.mdx
+Found card title: Endpoint Description
+Adding card title to seen: Endpoint Description
+Found query: user_id
+Adding query to seen: user_id
+Found query: organization
+Adding query to seen: organization
+Found query: week_nr
+Adding query to seen: week_nr
+Found query: algorithm_id
+Adding query to seen: algorithm_id
+Found card title: Endpoint Description
+Duplicate card title found: Endpoint Description, skipping line.
+Skipping line: 
+Found query: user_id
+Duplicate query found: user_id, skipping line.
+Skipping line: User identifier
+Found query: organization
+Duplicate query found: organization, skipping line.
+Skipping line: Organization name
+Found query: week_nr
+Duplicate query found: week_nr, skipping line.
+Skipping line: Week number
+Found query: algorithm_id
+Duplicate query found: algorithm_id, skipping line.
+Skipping line: Algorithm identifier
+Found card title: Endpoint Description
+Duplicate card title found: Endpoint Description, skipping line.
+Skipping line: 
+Found query: user_id
+Duplicate query found: user_id, skipping line.
+Skipping line: User's unique identifier.
+Found query: organization
+Duplicate query found: organization, skipping line.
+Skipping line: Organization's unique identifier.
+Found query: week_nr
+Duplicate query found: week_nr, skipping line.
+Skipping line: Week number for the query.
+Found query: algorithm_id
+Duplicate query found: algorithm_id, skipping line.
+Skipping line: Algorithm's unique identifier.
+Removing excess </ParamField> at the end of the file to balance tags.
+Removing excess </ParamField> at the end of the file to balance tags.
+Removing excess </ParamField> at the end of the file to balance tags.
+Removing excess </ParamField> at the end of the file to balance tags.
+Writing unique lines back to file: pages/trades/weekly_trades.mdx
+Opening file: pages/trades/weekly_trades.mdx
+Found card title: Endpoint Description
+Adding card title to seen: Endpoint Description
+Found query: user_id
+Adding query to seen: user_id
+Found query: organization
+Adding query to seen: organization
+Found query: week_nr
+Adding query to seen: week_nr
+Found query: algorithm_id
+Adding query to seen: algorithm_id
+Writing unique lines back to file: pages/trades/weekly_trades.mdx
+Opening file: pages/trades/trade_metadata.mdx
+Found card title: Endpoint Description
+Adding card title to seen: Endpoint Description
+Found query: trade_hash
+Adding query to seen: trade_hash
+Found card title: Endpoint Description
+Duplicate card title found: Endpoint Description, skipping line.
+Skipping line: 
+Found query: trade_hash
+Duplicate query found: trade_hash, skipping line.
+Skipping line: The hash identifier for a trade.
+Removing excess </ParamField> at the end of the file to balance tags.
+Writing unique lines back to file: pages/trades/trade_metadata.mdx
+Opening file: pages/trades/trade_status.mdx
+Found card title: Endpoint Description
+Adding card title to seen: Endpoint Description
+Found query: trade_hash
+Adding query to seen: trade_hash
+Found card title: Endpoint Description
+Duplicate card title found: Endpoint Description, skipping line.
+Skipping line: 
+Found query: trade_hash
+Duplicate query found: trade_hash, skipping line.
+Skipping line: Hash identifier for the trade.
+Removing excess </ParamField> at the end of the file to balance tags.
+Writing unique lines back to file: pages/trades/trade_status.mdx
+Opening file: pages/strategies/strategy_available.mdx
+Found card title: Endpoint Description
+Adding card title to seen: Endpoint Description
+Found query: strategy_name
+Adding query to seen: strategy_name
+Found card title: Endpoint Description
+Duplicate card title found: Endpoint Description, skipping line.
+Skipping line: 
