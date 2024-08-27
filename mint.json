@@ -1,72 +1,79 @@
 {
-  "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
-  "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
-  },
-  "favicon": "/favicon.svg",
-  "colors": {
-    "primary": "#9351d1",
-    "light": "#9351d1",
-    "dark": "#9351d1",
-    "anchors": {
-      "from": "#9351d1",
-      "to": "#b78edd"
-    }
-  },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:support@xylex.ai"
-    }
-  ],
-  "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://app.xylex.ai"
-  },
+    "$schema": "https://mintlify.com/schema.json",
+    "name": "Starter Kit",
+    "logo": {
+        "dark": "/logo/dark.svg",
+        "light": "/logo/light.svg"
+    },
+    "favicon": "/favicon.svg",
+    "colors": {
+        "primary": "#9351d1",
+        "light": "#9351d1",
+        "dark": "#9351d1",
+        "anchors": {
+            "from": "#9351d1",
+            "to": "#b78edd"
+        }
+    },
+    "topbarLinks": [
+        {
+            "name": "Support",
+            "url": "mailto:support@xylex.ai"
+        }
+    ],
+    "topbarCtaButton": {
+        "name": "Dashboard",
+        "url": "https://app.xylex.ai"
+    },
 
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://nightly.docs.xylex.ai"
+    "anchors": [
+        {
+            "name": "Documentation",
+            "icon": "book-open-cover",
+            "url": "https://nightly.docs.xylex.ai"
+        },
+        {
+            "name": "Community",
+            "icon": "slack",
+            "url": "https://mintlify.com/community"
+        },
+        {
+            "name": "Blog",
+            "icon": "newspaper",
+            "url": "https://mintlify.com/blog"
+        }
+    ],
+    "navigation": [
+        {
+            "group": "Get Started",
+            "pages": ["introduction", "quickstart", "development"]
+        },
+        {
+            "group": "Essentials",
+            "pages": [
+                "essentials/markdown",
+                "essentials/code",
+                "essentials/images",
+                "essentials/settings",
+                "essentials/navigation",
+                "essentials/reusable-snippets"
+            ]
+        }
+    ],
+    "footerSocials": {
+        "x": "https://x.com/mintlify",
+        "github": "https://github.com/mintlify",
+        "linkedin": "https://www.linkedin.com/company/mintsearch"
     },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+    "api": {
+        "baseUrl": "https://api.v2.xylex.api",
+        "playground": { "mode": "show" },
+        "maintainOrder": true,
+        "request": {
+            "example": {
+                "languages": ["bash", "javascript", "python"],
+                "showOptionalParams": true
+            }
+        }
     }
-  ],
-  "navigation": [
-    {
-      "group": "Get Started",
-      "pages": [
-        "introduction",
-        "quickstart",
-        "development"
-      ]
-    },
-    {
-      "group": "Essentials",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
-    }
-  ],
-  "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
-  }
 }

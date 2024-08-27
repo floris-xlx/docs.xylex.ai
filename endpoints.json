@@ -1,0 +1,36 @@
+[
+    {
+        "title": "Get all users",
+        "method": "GET",
+        "url": "/api/users",
+        "description": "Get all users from the database",
+        "parameters": [
+            {
+                "name": "username",
+                "type": "string",
+                "required": true,
+                "description": "The username of the user"
+            },
+            {
+                "name": "user_id",
+                "type": "string",
+                "required": true,
+                "description": "The unique identifier of the user"
+            }
+        ]
+    },
+    {
+        "title": "Get user by ID",
+        "method": "GET",
+        "url": "/api/users/:id",
+        "description": "Get a user from the database by ID",
+        "parameters": [
+            {
+                "name": "id",
+                "type": "string",
+                "required": true,
+                "description": "The unique identifier of the user"
+            }
+        ]
+    }
+]
