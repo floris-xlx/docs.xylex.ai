@@ -53,18 +53,19 @@ async def main():
 
     load_dotenv()  # Load environment variables from .env file
 
-
-
     # Set up the remote URL with authentication
 
     # Add changes, commit, and push with JWT authentication
     jwt_key = generate_jwt()
-    repo_url = "https://github.com/floris-xlx/docs.xylex.ai"
-    remote_url = f"https://x-access-token:{jwt_key}@{repo_url.split('https://')[1]}"
-    
     subprocess.run("git add .", shell=True, check=True)
-    subprocess.run('git commit -m "Generated API docs"', shell=True, check=True)
-    subprocess.run(f"git push --force {remote_url} main", shell=True, check=True)
+    subprocess.run('git commit -m "Generated API docs"',
+                   shell=True,
+                   check=True)
+    subprocess.run(
+        f"git remote set-url origin https://x-access-token:{jwt_key}@github.com/floris-xlx/docs.xylex.ai.git",
+        shell=True,
+        check=True)
+    subprocess.run("git push --force", shell=True, check=True)
 
 
 if __name__ == '__main__':
