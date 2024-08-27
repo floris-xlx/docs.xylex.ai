@@ -5,12 +5,12 @@ api: 'GET https://api.v2.xylex.ai/trades/fetch_user_trade_metadata'
 
 
 
-<Card title="Endpoint Description" icon="info" horizontal >Fetches trade metadata for a specific user based on the provided user ID. Logs the user ID and retrieves trade metadata from the database. Returns a JSON response with the status, user ID, and trade metadata.</Card>
+<Card title="Endpoint Description" icon="info" horizontal >Fetches trade metadata for a specific user based on user ID. Returns a JSON response with the status (`Healthy` or `Unhealthy`), user ID, and trade metadata. Logs the user ID being queried.</Card>
 
 
 
 
 
-<ParamField query="user_id" type="String" required  children="The user_id is a string parameter that uniquely identifies a user for fetching their trade metadata.">
-  The user's unique identifier.
+<ParamField query="user_id" type="String" required  children="A unique identifier for the user whose trade metadata is being fetched. It is a required parameter to query the database for the relevant trade data.">
+  The ID of the user.
 </ParamField>

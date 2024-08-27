@@ -5,15 +5,15 @@ api: 'GET https://api.v2.xylex.ai/strategies/equity_pnl'
 
 
 
-<Card title="Endpoint Description" icon="info" horizontal >Fetches equity P&L data for a specified strategy ID over a given time period, defaulting to 12 months. Computes P&L panel data and returns it along with the strategy`s health status.</Card>
+<Card title="Endpoint Description" icon="info" horizontal >Fetches equity PnL data for a specified strategy ID with an optional time range, defaulting to 12 months. It calculates the start time based on the current time and the specified duration. Returns the PnL data along with a health status of the retrieved data.</Card>
 
 
 
 
 
-<ParamField query="strategy_id" type="String" required  children="The `strategy_id` parameter is a unique string that identifies the specific strategy for which the equity PnL (Profit and Loss) data is being fetched. It is mandatory and used to query the relevant data.">
+<ParamField query="strategy_id" type="String" required  children="The strategy_id is a required parameter that uniquely identifies the trading strategy for which the equity PnL (Profit and Loss) data is being fetched. It is a string value that acts as a key to specify which strategy's data is being queried.">
   Unique identifier for the strategy.
 </ParamField>
-<ParamField query="data_length" type="Option<String>"  children="The `data_length` parameter specifies the optional time period for which the equity PnL data should be computed. It can take values such as '12_months', '30_days', '7_days', or '24_hours'. If not provided, it defaults to '12_months'.">
-  Optional time period for data retrieval.
+<ParamField query="data_length" type="Option<String>"  children="The data_length parameter is an optional string that specifies the time period for which the equity PnL data is required. Possible values include '12_months', '30_days', '7_days', and '24_hours'. If not provided, a default value of '12_months' is used to determine the time range for the data.">
+  Time period for fetching data.
 </ParamField>

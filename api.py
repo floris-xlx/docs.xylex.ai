@@ -77,6 +77,20 @@ async def build_docs_client():
     install_token = generate_installation_token(jwt_key)
     print(install_token)
 
+    import os
+    import glob
+
+    # Find all files in the root directory that contain 'nohup' in their name
+    nohup_files = glob.glob('nohup*')
+
+    # Delete each file found
+    for file in nohup_files:
+        try:
+            os.remove(file)
+            print(f"Deleted file: {file}")
+        except Exception as e:
+            print(f"Error deleting file {file}: {e}")
+
     user_access_token = os.getenv("XLX_DOCS_GITHUB_TOKEN")
     subprocess.run("git config --global user.name 'floris-xlx'",
                    shell=True,

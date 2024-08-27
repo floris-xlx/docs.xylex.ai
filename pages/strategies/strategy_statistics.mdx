@@ -5,14 +5,14 @@ api: 'GET https://api.v2.xylex.ai/strategy/statistics'
 
 
 
-<Card title="Endpoint Description" icon="info" horizontal >Fetches and computes statistics for a given strategy ID, returning success or error messages based on the operation`s outcome.</Card>
+<Card title="Endpoint Description" icon="info" horizontal >Fetches statistics for a given strategy ID. Retrieves trades, computes statistics, and responds with success or error message based on the operation outcome.</Card>
 
 
 
 
 
-<ParamField query="strategy_id" type="String" required  children="A unique string that identifies the specific strategy for which statistics are to be computed.">
-  Identifier for the strategy
+<ParamField query="strategy_id" type="String" required  children="A unique identifier for the strategy whose statistics are being fetched or updated.">
+  ID of the strategy.
 </ParamField>
 
 

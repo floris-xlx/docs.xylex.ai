@@ -5,18 +5,18 @@ api: 'POST https://api.v2.xylex.ai/strategy/name_create'
 
 
 
-<Card title="Endpoint Description" icon="info" horizontal >Creates a unique strategy name for an organization using provided strategy name, strategy ID, and organization ID. Returns a JSON response indicating the strategy name and whether it was successfully created.</Card>
+<Card title="Endpoint Description" icon="info" horizontal >Creates a strategy name unique to an organization using provided strategy name, strategy ID, and organization ID. Logs the process and checks database uniqueness before creation. Returns JSON with the strategy name and creation status.</Card>
 
 
 
 
 
-<ParamField query="strategy_name" type="String" required  children="The strategy_name parameter is a unique identifier for the strategy within the organization and is used to ensure that the strategy can be distinguished from others.">
-  The name of the strategy to be created.
+<ParamField query="strategy_name" type="String" required  children="This parameter represents the name of the strategy and must be unique within the organization. It is required to create a new strategy entry.">
+  The name of the strategy.
 </ParamField>
-<ParamField query="strategy_id" type="String" required  children="The strategy_id parameter is used to uniquely identify the strategy within the system, allowing for operations specific to this strategy.">
-  The unique identifier of the strategy.
+<ParamField query="strategy_id" type="String" required  children="This parameter represents the unique identifier for the strategy and is required for creating a new strategy entry.">
+  The identifier of the strategy.
 </ParamField>
-<ParamField query="organization_id" type="String" required  children="The organization_id parameter specifies which organization the strategy belongs to, ensuring that the strategy is associated with the correct organizational entity.">
-  The unique identifier of the organization.
+<ParamField query="organization_id" type="String" required  children="This parameter represents the unique identifier for the organization and is required to ensure the strategy name is unique within the organization.">
+  The identifier of the organization.
 </ParamField>
