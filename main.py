@@ -12,33 +12,33 @@ from automate.deduplicator import remove_duplicates_from_mdx
 
 
 async def main():
-    await clear_cache()
-    await clone_and_checkout()
-    await list_folders_in_cache_api()
-    await get_navigation_groups()
-    await update_navigation_groups()
-    await fetch_latest_commit()
-    sync_nav_tags()
+    # await clear_cache()
+    # await clone_and_checkout()
+    # await list_folders_in_cache_api()
+    # await get_navigation_groups()
+    # await update_navigation_groups()
+    # await fetch_latest_commit()
+    # sync_nav_tags()
 
-    endpoints = find_and_extract_endpoints()
-    print(json.dumps(endpoints, indent=4))
+    # endpoints = find_and_extract_endpoints()
+    # print(json.dumps(endpoints, indent=4))
 
-    import concurrent.futures
+    # import concurrent.futures
 
-    def update_mdx_files_with_parameters_thread(endpoint):
-        print(f"Starting thread for endpoint: {endpoint['endpoint']}")
-        asyncio.run(update_mdx_files_with_parameters([endpoint]))
-        print(f"Finished thread for endpoint: {endpoint['endpoint']}")
+    # def update_mdx_files_with_parameters_thread(endpoint):
+    #     print(f"Starting thread for endpoint: {endpoint['endpoint']}")
+    #     asyncio.run(update_mdx_files_with_parameters([endpoint]))
+    #     print(f"Finished thread for endpoint: {endpoint['endpoint']}")
 
-    with concurrent.futures.ThreadPoolExecutor() as executor:
-        print("Starting ThreadPoolExecutor for updating MDX files with parameters.")
-        executor.map(update_mdx_files_with_parameters_thread, endpoints)
-        print("Completed all threads for updating MDX files with parameters.")
+    # with concurrent.futures.ThreadPoolExecutor() as executor:
+    #     print("Starting ThreadPoolExecutor for updating MDX files with parameters.")
+    #     executor.map(update_mdx_files_with_parameters_thread, endpoints)
+    #     print("Completed all threads for updating MDX files with parameters.")
 
-    for endpoint in endpoints:
-        mdx_filepath = endpoint.get("mdx_filepath")
-        if mdx_filepath:
-            await remove_duplicates_from_mdx(mdx_filepath)
+    # for endpoint in endpoints:
+    #     mdx_filepath = endpoint.get("mdx_filepath")
+    #     if mdx_filepath:
+    #         await remove_duplicates_from_mdx(mdx_filepath)
 
     # print in bold green success message and then git add . && git commit -m "Generated API docs" && git push --force
     print("\033[1m\033[92mSuccessfully generated API docs!\033[0m")
@@ -52,16 +52,15 @@ async def main():
 
     load_dotenv()  # Load environment variables from .env file
 
-    username = "floris-xlx"
-    token = os.getenv("XLX_DOCS_GITHUB_TOKEN")
+    # username = "floris-xlx"
+    # token = os.getenv("XLX_DOCS_GITHUB_TOKEN")
 
     # Set up the remote URL with authentication
-    remote_url = f"https://{username}:{token}@github.com/docs.xylex.ai.git"
 
     # Add changes, commit, and push
     subprocess.run("git add .", shell=True, check=True)
     subprocess.run('git commit -m "Generated API docs"', shell=True, check=True)
-    subprocess.run(f"git push --force {remote_url}", shell=True, check=True)
+    subprocess.run(f"git push --force origin main", shell=True, check=True)
 
 
 if __name__ == '__main__':
