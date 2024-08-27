@@ -5,15 +5,15 @@ api: 'POST https://api.v2.xylex.ai/organization/name_create'
 
 
 
-<Card title="Endpoint Description" icon="info" horizontal >Creates a new organization name by checking for uniqueness and adding it to the database. Returns a JSON response indicating the organization name and whether it was successfully created.</Card>
+<Card title="Endpoint Description" icon="info" horizontal >This endpoint checks if an organization name is unique and adds it to the database. It requires `organization_name` and `organization_id` as query parameters. It responds with the organization name and whether it was successfully created.</Card>
 
 
 
 
 
-<ParamField query="organization_name" type="String" required  children="This parameter specifies the name of the organization that is being created or verified for uniqueness in the system.">
+<ParamField query="organization_name" type="String" required  children="This is the name of the organization that is to be checked for uniqueness and potentially added to the database.">
   The name of the organization.
 </ParamField>
-<ParamField query="organization_id" type="String" required  children="This parameter specifies the unique identifier associated with the organization, potentially used to differentiate between organizations with the same name.">
-  The unique identifier for the organization.
+<ParamField query="organization_id" type="String" required  children="This is the unique identifier for the organization that is used in conjunction with the organization name to perform operations in the database.">
+  The ID of the organization.
 </ParamField>
