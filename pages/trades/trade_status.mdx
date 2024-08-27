@@ -5,28 +5,12 @@ api: 'GET https://api.v2.xylex.ai/trades/fetch_trade_status'
 
 
 
-<Card title="Endpoint Description" icon="info" horizontal >This endpoint retrieves the status of a trade using a provided `trade_hash`. It logs the trade hash and queries the database to fetch the trade status. The response includes the trade hash and its current status in JSON format.</Card>
+<Card title="Endpoint Description" icon="info" horizontal >Fetches the status of a trade using a provided trade hash, logs the request, and returns the trade hash and its status as a JSON response.</Card>
 
 
 
 
 
-<ParamField query="trade_hash" type="String" required  children="The trade_hash is a string that serves as a unique identifier for a specific trade, used to fetch the current status of the trade.">
-  The unique identifier for a trade.
+<ParamField query="trade_hash" type="String" required  children="The trade_hash is a unique string used to identify and fetch the status of a specific trade. It is required to query the trade status endpoint.">
+  Unique identifier for the trade.
 </ParamField>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

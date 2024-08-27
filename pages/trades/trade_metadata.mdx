@@ -5,28 +5,12 @@ api: 'GET https://api.v2.xylex.ai/trades/fetch_trade_metadata'
 
 
 
-<Card title="Endpoint Description" icon="info" horizontal >Fetches trade metadata using a specified trade hash and returns it with a status indicating health.</Card>
+<Card title="Endpoint Description" icon="info" horizontal >Fetches trade metadata using a trade hash, logs the operation, and returns the metadata with a status of `Healthy` if data is found, otherwise `Unhealthy`.</Card>
 
 
 
 
 
-<ParamField query="trade_hash" type="String" required  children="A unique identifier for the trade that is used to fetch the associated metadata from the database. It is required to identify which trade's metadata needs to be retrieved.">
-  The hash of the trade to fetch metadata for.
+<ParamField query="trade_hash" type="String" required  children="A unique identifier for the trade, represented as a hash, used to fetch its metadata.">
+  The hash of the trade.
 </ParamField>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

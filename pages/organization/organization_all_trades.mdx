@@ -5,28 +5,12 @@ api: 'GET https://api.v2.xylex.ai/trades/fetch_trade_metadata_by_organization_id
 
 
 
-<Card title="Endpoint Description" icon="info" horizontal >Fetches trade metadata for a given organization ID, returning the data and status based on its existence.</Card>
+<Card title="Endpoint Description" icon="info" horizontal >Fetches trade metadata for a given organization ID, checks the database, and returns the metadata with a health status of `Healthy` or `Unhealthy` based on the result`s presence.</Card>
 
 
 
 
 
-<ParamField query="organization_id" type="String" required  children="This parameter represents the unique identifier for an organization, used to fetch trade metadata associated with that organization.">
-  The ID of the organization.
+<ParamField query="organization_id" type="String" required  children="A unique identifier representing the organization whose trade metadata is to be fetched.">
+  The ID of the organization
 </ParamField>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

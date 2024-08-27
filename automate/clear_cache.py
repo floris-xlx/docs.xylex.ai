@@ -3,7 +3,7 @@ import shutil
 
 
 async def clear_cache():
-    #await clear_pages_cache()
+    await clear_pages_cache()
 
     cache_dir = 'cache'
     if os.path.exists(cache_dir) and os.path.isdir(cache_dir):
