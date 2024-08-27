@@ -43,6 +43,3 @@ def find_and_extract_endpoints():
     return endpoints
 
 
-if __name__ == '__main__':
-    endpoints = find_and_extract_endpoints()
-    print(json.dumps(endpoints, indent=4))
