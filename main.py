@@ -60,10 +60,15 @@ async def main():
     print(jwt_key)
     install_token = generate_installation_token(jwt_key)
     print(install_token)
-    
+
     # Set the commit user to the app
-    subprocess.run('git config user.name "xylex-buildpack"', shell=True, check=True)
-    subprocess.run('git config user.email "app@xylex.ai"', shell=True, check=True)
+    subprocess.run('git config user.name "xylex-buildpack[bot]"',
+                   shell=True,
+                   check=True)
+    subprocess.run('git config user.email "980627+xylex-buildpack[bot]@users.noreply.github.com"',
+                   shell=True,
+                   check=True)
+
     subprocess.run("git add .", shell=True, check=True)
     subprocess.run('git commit -m "Generated API docs"',
                    shell=True,
@@ -77,7 +82,6 @@ async def main():
 
 if __name__ == '__main__':
     asyncio.run(main())
-
 
 import requests
 import os
