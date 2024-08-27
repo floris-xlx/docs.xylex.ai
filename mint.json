@@ -25,7 +25,6 @@
         "name": "Dashboard",
         "url": "https://app.xylex.ai"
     },
-
     "anchors": [
         {
             "name": "Documentation",
@@ -46,7 +45,11 @@
     "navigation": [
         {
             "group": "Get Started",
-            "pages": ["introduction", "quickstart", "development"]
+            "pages": [
+                "introduction",
+                "quickstart",
+                "development"
+            ]
         },
         {
             "group": "Essentials",
@@ -58,6 +61,30 @@
                 "essentials/navigation",
                 "essentials/reusable-snippets"
             ]
+        },
+        {
+            "group": "User API",
+            "pages": []
+        },
+        {
+            "group": "Public API",
+            "pages": []
+        },
+        {
+            "group": "Trades API",
+            "pages": []
+        },
+        {
+            "group": "Strategies API",
+            "pages": []
+        },
+        {
+            "group": "Organization API",
+            "pages": []
+        },
+        {
+            "group": "Authenticator API",
+            "pages": []
         }
     ],
     "footerSocials": {
@@ -67,11 +94,17 @@
     },
     "api": {
         "baseUrl": "https://api.v2.xylex.api",
-        "playground": { "mode": "show" },
+        "playground": {
+            "mode": "show"
+        },
         "maintainOrder": true,
         "request": {
             "example": {
-                "languages": ["bash", "javascript", "python"],
+                "languages": [
+                    "bash",
+                    "javascript",
+                    "python"
+                ],
                 "showOptionalParams": true
             }
         }
