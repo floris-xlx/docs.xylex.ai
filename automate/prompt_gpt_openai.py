@@ -31,7 +31,7 @@ def prompt_openai_model(prompt_text):
     response = client.chat.completions.create(
         model=open_ai_model,
         messages=[
-            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "system", "content": "Only respond with a list with parameters with 2 keys: name and type."},
             {"role": "user", "content": prompt_text}
         ],
         max_tokens=open_ai_max_tokens,
