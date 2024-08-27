@@ -4,6 +4,11 @@ import json
 MINT_CONFIG = 'mint.json'
 CACHE_API_PATH = 'cache/api'
 
+BANNED_PATHS = [
+    'cache', 'automate', 'essentials', '.git', '.github', 'snippets', 'logos',
+    'images'
+]
+
 
 def check_directory_exists(path):
     if not os.path.exists(path):
@@ -89,10 +94,31 @@ async def update_navigation_groups():
         group_key = f"{new_group} API"
         pages_path = generate_pages_path(new_group, unique_folders_and_files)
         if pages_path:  # Only add the group if pages_path is not empty
-            data['navigation'].append({"group": group_key, "pages": pages_path})
+            data['navigation'].append({
+                "group": group_key,
+                "pages": pages_path
+            })
 
     with open(MINT_CONFIG, 'w') as file:
         json.dump(data, file, indent=4)
 
-    print(f"Updated navigation groups in {MINT_CONFIG} with: {unique_folders}")
+    print(
+        f"Updated navigation groups in {MINT_CONFIG} with: {unique_folders}"
+    )
+
+    await create_group_folders_and_pages(top_level_folders)
+
     return unique_folders
+
+
+async def create_group_folders_and_pages(top_level_folders):
+    for group, pages in top_level_folders.items():
+        if group.lower() not in BANNED_PATHS:
+            group_folder = os.path.join(os.getcwd(), group)
+            os.makedirs(group_folder, exist_ok=True)
+            for page in pages:
+                page_path = os.path.join(group_folder, f"{page}.mdx")
+                with open(page_path, 'w') as page_file:
+                    page_file.write(
+                        f"# {page.replace('_', ' ').title()}\n\nContent for {page} page."
+                    )
