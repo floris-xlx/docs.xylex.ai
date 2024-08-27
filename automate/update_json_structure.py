@@ -19,7 +19,7 @@ def update_group_pages(group, base_path, ignore_folders):
         group['pages'] = [os.path.join(group['group'].lower(), f).replace("\\", "/").replace('.mdx', '') for f in mdx_files]
 
 def update_navigation():
-    ignore_folders = {'images', 'logo', 'snippets'}
+    ignore_folders = {'images', 'logo', 'snippets', 'cache'}
     base_path = os.getcwd()
     mint_data = load_mint_data('mint.json')
 

@@ -22,7 +22,12 @@ open_ai:
     open_ai_temperature: 0.75
 
 env:
-    discord_webhook_url: XLX_DOCS_XYLEX_AI_BUILD_LOGS_DISCORD_WEBHOOK_URL
-    open_ai_key: XLX_DOCS_XYLEX_AI_OPENAI_KEY
-    github_token: XLX_DOCS_XYLEX_AI_GITHUB_TOKEN
-    xylex_api_key: XLX_DOCS_XYLEX_AI_XYLEX_API_KEY
+    discord_webhook_url: XLX_DOCS_BUILD_LOGS_DISCORD_WEBHOOK_URL
+    open_ai_key: XLX_DOCS_OPENAI_KEY
+    github_token: XLX_DOCS_GITHUB_TOKEN
+    xylex_api_key: XLX_DOCS_XYLEX_API_KEY
+    github_client_secret: XLX_DOCS_XYLEX_CLIENT_SECRET
+    github_app_id: XLX_DOCS_GITHUB_APP_ID
+    github_client_id: XLX_DOCS_GITHUB_APP_CLIENT_ID
+    github_app_jwt: XLX_DOCS_GITHUB_JWT
+    github_installation_token: XLX_DOCS_GITHUB_INSTALLATION_TOKEN

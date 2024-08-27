@@ -9,3 +9,4 @@ supabase==1.2.0
 uvicorn==0.13.1
 PyYAML==6.0.1
 importlib==1.0.4
+ghapi==1.0.5
