@@ -2,3 +2,15 @@
 title: 'Name Available'
 api: 'GET https://api.v2.xylex.ai/user/name_available'
 ---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Checks if a username is available by querying the database and returns the username along with its availability status.</Card>
+
+
+
+
+
+<ParamField query="username" type="String" required  children="This parameter represents the username that the user wants to check for its availability in the system. The username must be provided and is used to query the database to determine if it is already taken or available for registration.">
+  The username to check for availability.
+</ParamField>

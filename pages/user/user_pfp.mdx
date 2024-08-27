@@ -2,3 +2,15 @@
 title: 'Fetch User Pfp'
 api: 'GET https://api.v2.xylex.ai/user/fetch_user_pfp'
 ---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches a user`s profile picture and username by user ID, returning their status as either `Healthy` or `Unhealthy` based on data presence.</Card>
+
+
+
+
+
+<ParamField query="user_id" type="String" required  children="The unique identifier for the user whose profile picture is being requested. This parameter is essential for fetching the correct user's profile data.">
+  The ID of the user.
+</ParamField>

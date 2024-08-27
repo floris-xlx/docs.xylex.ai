@@ -2,3 +2,32 @@
 title: 'Get Trades Weekly Org'
 api: 'GET https://api.v2.xylex.ai/get_trades_weekly_org'
 ---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches weekly trades based on user ID, organization, and algorithm ID. Verifies if the user`s organization matches the provided one. Responds with trade data or appropriate error messages.</Card>
+
+
+
+
+
+<ParamField query="user_id" type="String" required  children="A string representing the unique identifier for the user making the request.">
+  Identifier for the user.
+</ParamField>
+<ParamField query="organization" type="String" required  children="A string representing the organization name or identifier to which the user belongs.">
+  Organization name or ID.
+</ParamField>
+<ParamField query="week_nr" type="Option<i64>"  children="An optional 64-bit integer representing the specific week number for which trades are requested. Defaults to the current week if not provided.">
+  Week number for the trades.
+</ParamField>
+<ParamField query="algorithm_id" type="String" required  children="A string representing the unique identifier for the algorithm associated with the trades.">
+  Identifier for the algorithm.
+</ParamField>
+
+
+
+
+
+
+
+

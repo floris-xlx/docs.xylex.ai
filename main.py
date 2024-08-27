@@ -23,7 +23,17 @@ async def main():
     endpoints = find_and_extract_endpoints()
     print(json.dumps(endpoints, indent=4))
 
-    # await update_mdx_files_with_parameters(endpoints)
+    import concurrent.futures
+
+    def update_mdx_files_with_parameters_thread(endpoint):
+        print(f"Starting thread for endpoint: {endpoint['endpoint']}")
+        asyncio.run(update_mdx_files_with_parameters([endpoint]))
+        print(f"Finished thread for endpoint: {endpoint['endpoint']}")
+
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+        print("Starting ThreadPoolExecutor for updating MDX files with parameters.")
+        executor.map(update_mdx_files_with_parameters_thread, endpoints)
+        print("Completed all threads for updating MDX files with parameters.")
 
     for endpoint in endpoints:
         mdx_filepath = endpoint.get("mdx_filepath")

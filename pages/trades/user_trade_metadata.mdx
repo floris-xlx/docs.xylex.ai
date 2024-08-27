@@ -2,3 +2,15 @@
 title: 'Fetch User Trade Metadata'
 api: 'GET https://api.v2.xylex.ai/trades/fetch_user_trade_metadata'
 ---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches user trade metadata based on the provided user ID, logging the process. Returns a JSON response with the status and trade metadata if available.</Card>
+
+
+
+
+
+<ParamField query="user_id" type="String" required  children="A unique string that represents the user for whom trade metadata is being fetched.">
+  The identifier of the user.
+</ParamField>
