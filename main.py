@@ -8,6 +8,8 @@ from automate.get_latest_commit import fetch_latest_commit
 from automate.sync_nav_tags import sync_nav_tags
 from automate.endpoint_router import find_and_extract_endpoints
 from automate.content_framer import update_mdx_files_with_parameters
+from automate.deduplicator import remove_duplicates_from_mdx
+
 
 async def main():
     await clear_cache()
@@ -21,7 +23,26 @@ async def main():
     endpoints = find_and_extract_endpoints()
     print(json.dumps(endpoints, indent=4))
 
-    await update_mdx_files_with_parameters(endpoints)
+    # await update_mdx_files_with_parameters(endpoints)
+
+    for endpoint in endpoints:
+        mdx_filepath = endpoint.get("mdx_filepath")
+        if mdx_filepath:
+            await remove_duplicates_from_mdx(mdx_filepath)
+
+    # print in bold green success message and then git add . && git commit -m "Generated API docs" && git push --force
+    print("\033[1m\033[92mSuccessfully generated API docs!\033[0m")
+    print("\033[1m\033[92mPushing changes to the repository...\033[0m")
+
+    import subprocess
+
+    # Execute shell command to add changes, commit, and push
+    subprocess.run("git add .", shell=True, check=True)
+    subprocess.run('git commit -m "Generated API docs"',
+                   shell=True,
+                   check=True)
+    subprocess.run("git push --force", shell=True, check=True)
+
 
 if __name__ == '__main__':
     asyncio.run(main())

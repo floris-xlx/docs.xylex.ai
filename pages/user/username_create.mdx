@@ -2,12 +2,3 @@
 title: 'Name Create'
 api: 'POST https://api.v2.xylex.ai/user/name_create'
 ---
-
-
-
-<ParamField query="username" type="String" required  children="This parameter represents the desired username that the user wants to create. It should be unique and will be checked against the database for availability.">
-  The desired username for creation.
-</ParamField>
-<ParamField query="user_id" type="String" required  children="This parameter is the unique identifier of the user who is attempting to create a new username. It is used to associate the new username with the correct user in the database.">
-  The ID of the user requesting the username creation.
-</ParamField>
