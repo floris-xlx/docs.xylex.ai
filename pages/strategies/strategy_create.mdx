@@ -5,18 +5,18 @@ api: 'POST https://api.v2.xylex.ai/strategy/name_create'
 
 
 
-<Card title="Endpoint Description" icon="info" horizontal >Creates a strategy name unique to an organization. Accepts `strategy_name`, `strategy_id`, and `organization_id` as parameters. Responds with the strategy name and a creation status.</Card>
+<Card title="Endpoint Description" icon="info" horizontal >Creates a unique strategy name for an organization using provided strategy name, strategy ID, and organization ID. Returns a JSON response indicating the strategy name and whether it was successfully created.</Card>
 
 
 
 
 
-<ParamField query="strategy_name" type="String" required  children="The strategy_name parameter represents the unique name of the strategy that is being created within an organization.">
-  Name of the strategy.
+<ParamField query="strategy_name" type="String" required  children="The strategy_name parameter is a unique identifier for the strategy within the organization and is used to ensure that the strategy can be distinguished from others.">
+  The name of the strategy to be created.
 </ParamField>
-<ParamField query="strategy_id" type="String" required  children="The strategy_id parameter represents a unique identifier for the strategy being created. This ID helps in distinguishing different strategies within the system.">
-  Identifier for the strategy.
+<ParamField query="strategy_id" type="String" required  children="The strategy_id parameter is used to uniquely identify the strategy within the system, allowing for operations specific to this strategy.">
+  The unique identifier of the strategy.
 </ParamField>
-<ParamField query="organization_id" type="String" required  children="The organization_id parameter represents the unique identifier for the organization within which the strategy is being created. This ensures that strategies are unique to each organization.">
-  Identifier for the organization.
+<ParamField query="organization_id" type="String" required  children="The organization_id parameter specifies which organization the strategy belongs to, ensuring that the strategy is associated with the correct organizational entity.">
+  The unique identifier of the organization.
 </ParamField>

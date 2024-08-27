@@ -5,17 +5,17 @@ api: 'GET https://api.v2.xylex.ai/strategies/fetch_strategy_metadata_by_strategy
 
 
 
-<Card title="Endpoint Description" icon="info" horizontal >Fetches metadata for a strategy using a given strategy ID and returns a JSON response containing the status and the fetched data.</Card>
+<Card title="Endpoint Description" icon="info" horizontal >Retrieves metadata for a strategy using the provided strategy ID. Responds with the status of the operation and the associated strategy data.</Card>
 
 
 
 
 
-<ParamField query="strategy_id" type="String" required  children="This parameter represents the unique identifier of the strategy whose metadata is being fetched.">
-  The ID of the strategy.
+<ParamField query="strategy_id" type="String" required  children="The strategy_id is a unique string that is used to identify and fetch metadata related to a particular strategy within the system.">
+  A unique identifier for the strategy.
 </ParamField>
-<ParamField query="organization" type="String" required  children="This parameter is used to identify the organization for which the strategy metadata is being fetched.">
-  The name of the organization.
+<ParamField query="organization" type="String" required  children="The organization is a unique string that is used to identify and fetch metadata related to a particular organization within the system.">
+  A unique identifier for the organization.
 </ParamField>
 
 
