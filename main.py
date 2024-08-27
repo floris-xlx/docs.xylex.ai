@@ -46,12 +46,22 @@ async def main():
 
     import subprocess
 
-    # Execute shell command to add changes, commit, and push
+    # Execute shell command to add changes, commit, and push with authentication
+    from dotenv import load_dotenv
+    import os
+
+    load_dotenv()  # Load environment variables from .env file
+
+    username = "floris-xlx"
+    token = os.getenv("XLX_DOCS_GITHUB_TOKEN")
+
+    # Set up the remote URL with authentication
+    remote_url = f"https://{username}:{token}@github.com/docs.xylex.ai.git"
+
+    # Add changes, commit, and push
     subprocess.run("git add .", shell=True, check=True)
-    subprocess.run('git commit -m "Generated API docs"',
-                   shell=True,
-                   check=True)
-    subprocess.run("git push --force", shell=True, check=True)
+    subprocess.run('git commit -m "Generated API docs"', shell=True, check=True)
+    subprocess.run(f"git push --force {remote_url}", shell=True, check=True)
 
 
 if __name__ == '__main__':
