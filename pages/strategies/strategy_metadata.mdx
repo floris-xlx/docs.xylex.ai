@@ -5,123 +5,17 @@ api: 'GET https://api.v2.xylex.ai/strategies/fetch_strategy_metadata_by_strategy
 
 
 
-<Card title="Endpoint Description" icon="info" horizontal >Fetches strategy metadata using a given strategy ID, logs the process, and returns the metadata with a `Healthy` or `Unhealthy` status based on availability.</Card>
+<Card title="Endpoint Description" icon="info" horizontal >Fetches strategy metadata using a specified strategy ID, returns data and status as `Healthy` or `Unhealthy` based on the presence of metadata.</Card>
 
 
 
 
 
-<ParamField query="strategy_id" type="String" required  children="This parameter is used to uniquely identify a strategy within the system. It is required to fetch the metadata related to the specific strategy.">
-  The unique identifier for a strategy.
+<ParamField query="strategy_id" type="String" required  children="The unique identifier for a specific strategy to fetch its metadata.">
+  Strategy ID
 </ParamField>
-<ParamField query="organization" type="String" required  children="This parameter represents the name or unique identifier of an organization. It is required to fetch the metadata related to the strategies associated with the specific organization.">
-  The name or ID of an organization.
-</ParamField>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</ParamField>
-</ParamField>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</ParamField>
-</ParamField>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</ParamField>
-</ParamField>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</ParamField>
-</ParamField>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</ParamField>
+<ParamField query="organization" type="String" required  children="The name or identifier of the organization to fetch its strategy metadata.">
+  Organization
 </ParamField>
 
 

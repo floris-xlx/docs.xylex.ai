@@ -113,7 +113,7 @@ async def handle_commit_messaging():
     commit_message, sha, committer_login, sha_short = await fetch_latest_commit()
 
     # Post a commit comment using the short SHA
-    comment_body = f"Commit by {committer_login}: {commit_message}"
+    comment_body = f"Successfully built the documentation for commit {sha_short} by {committer_login}, View the documentation at [https://nightly.docs.xylex.ai/](https://nightly.docs.xylex.ai/)"
     post_commit_comment(sha_short, comment_body)
 
     # Post a commit status using the full SHA

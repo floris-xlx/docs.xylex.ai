@@ -5,60 +5,12 @@ api: 'GET https://api.v2.xylex.ai/public/user'
 
 
 
-<Card title="Endpoint Description" icon="info" horizontal >Fetches a user profile by username, checking cache first; if not found, retrieves from the database. Returns profile data with a status and time taken, caching the result for future requests.</Card>
+<Card title="Endpoint Description" icon="info" horizontal >Fetches a user profile by username, checking cache first, then querying the database if needed, and returns profile data with status and time taken.</Card>
 
 
 
 
 
-<ParamField query="username" type="String" required  children="This parameter is used to identify the user whose profile information is requested from the database or cache. It is a mandatory parameter provided by the client in the request query.">
-  The username of the user whose profile is being fetched.
+<ParamField query="username" type="String" required  children="This parameter specifies the username of the user whose profile is being requested. It is used to identify and retrieve the corresponding user profile from the cache or database.">
+  Username of the user profile to fetch.
 </ParamField>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
