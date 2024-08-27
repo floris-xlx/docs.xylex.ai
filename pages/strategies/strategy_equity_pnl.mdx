@@ -5,15 +5,15 @@ api: 'GET https://api.v2.xylex.ai/strategies/equity_pnl'
 
 
 
-<Card title="Endpoint Description" icon="info" horizontal >Fetches equity PNL data for a given strategy ID over a specified time period, returning status and strategy trades data.</Card>
+<Card title="Endpoint Description" icon="info" horizontal >This endpoint retrieves equity PnL data for a specified strategy ID over a designated time period. It supports optional query parameters for the strategy ID and the duration of data retrieval, defaulting to 12 months. The response includes the status and PnL data.</Card>
 
 
 
 
 
-<ParamField query="strategy_id" type="String" required  children="A unique string that serves as the identifier for the strategy whose equity PnL data is being fetched.">
+<ParamField query="strategy_id" type="String" required  children="The strategy_id is a unique identifier that represents a specific strategy for which the equity PNL (Profit and Loss) data is being fetched. This parameter is mandatory for the query.">
   Identifier for the strategy.
 </ParamField>
-<ParamField query="data_length" type="Option<String>"  children="An optional parameter specifying the duration of historical data to fetch, e.g., '12_months', '30_days'. Defaults to '12_months' if not provided.">
-  Duration of data to fetch.
+<ParamField query="data_length" type="Option<String>"  children="The data_length parameter specifies the time frame for which the equity PNL data is required. It is optional and defaults to "12_months" if not provided. Possible values include "12_months", "30_days", "7_days", and "24_hours".">
+  Time frame for the data.
 </ParamField>

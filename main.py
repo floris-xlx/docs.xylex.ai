@@ -59,7 +59,7 @@ async def main():
     print(jwt_key)
     install_token = generate_installation_token(jwt_key)
     print(install_token)
-
+    
     # Set the commit user to the app
     subprocess.run('git config user.name "xylex-buildpack[bot]"',
                    shell=True,

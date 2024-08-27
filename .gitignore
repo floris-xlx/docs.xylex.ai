@@ -3,3 +3,5 @@
 cache/*
 *.pem
 nohup.out
+*.out
+nohup.out
