@@ -5,15 +5,15 @@ api: 'GET https://api.v2.xylex.ai/strategies/equity_pnl'
 
 
 
-<Card title="Endpoint Description" icon="info" horizontal >Fetches the equity P&L data for a specified strategy ID and time period, returning JSON with strategy status and computed P&L data.</Card>
+<Card title="Endpoint Description" icon="info" horizontal >This endpoint retrieves equity profit and loss data for a given strategy ID over a specified time period, defaulting to 12 months if not provided. It calculates the time range in Unix time and fetches the relevant data. It responds with the strategy`s status and trade data in JSON format.</Card>
 
 
 
 
 
-<ParamField query="strategy_id" type="String" required  children="A unique identifier for the strategy whose equity PnL data is to be fetched.">
-  The ID of the strategy
+<ParamField query="strategy_id" type="String" required  children="The unique identifier for the strategy for which the equity PnL is being fetched.">
+  The ID of the strategy.
 </ParamField>
-<ParamField query="data_length" type="Option<String>"  children="Optional parameter specifying the time span for the data to be fetched. Defaults to '12_months' if not provided.">
-  The length of data to fetch
+<ParamField query="data_length" type="Option<String>"  children="The period for which the equity PnL data should be calculated, specified as a string. Defaults to '12_months' if not provided.">
+  The length of data to fetch.
 </ParamField>

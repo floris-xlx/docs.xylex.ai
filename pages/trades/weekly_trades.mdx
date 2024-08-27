@@ -5,23 +5,23 @@ api: 'GET https://api.v2.xylex.ai/get_trades_weekly_org'
 
 
 
-<Card title="Endpoint Description" icon="info" horizontal >Fetches weekly trade data for a specific user and organization, verifying the user`s organization. Returns trades for the requested week, filtering out unapproved or invalid trades. Provides error responses for mismatches, missing data, or internal issues.</Card>
+<Card title="Endpoint Description" icon="info" horizontal >Fetches weekly trade data for a specified organization and user, verifying the user`s organization. If the week number is not provided, defaults to the current week. Returns a list of approved trades or error messages if issues arise.</Card>
 
 
 
 
 
-<ParamField query="user_id" type="String" required  children="A unique identifier for the user making the request.">
-  User identifier
+<ParamField query="user_id" type="String" required  children="A unique identifier for the user making the request, used to verify the user's organization and fetch associated trades.">
+  The ID of the user.
 </ParamField>
-<ParamField query="organization" type="String" required  children="The organization to which the user belongs and for which the trades are being requested.">
-  Organization identifier
+<ParamField query="organization" type="String" required  children="The name or ID of the organization to which the user belongs, used for validating the user's membership and fetching related trades.">
+  The organization associated with the user.
 </ParamField>
-<ParamField query="week_nr" type="Option<i64>"  children="The specific week number for which trades are being requested. If not provided, defaults to the current week.">
-  Week number
+<ParamField query="week_nr" type="Option<i64>"  children="An optional parameter specifying the week number for which to fetch trades. If not provided, the current week is used by default.">
+  The week number for the trades.
 </ParamField>
-<ParamField query="algorithm_id" type="String" required  children="A unique identifier for the algorithm associated with the trades being requested.">
-  Algorithm identifier
+<ParamField query="algorithm_id" type="String" required  children="A unique identifier for a specific trading algorithm, used to fetch trades associated with this algorithm within the specified week.">
+  The ID of the algorithm.
 </ParamField>
 
 
