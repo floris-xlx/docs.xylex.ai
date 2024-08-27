@@ -32,20 +32,38 @@ async def get_navigation_groups():
 
 async def get_top_level_folders_excluding_mod_rs():
     check_directory_exists(CACHE_API_PATH)
-    top_level_folders = {
-        name: [
-            file_name
-            for file_name in os.listdir(os.path.join(CACHE_API_PATH, name))
-            if os.path.isfile(os.path.join(CACHE_API_PATH, name, file_name))
-            and file_name != 'mod.rs'
-        ]
-        for name in os.listdir(CACHE_API_PATH)
-        if os.path.isdir(os.path.join(CACHE_API_PATH, name))
-    }
+    top_level_folders = {}
+
+    for name in os.listdir(CACHE_API_PATH):
+        folder_path = os.path.join(CACHE_API_PATH, name)
+        if os.path.isdir(folder_path):
+            files = [
+                file_name.replace('.rs', '')
+                for file_name in os.listdir(folder_path)
+                if os.path.isfile(os.path.join(folder_path, file_name))
+                and file_name != 'mod.rs'
+            ]
+
+            # Look one folder deeper for 'endpoint.rs'
+            for sub_name in os.listdir(folder_path):
+                sub_folder_path = os.path.join(folder_path, sub_name)
+                if os.path.isdir(sub_folder_path):
+                    if 'endpoint.rs' in os.listdir(sub_folder_path):
+                        files.append(sub_name)
+
+            top_level_folders[name] = files
+
     print(
         f"Top-level folders and files (excluding 'mod.rs') in '{CACHE_API_PATH}': {top_level_folders}"
     )
     return top_level_folders
+
+
+def generate_pages_path(new_group, unique_folders_and_files):
+    return [
+        f"{new_group.lower()}/{file}"
+        for file in unique_folders_and_files[new_group.lower()]
+    ]
 
 
 async def update_navigation_groups():
@@ -69,11 +87,9 @@ async def update_navigation_groups():
 
     for new_group in unique_folders:
         group_key = f"{new_group} API"
-        pages_path = [
-            f"{new_group.lower()}/{file}"
-            for file in unique_folders_and_files[new_group.lower()]
-        ]
-        data['navigation'].append({"group": group_key, "pages": pages_path})
+        pages_path = generate_pages_path(new_group, unique_folders_and_files)
+        if pages_path:  # Only add the group if pages_path is not empty
+            data['navigation'].append({"group": group_key, "pages": pages_path})
 
     with open(MINT_CONFIG, 'w') as file:
         json.dump(data, file, indent=4)
