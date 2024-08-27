@@ -5,13 +5,13 @@ api: 'GET https://api.v2.xylex.ai/strategy/statistics'
 
 
 
-<Card title="Endpoint Description" icon="info" horizontal >Updates statistics for all strategies, retrieving trades and computing statistics for each. Logs success and error counts, returning a summary of the update process. Responds with success or error messages based on operation outcomes.</Card>
+<Card title="Endpoint Description" icon="info" horizontal >Fetches statistics for a specific strategy using the provided strategy ID, retrieves trade data, computes statistics, and returns a JSON response with success or error status.</Card>
 
 
 
 
 
-<ParamField query="strategy_id" type="String" required  children="The identifier for the strategy whose statistics are to be fetched or updated. This parameter is used to retrieve trades related to the specific strategy.">
+<ParamField query="strategy_id" type="String" required  children="A unique identifier for the strategy for which statistics are being fetched or updated.">
   The ID of the strategy.
 </ParamField>
 

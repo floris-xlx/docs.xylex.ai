@@ -69,6 +69,7 @@
         {
             "group": "Public API",
             "pages": [
+                "pages/public/version",
                 "pages/public/ping",
                 "pages/public/get_user_profile"
             ]

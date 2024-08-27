@@ -57,6 +57,8 @@ async def build_docs_client():
         if mdx_filepath:
             await remove_duplicates_from_mdx(mdx_filepath)
 
+    sync_nav_tags()
+
     # print in bold green success message and then git add . && git commit -m "Generated API docs" && git push --force
     print("\033[1m\033[92mSuccessfully generated API docs!\033[0m")
     print("\033[1m\033[92mPushing changes to the repository...\033[0m")
@@ -109,7 +111,6 @@ async def build_docs_client():
     subprocess.run("git push --force", shell=True, check=True)
 
 
-
 import requests
 import os
 
@@ -122,9 +123,11 @@ def get_api_key(api_key_header: APIKeyHeader):
         raise HTTPException(status_code=403, detail="Invalid API Key")
     return api_key_header.api_key
 
+
 async def handle_commit_messaging():
     # Fetch the latest commit details
-    commit_message, sha, committer_login, sha_short = await fetch_latest_commit()
+    commit_message, sha, committer_login, sha_short = await fetch_latest_commit(
+    )
 
     # Post a commit comment using the short SHA
     comment_body = f"Successfully built the documentation for commit {sha_short} by {committer_login}, View the documentation at [https://nightly.docs.xylex.ai/](https://nightly.docs.xylex.ai/)"
@@ -142,13 +145,7 @@ async def build_docs(api_key: str):
     return {"message": "Docs built successfully!"}
 
 
-
-
 # Call the function to handle messaging
-
-
-
-
 
 if __name__ == "__main__":
     import uvicorn
