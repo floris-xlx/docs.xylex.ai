@@ -25,6 +25,7 @@ from automate.deduplicator import remove_duplicates_from_mdx
 from automate.github_jwt_key import generate_jwt, generate_installation_token
 from automate.add_commit_status import post_commit_comment, post_commit_status_with_jwt
 
+
 async def build_docs_client():
     await clear_cache()
     await clone_and_checkout()
@@ -77,9 +78,12 @@ async def build_docs_client():
     print(install_token)
 
     user_access_token = os.getenv("XLX_DOCS_GITHUB_TOKEN")
-
-
-
+    subprocess.run("git config --global user.name 'floris-xlx'",
+                   shell=True,
+                   check=True)
+    subprocess.run("git config --global user.email 'floris@xylex.ai'",
+                   shell=True,
+                   check=True)
     subprocess.run("git add .", shell=True, check=True)
     subprocess.run('git commit -m "Generated API docs"',
                    shell=True,
