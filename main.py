@@ -9,7 +9,7 @@ from automate.sync_nav_tags import sync_nav_tags
 from automate.endpoint_router import find_and_extract_endpoints
 from automate.content_framer import update_mdx_files_with_parameters
 from automate.deduplicator import remove_duplicates_from_mdx
-from automate.github_jwt_key import generate_jwt
+from automate.github_jwt_key import generate_jwt, generate_installation_token
 
 
 async def main():
@@ -57,12 +57,15 @@ async def main():
 
     # Add changes, commit, and push with JWT authentication
     jwt_key = generate_jwt()
+    print(jwt_key)
+    install_token = generate_installation_token(jwt_key)
+    print(install_token)
     subprocess.run("git add .", shell=True, check=True)
     subprocess.run('git commit -m "Generated API docs"',
                    shell=True,
                    check=True)
     subprocess.run(
-        f"git remote set-url origin https://x-access-token:{jwt_key}@github.com/floris-xlx/docs.xylex.ai.git",
+        f"git remote set-url origin https://x-access-token:{install_token}@github.com/floris-xlx/docs.xylex.ai.git",
         shell=True,
         check=True)
     subprocess.run("git push --force", shell=True, check=True)
@@ -70,3 +73,7 @@ async def main():
 
 if __name__ == '__main__':
     asyncio.run(main())
+
+
+import requests
+import os

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import sys
+import requests
 import time
 
 import jwt
@@ -35,5 +36,24 @@ payload = {
 # Create JWT
 encoded_jwt = jwt.encode(payload, signing_key, algorithm="RS256")
 
+
 def generate_jwt():
     return encoded_jwt
+
+
+def generate_installation_token(encoded_jwt):
+    installation_id = os.getenv('XLX_DOCS_GITHUB_INSTALLATION_ID')
+    if not installation_id:
+        raise ValueError("GitHub Installation ID is not set in the environment variable.")
+
+    url = f'https://api.github.com/app/installations/{installation_id}/access_tokens'
+    headers = {
+        'Authorization': f'Bearer {encoded_jwt}',
+        'Accept': 'application/vnd.github.v3+json'
+    }
+
+    response = requests.post(url, headers=headers)
+    response.raise_for_status()
+
+    installation_access_token = response.json()['token']
+    return installation_access_token
