@@ -5,12 +5,12 @@ api: 'GET https://api.v2.xylex.ai/strategy/name_available'
 
 
 
-<Card title="Endpoint Description" icon="info" horizontal >Checks if a strategy name is available by querying the database and returns a JSON response indicating the availability status.</Card>
+<Card title="Endpoint Description" icon="info" horizontal >Checks if a strategy name is available by querying a database. Accepts a strategy name as a query parameter. Returns a JSON response indicating the name and its availability status.</Card>
 
 
 
 
 
-<ParamField query="strategy_name" type="String" required  children="This parameter represents the name of the strategy that is being queried to determine if it is available. It is a required string used to perform the availability check in the database.">
+<ParamField query="strategy_name" type="String" required  children="This parameter represents the name of a strategy that is being checked to see if it is available. It is used within the endpoint to query the database for availability status.">
   The name of the strategy to check for availability.
 </ParamField>

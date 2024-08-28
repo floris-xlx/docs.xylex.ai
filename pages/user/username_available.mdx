@@ -5,12 +5,12 @@ api: 'GET https://api.v2.xylex.ai/user/name_available'
 
 
 
-<Card title="Endpoint Description" icon="info" horizontal >Checks if a username is available by querying a database and returns a JSON response indicating the username and its availability status.</Card>
+<Card title="Endpoint Description" icon="info" horizontal >Checks if a specified username is available, returning a JSON response with the username and its availability status.</Card>
 
 
 
 
 
-<ParamField query="username" type="String" required  children="This parameter represents the username that the user wants to check for availability in the system. It is a required field and must be provided as a string.">
+<ParamField query="username" type="String" required  children="This parameter represents the username that is being queried to determine if it is available for registration or use. It must be a string value and is required for the function to execute properly.">
   The username to check for availability.
 </ParamField>
