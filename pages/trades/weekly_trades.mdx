@@ -5,19 +5,19 @@ api: 'GET https://api.v2.xylex.ai/get_trades_weekly_org'
 
 
 
-<Card title="Endpoint Description" icon="info" horizontal >Fetches weekly trades for a specific algorithm in an organization. Requires user ID, organization, and algorithm ID; week number is optional. Validates user organization and filters trades by status.</Card>
+<Card title="Endpoint Description" icon="info" horizontal >Fetches weekly trades for a specified organization and algorithm, verifying user organization.</Card>
 
 
 
 
 
-<ParamField query="user_id" type="String" required  children="The unique identifier for the user.">
+<ParamField query="user_id" type="String" required  children="The unique identifier for the user making the request.">
   User ID
 </ParamField>
-<ParamField query="organization" type="String" required  children="The organization to which the user belongs.">
+<ParamField query="organization" type="String" required  children="The name of the organization related to the trades.">
   Organization
 </ParamField>
-<ParamField query="week_nr" type="Option<i64>"  children="The specific week number for which trades are requested. If not provided, defaults to the current week.">
+<ParamField query="week_nr" type="Option<i64>"  children="The week number for which trades are to be fetched. Defaults to the current week if not provided.">
   Week Number
 </ParamField>
 <ParamField query="algorithm_id" type="String" required  children="The unique identifier for the algorithm associated with the trades.">
