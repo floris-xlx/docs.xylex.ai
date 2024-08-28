@@ -1,0 +1,31 @@
+---
+title: 'Time Series'
+api: 'GET https://api.v2.xylex.ai/data/time_series'
+---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >This endpoint retrieves time series data for a specified symbol, interval, and optional date range, requiring a valid API key. It checks a cache for existing data and fetches from an external source if not cached. Responses include success status and relevant data.</Card>
+
+
+
+
+
+<ParamField query="symbol" type="String" required  children="This parameter specifies the stock symbol for which the time series data is requested. It is required to identify the specific stock of interest.">
+  The stock symbol to query.
+</ParamField>
+<ParamField query="start_date" type="Option<String>"  children="This optional parameter is used to specify the starting date from which the time series data should be retrieved. If not provided, data from the earliest available date will be considered.">
+  The start date for the time series data.
+</ParamField>
+<ParamField query="end_date" type="Option<String>"  children="This optional parameter is used to specify the ending date until which the time series data should be retrieved. If not provided, data up to the latest available date will be considered.">
+  The end date for the time series data.
+</ParamField>
+<ParamField query="interval" type="String" required  children="This parameter defines the time interval between data points in the time series. It is required to determine the granularity of the data, such as '1min', '5min', 'daily', etc.">
+  The interval between data points.
+</ParamField>
+<ParamField query="outputsize" type="u32" required  children="This parameter specifies the maximum number of data points that should be included in the response. It is required to limit the size of the returned data set.">
+  The maximum number of data points to return.
+</ParamField>
+<ParamField query="api_key" type="String" required  children="This parameter is used for authentication and is required to authorize the request. It must be a valid API key with appropriate permissions to access the time series data.">
+  The API key for authentication.
+</ParamField>

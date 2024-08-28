@@ -110,6 +110,13 @@
                 "pages/organization/organization_all_trades",
                 "pages/organization/organization_create"
             ]
+        },
+        {
+            "group": "Data API",
+            "pages": [
+                "pages/data/price",
+                "pages/data/time_series"
+            ]
         }
     ],
     "footerSocials": {

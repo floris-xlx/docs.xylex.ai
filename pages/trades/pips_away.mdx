@@ -5,12 +5,12 @@ api: 'GET https://api.v2.xylex.ai/trades/pips_away'
 
 
 
-<Card title="Endpoint Description" icon="info" horizontal >Fetches the status of a trade using a specified trade hash. Logs the trade hash for tracking. Responds with a JSON object containing the trade hash and its status.</Card>
+<Card title="Endpoint Description" icon="info" horizontal >Fetches and returns the status of a trade using its hash. Logs the trade hash being queried. Responds with the trade hash and its corresponding status in JSON format.</Card>
 
 
 
 
 
-<ParamField query="trade_hash" type="String" required  children="A unique string that identifies a specific trade in the system, used to fetch its status.">
+<ParamField query="trade_hash" type="String" required  children="The trade_hash parameter is a string that serves as the unique identifier for a trade. It is used to query the trade status and fetch the pips away data associated with that specific trade.">
   The unique identifier for the trade.
 </ParamField>

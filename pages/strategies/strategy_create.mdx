@@ -5,18 +5,18 @@ api: 'POST https://api.v2.xylex.ai/strategy/name_create'
 
 
 
-<Card title="Endpoint Description" icon="info" horizontal >Creates a unique strategy name for an organization using the provided strategy name, strategy ID, and organization ID. Returns a JSON response indicating if the strategy name was successfully created.</Card>
+<Card title="Endpoint Description" icon="info" horizontal >Creates a unique strategy name for an organization by accepting strategy name, strategy ID, and organization ID as parameters. It checks if the strategy name is unique and adds it to the database. Returns a JSON response indicating the strategy name and creation status.</Card>
 
 
 
 
 
-<ParamField query="strategy_name" type="String" required  children="The name of the strategy to be created, which must be unique to the organization.">
-  Name of the strategy
+<ParamField query="strategy_name" type="String" required  children="The strategy_name parameter represents the unique name of the strategy within the organization. It is used to identify the strategy being created.">
+  The name of the strategy to be created.
 </ParamField>
-<ParamField query="strategy_id" type="String" required  children="A unique identifier for the strategy being created.">
-  ID of the strategy
+<ParamField query="strategy_id" type="String" required  children="The strategy_id parameter is a unique identifier for the strategy. It is required to differentiate between different strategies within an organization.">
+  The identifier for the strategy.
 </ParamField>
-<ParamField query="organization_id" type="String" required  children="A unique identifier for the organization, ensuring that the strategy name is unique within this context.">
-  ID of the organization
+<ParamField query="organization_id" type="String" required  children="The organization_id parameter is used to associate the strategy with a specific organization. It ensures that the strategy is unique to that organization.">
+  The organization identifier.
 </ParamField>
