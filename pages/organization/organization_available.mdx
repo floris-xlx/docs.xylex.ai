@@ -5,12 +5,12 @@ api: 'GET https://api.v2.xylex.ai/organization/name_available'
 
 
 
-<Card title="Endpoint Description" icon="info" horizontal >Checks if an organization name is available by querying the database and returns a JSON response indicating the availability status.</Card>
+<Card title="Endpoint Description" icon="info" horizontal >Checks the availability of an organization name, returning a JSON response with the name and its availability status.</Card>
 
 
 
 
 
-<ParamField query="organization_name" type="String" required  children="This parameter represents the name of the organization that the user wants to check for availability. It is a string and must be provided in the query parameters of the request.">
-  The name of the organization to check availability for.
+<ParamField query="organization_name" type="String" required  children="This parameter represents the name of the organization that is being queried to determine if it is available or already in use. It is required for the endpoint to function correctly.">
+  The name of the organization to check for availability.
 </ParamField>

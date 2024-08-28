@@ -5,12 +5,12 @@ api: 'GET https://api.v2.xylex.ai/user/fetch_user_pfp'
 
 
 
-<Card title="Endpoint Description" icon="info" horizontal >Fetches the username and profile picture of a user based on the provided user_id. Returns a JSON response indicating the health status of the data retrieval and the user`s profile information.</Card>
+<Card title="Endpoint Description" icon="info" horizontal >Fetches a user`s profile picture and username based on a provided user ID, returning their data and status.</Card>
 
 
 
 
 
-<ParamField query="user_id" type="String" required  children="The user ID is used to fetch the profile data of a specific user, including their username and profile picture. It is a required parameter for the endpoint to function properly.">
-  The unique identifier for a user.
+<ParamField query="user_id" type="String" required  children="A unique identifier for the user whose profile picture is being fetched. It is a required parameter in the query to identify the user.">
+  The ID of the user.
 </ParamField>

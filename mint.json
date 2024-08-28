@@ -89,6 +89,7 @@
             "pages": [
                 "pages/trades/trade_status",
                 "pages/trades/weekly_trades",
+                "pages/trades/pips_away",
                 "pages/trades/user_trade_metadata",
                 "pages/trades/trade_metadata"
             ]
