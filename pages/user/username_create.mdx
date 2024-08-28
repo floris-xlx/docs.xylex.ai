@@ -5,15 +5,15 @@ api: 'POST https://api.v2.xylex.ai/user/name_create'
 
 
 
-<Card title="Endpoint Description" icon="info" horizontal >Creates a username for a user, requiring a `username` and `user_id`. Validates uniqueness and attempts to add it to the database. Responds with the username and a creation success status.</Card>
+<Card title="Endpoint Description" icon="info" horizontal >Creates a username for a user, ensuring its uniqueness, using the provided `username` and `user_id` parameters. Returns a JSON response indicating the username and whether it was successfully created.</Card>
 
 
 
 
 
-<ParamField query="username" type="String" required  children="The username parameter is a required string that represents the desired username that a user wants to create in the system. It must be unique and will be checked against existing usernames to ensure no duplicates.">
-  The desired username for the user.
+<ParamField query="username" type="String" required  children="A unique string representing the username that is intended to be created for the user.">
+  The username to be created.
 </ParamField>
-<ParamField query="user_id" type="String" required  children="The user_id parameter is a required string that serves as a unique identifier for the user who is attempting to create a new username. This ID is used to associate the username with the correct user account in the system.">
-  The unique identifier for the user.
+<ParamField query="user_id" type="String" required  children="A string representing the unique identifier of the user for whom the username is being created.">
+  The ID of the user.
 </ParamField>
