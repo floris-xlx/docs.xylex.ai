@@ -1,0 +1,43 @@
+---
+title: 'Event Logging'
+description: 'Event log the Supabase Client'
+---
+
+Import the `EventLogEntry` type
+```ts
+import { EventLogEntry } from '@/actions/event_log/addEventLog';
+```
+Import the `addEventLog` action
+```ts
+import { addEventLog } from '@/actions/event_log/addEventLog';
+```
+
+Construct the `EventLogEntry`
+```ts
+const event_log = {
+    route: '/' + organization,
+    status: 'success',
+    message: 'This should be readable',
+    action: 'this-should-be-hyphenated',
+    user_id: user.id,
+    time: Date.now(),
+    duration: duration,
+    requested_resource: data,
+    organization: user.organization,
+    domain: 'app.xylex.ai'
+} as EventLogEntry;
+```
+
+The `user` object is gotten via the Zustand store
+```ts
+import { useUserStore } from '@/store/store'
+
+async function testFunction() {
+    // only in server side code you would use this syntax otherwise you deconstruct it like usual
+    const user = useUserStore.getState().user;
+}
+```
+
+
+Wherever the 
+```ts

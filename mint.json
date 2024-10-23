@@ -47,6 +47,15 @@
             ]
         },
         {
+            "group": "Supabase Client",
+            "pages": [
+                "pages/supabase_client/usage",
+                "pages/supabase_client/xylex_client",
+                "pages/supabase_client/event_logging"
+            ]
+        },
+
+        {
             "group": "Authenticator API",
             "pages": [
                 "pages/authenticator/verify_code_secret",

@@ -1,0 +1,61 @@
+---
+title: 'Using the Supabase Client'
+description: 'Usage'
+---
+
+## Fetching with `fetchTableData`
+
+`fetchTableData` is imported as
+```ts
+import { fetchTableData } from '@/actions/supabaseClient';
+```
+
+
+Then the call gets constructed
+```ts
+const { success, data, error, duration } = await fetchTableData({
+    tableName: 'TABLE_NAME',
+    key: 'EQ_KEY',
+    keyValue: organizationId,
+    columns: ['*'],
+    single: false,
+    xylex_client: true
+});
+```
+
+#### Filtering with EQ
+
+The `EQ_KEY` is used as a comparison value to `eq.` with
+```ts
+EQ_KEY = ?? (usually user_id, trade_hash etc)
+```
+
+#### Result limitations
+
+the `single: false` dictates whether more than 1 result can be yielded or if it will only return 1
+```ts
+// this will yield all possible unpaginated results
+single: false
+// this will yield only 1 
+single: true
+```
+
+#### Target supabase
+
+The `xylex_client: true` will dictate whether one of the following get called:
+- IF false: `xxxxx.supabase.co` (supabase hosted)
+- IF true: `studio.xylex.ai` (hetzner-europe1)
+
+```ts
+// this will go to studio.xylex.ai
+xylex_client: true
+// this will go to the managed supabase by them
+xylex_client: false (default)
+```
+
+#### Return objects
+These are always returned besides success or error these only when either one applies
+```ts
+{ success, data, error, duration }
+```
+The `duration` from this return is used in your `EventLogEntry` Obj, its the function compute time in `ms`
