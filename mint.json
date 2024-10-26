@@ -54,7 +54,12 @@
                 "pages/supabase_client/event_logging"
             ]
         },
-
+        {
+            "group": "UI",
+            "pages": [
+                "components/timeline"
+            ]
+        },
         {
             "group": "Authenticator API",
             "pages": [
