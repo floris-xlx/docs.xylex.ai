@@ -57,6 +57,7 @@
         {
             "group": "UI",
             "pages": [
+                "ui/xylex-provider",
                 "components/timeline"
             ]
         },
