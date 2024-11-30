@@ -46,6 +46,13 @@
                 "development"
             ]
         },
+                {
+            "group": "Config",
+            "pages": [
+                "config/env_vars"
+
+            ]
+        },
         {
             "group": "Supabase Client",
             "pages": [
