@@ -3,37 +3,63 @@ title: "ListBox"
 description: "Listbox XYLEXUI"
 ---
 
-### Importing the component
+### Importing the `ListBox`
 
 ```typescript
 import { ListBox } from '@/ui';
 ```
 
-### Refactoring UI towards `listbox.tsx`
-
-This is an old inefficient way of handling the listbox
-
-```typescript
-<div>
-  <ItemWithActions
-    picture_url={'https://vectorseek.com/wp-content/uploads/2023/06/Payoneer-Icon-Vector-01.jpg'}
-    picture_alt={'og'}
-    picture_fallback_name={'og'}
-    title={'Payoneer API Playground'}
-    subTitle={'Admin'}
-    icon={OpenLinkIcon}
-  />
-  <ItemWithActions
-    picture_url={'https://vectorseek.com/wp-content/uploads/2023/06/Payoneer-Icon-Vector-01.jpg'}
-    picture_alt={'og'}
-    picture_fallback_name={'og'}
-    title={'Payoneer API Playground'}
-    subTitle={'Admin'}
-    icon={OpenLinkIcon}
-  />
-</div>
-```
+### Refactoring deprecated listboxes towards `ListBox`
 
 ![](image.png)
 
-It serves it's purpose but its outdated in contrary to the `listbox.tsx` component
+```typescript
+<div>
+    <ItemWithActions
+        picture_url={'https://vectorseek.com/wp-content/uploads/2023/06/Payoneer-Icon-Vector-01.jpg'}
+        picture_alt={'og'}
+        picture_fallback_name={'og'}
+        title={'Payoneer API Playground'}
+        subTitle={'Admin'}
+        icon={OpenLinkIcon}
+    />
+    <ItemWithActions
+        picture_url={'https://vectorseek.com/wp-content/uploads/2023/06/Payoneer-Icon-Vector-01.jpg'}
+        picture_alt={'og'}
+        picture_fallback_name={'og'}
+        title={'Payoneer API Playground'}
+        subTitle={'Admin'}
+        icon={OpenLinkIcon}
+    />
+</div>
+```
+
+While it serves it purposes, it deprecates from the new `ListBox` and is missing some new UI updates alongside polluting the package size with unused code.
+
+
+
+### `ListBoxItem` Type
+
+```typescript list-box.ts
+interface ListBoxItem {
+    label: string;
+    description?: string;
+    onClick?: () => void;
+    href?: string;
+    type?: string;
+    selected?: boolean;
+    auth_idx_action?: number;
+    auth_idx_user?: number;
+    callback_to_dialog?: boolean;
+    dialog_content?: ReactNode;
+    dialog_description?: string;
+    dialog_title?: string;
+    dialog_button_loading?: boolean;
+    dialog_button_onClick?: () => void;
+    icon?: ReactNode | string;
+    icon_alt?: string;
+    icon_no_padding?: boolean;
+    button?: ReactNode;
+    separator_above?: boolean;
+}
+```
