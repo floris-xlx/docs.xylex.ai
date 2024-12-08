@@ -1,0 +1,39 @@
+---
+title: "ListBox"
+description: "Listbox XYLEXUI"
+---
+
+### Importing the component
+
+```typescript
+import { ListBox } from '@/ui';
+```
+
+### Refactoring UI towards `listbox.tsx`
+
+This is an old inefficient way of handling the listbox
+
+```typescript
+<div>
+  <ItemWithActions
+    picture_url={'https://vectorseek.com/wp-content/uploads/2023/06/Payoneer-Icon-Vector-01.jpg'}
+    picture_alt={'og'}
+    picture_fallback_name={'og'}
+    title={'Payoneer API Playground'}
+    subTitle={'Admin'}
+    icon={OpenLinkIcon}
+  />
+  <ItemWithActions
+    picture_url={'https://vectorseek.com/wp-content/uploads/2023/06/Payoneer-Icon-Vector-01.jpg'}
+    picture_alt={'og'}
+    picture_fallback_name={'og'}
+    title={'Payoneer API Playground'}
+    subTitle={'Admin'}
+    icon={OpenLinkIcon}
+  />
+</div>
+```
+
+![](image.png)
+
+It serves it's purpose but its outdated in contrary to the `listbox.tsx` component
