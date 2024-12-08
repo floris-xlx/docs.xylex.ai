@@ -94,3 +94,32 @@ interface ListBoxItem {
 Need to display dense data but tables are not suitable then use this listbox instead
 
 ![](key-value-listbox-example-2.png)
+
+### Imports
+
+```typescript
+import { KeyValueListBox } from '@/ui';
+```
+
+### Variants
+
+```typescript
+bordered: 'bg-foreground border',
+no_border: 'bg-foreground'
+```
+
+### Props
+
+```typescript
+key,
+label,
+value,
+allow_rounding,
+max_decimals,
+is_date,
+is_badge,
+is_weekday,
+elipse,
+font_size_mobile = 14,
+font_size_desktop = 14
+```
