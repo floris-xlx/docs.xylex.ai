@@ -71,7 +71,13 @@
           ]
 
         },
-        
+                {
+          "group": "Translations",
+          "pages": [
+            "translations/provider"
+          ]
+
+        },
         
         {
             "group": "UI",
