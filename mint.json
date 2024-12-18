@@ -76,7 +76,8 @@
           "pages": [
             "translations/provider",
             "translations/locales",
-            "translations/text"
+            "translations/text",
+            "translations/extract-text"
           ]
 
         },
