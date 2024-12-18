@@ -61,6 +61,18 @@
                 "pages/supabase_client/event_logging"
             ]
         },
+        
+        {
+          "group": "Builders",
+          "pages": [
+            "builders/create-invoice-record",
+            "builders/create-job",
+            "builders/create-notification"
+          ]
+
+        },
+        
+        
         {
             "group": "UI",
             "pages": [
