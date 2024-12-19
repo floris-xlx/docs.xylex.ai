@@ -2,3 +2,26 @@
 title: 'Fetch Strategy Metadata By Strategy Id'
 api: 'GET https://api.v2.xylex.ai/strategies/fetch_strategy_metadata_by_strategy_id'
 ---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches strategy metadata by a given strategy ID, checks the data`s availability, and returns the metadata along with a status indicating `Healthy` or `Unhealthy` based on the data`s presence.</Card>
+
+
+
+
+
+<ParamField query="strategy_id" type="String" required  children="A unique identifier to fetch metadata for a specific strategy.">
+  The ID of the strategy.
+</ParamField>
+<ParamField query="organization" type="String" required  children="A unique identifier for the organization to fetch strategy metadata.">
+  The organization identifier.
+</ParamField>
+
+
+
+
+
+
+
+

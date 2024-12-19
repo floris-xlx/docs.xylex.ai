@@ -1,0 +1,27 @@
+---
+title: 'Timeline'
+description: 'Event timeline'
+---
+
+### Introduction
+```
+components/Timeline/TimelineLayout.tsx
+```
+
+## Icon Dictionary
+```typescript
+const iconDictionary = {
+    'invalidate-trade-from-dashboard': <X className='text-red-500' />,
+    'approve-trade-from-dashboard': <Check className='text-brand' />,
+    'update-trade-status-from-dashboard': <Pen className='text-brand' size={22} />,
+    'update-trade-status': <GitPullRequestCreateArrow className='text-brand' size={22} />,
+    'send-discord-message-approve-signal': <ClockAlert className='text-brand' size={22} />,
+    'default': <Info className='text-brand' size={22} />
+};
+
+const getIcon = (action) => {
+    return iconDictionary[action] || iconDictionary['default'];
+};
+```
+Icons can be pulled from anywhere but preferably from our own binary/library as it reduces the bundle size of the prod build.
+

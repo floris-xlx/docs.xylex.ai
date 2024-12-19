@@ -1,0 +1,151 @@
+---
+title: "ListBox"
+description: "Listbox XYLEXUI"
+---
+
+### Importing the `ListBox`
+
+```typescript
+import { ListBox } from '@/ui';
+```
+
+### Refactoring deprecated listboxes towards `ListBox`
+
+![Deprecated listbox](image.png "Deprecated listbox")
+
+```typescript
+<div>
+    <ItemWithActions
+        picture_url={'https://vectorseek.com/wp-content/uploads/2023/06/Payoneer-Icon-Vector-01.jpg'}
+        picture_alt={'og'}
+        picture_fallback_name={'og'}
+        title={'Payoneer API Playground'}
+        subTitle={'Admin'}
+        icon={OpenLinkIcon}
+    />
+    <ItemWithActions
+        picture_url={'https://vectorseek.com/wp-content/uploads/2023/06/Payoneer-Icon-Vector-01.jpg'}
+        picture_alt={'og'}
+        picture_fallback_name={'og'}
+        title={'Payoneer API Playground'}
+        subTitle={'Admin'}
+        icon={OpenLinkIcon}
+    />
+</div>
+```
+
+While it serves it purposes, it deprecates from the new `ListBox` and is missing some new UI updates alongside polluting the package size with unused code.
+
+### `ListBoxItem` Type
+
+```typescript listbox
+interface ListBoxItem {
+    label: string;
+    description?: string;
+    onClick?: () => void;
+    href?: string;
+    type?: string;
+    selected?: boolean;
+    auth_idx_action?: number;
+    auth_idx_user?: number;
+    callback_to_dialog?: boolean;
+    dialog_content?: ReactNode;
+    dialog_description?: string;
+    dialog_title?: string;
+    dialog_button_loading?: boolean;
+    dialog_button_onClick?: () => void;
+    icon?: ReactNode | string;
+    icon_alt?: string;
+    icon_no_padding?: boolean;
+    button?: ReactNode;
+    separator_above?: boolean;
+}
+```
+
+### Example 1:
+
+```typescript
+<ListBox
+    variant={'card'}
+    size={'card'}
+    items={[
+        {
+            icon: 'https://vectorseek.com/wp-content/uploads/2023/06/Payoneer-Icon-Vector-01.jpg',
+            icon_alt: 'og',
+            label: 'Payoneer API Playground',
+            description: 'Admin',
+            button: OpenLinkIcon
+        },
+        {
+            icon: 'https://vectorseek.com/wp-content/uploads/2023/06/Payoneer-Icon-Vector-01.jpg',
+            icon_alt: 'og',
+            label: 'Payoneer API Playground',
+            description: 'Admin',
+            button: OpenLinkIcon
+        }
+    ]}
+/>
+```
+
+![listbox-example-1](https://xylex.ams3.cdn.digitaloceanspaces.com/docs/listbox/listbox-example-1.png "listbox-example-1")
+
+## The `KeyValueListBox` component
+
+Need to display dense data but tables are not suitable then use this listbox instead
+
+![](key-value-listbox-example-2.png)
+
+### Imports
+
+```typescript
+import { KeyValueListBox } from '@/ui';
+```
+
+### Variants
+
+```typescript
+bordered: 'bg-foreground border',
+no_border: 'bg-foreground'
+```
+
+### Props
+
+```typescript
+key,
+label,
+value,
+allow_rounding,
+max_decimals,
+is_date,
+is_badge,
+is_weekday,
+elipse,
+font_size_mobile = 14,
+font_size_desktop = 14
+```
+
+```typescript
+  const [tradeKeys, setTradeKeys] = useState([
+    { 
+    key: 'entry_level', 
+    label: 'Entry Level', 
+    value: null, 
+    allow_rounding: true, 
+    max_decimals: 4 
+    },
+    { 
+    key: 'stoploss_level', 
+    label: 'Stop Loss Level', 
+    value: null, 
+    allow_rounding: true, 
+    max_decimals: 4 
+    },
+    { 
+    key: 'tp1_level', 
+    label: 'TP1 Level', 
+    value: null, 
+    allow_rounding: true, 
+    max_decimals: 4 
+    }
+ ]);
+```

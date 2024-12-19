@@ -2,3 +2,18 @@
 title: 'Name Create'
 api: 'POST https://api.v2.xylex.ai/organization/name_create'
 ---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >This endpoint checks if the given organization name is unique and attempts to add it to the database. It requires an organization name and ID as query parameters. The response includes the organization name and a boolean indicating if creation was successful.</Card>
+
+
+
+
+
+<ParamField query="organization_name" type="String" required  children="This parameter represents the name of the organization that is being requested for creation. It is used to check uniqueness and add to the database.">
+  The name of the organization to be created.
+</ParamField>
+<ParamField query="organization_id" type="String" required  children="This parameter represents the unique identifier for the organization being requested for creation. It is used in conjunction with the organization name to identify the organization in the database.">
+  The ID of the organization to be created.
+</ParamField>

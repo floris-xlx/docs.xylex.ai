@@ -46,6 +46,50 @@
                 "development"
             ]
         },
+                {
+            "group": "Config",
+            "pages": [
+                "config/env_vars"
+
+            ]
+        },
+        {
+            "group": "Supabase Client",
+            "pages": [
+                "pages/supabase_client/usage",
+                "pages/supabase_client/xylex_client",
+                "pages/supabase_client/event_logging"
+            ]
+        },
+        
+        {
+          "group": "Builders",
+          "pages": [
+            "builders/create-invoice-record",
+            "builders/create-job",
+            "builders/create-notification"
+          ]
+
+        },
+                {
+          "group": "Translations",
+          "pages": [
+            "translations/provider",
+            "translations/locales",
+            "translations/text",
+            "translations/extract-text"
+          ]
+
+        },
+        
+        {
+            "group": "UI",
+            "pages": [
+                "ui/xylex-provider",
+                "components/timeline",
+                "ui/listbox"
+            ]
+        },
         {
             "group": "Authenticator API",
             "pages": [
@@ -69,6 +113,8 @@
         {
             "group": "Public API",
             "pages": [
+                "pages/public/version",
+                "pages/public/ping",
                 "pages/public/get_user_profile"
             ]
         },
@@ -87,6 +133,7 @@
             "pages": [
                 "pages/trades/trade_status",
                 "pages/trades/weekly_trades",
+                "pages/trades/pips_away",
                 "pages/trades/user_trade_metadata",
                 "pages/trades/trade_metadata"
             ]
@@ -107,10 +154,17 @@
                 "pages/organization/organization_all_trades",
                 "pages/organization/organization_create"
             ]
+        },
+        {
+            "group": "Data API",
+            "pages": [
+                "pages/data/price",
+                "pages/data/time_series"
+            ]
         }
     ],
     "footerSocials": {
-        "x": "https://discord.gg/xylex",
+        "discord": "https://discord.gg/xylex",
         "github": "https://github.com/xylex-ai"
     },
     "api": {

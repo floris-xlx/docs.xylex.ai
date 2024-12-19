@@ -41,5 +41,3 @@ def find_and_extract_endpoints():
                     })
 
     return endpoints
-
-

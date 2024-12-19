@@ -1,0 +1,19 @@
+---
+title: 'Price'
+api: 'GET https://api.v2.xylex.ai/data/price'
+---
+
+
+
+<Card title="Endpoint Description" icon="info" horizontal >Fetches real-time price data for a given financial symbol. Requires a valid API key for access. Utilizes caching to improve response times for repeat requests.</Card>
+
+
+
+
+
+<ParamField query="symbol" type="String" required  children="The stock symbol represents the specific stock for which the real-time price is being requested. It is used as a key to identify the stock in financial markets and in the cache for previously fetched data.">
+  The stock symbol to query the price for.
+</ParamField>
+<ParamField query="api_key" type="String" required  children="The API key is a unique identifier used to authenticate the user requesting the real-time price data. It ensures that the request is authorized and prevents unauthorized access to the service.">
+  The API key for authentication.
+</ParamField>

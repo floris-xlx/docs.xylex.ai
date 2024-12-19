@@ -1,0 +1,40 @@
+---
+title: 'XYLEX Provider'
+description: 'Context provider'
+---
+
+### AuthIndexContext
+Xylex provider is the context layer that projects down the `authIndex` 
+
+### Header
+It renders the complete `NavigationHeader` and `ActionHeader`
+
+### Footer
+It also renders the entire `Footer`
+
+### Props
+```typescript
+export function XylexProvider({
+    children,
+    migrated_container = false
+}: {
+    children?: ReactNode,
+    migrated_container?: boolean
+})
+```
+
+#### Migration
+`migrated_container` is defaulted to `false` this will `translate-y-[xpx]` down the rendered `children` instead of having to rely on a `contentContainer` to push the children down 
+
+```typescript
+{migrated_container ? (
+    <div className='translate-y-[145px] sm:px-5'>
+        {children}
+    </div>
+) : (
+    children
+)}
+```
+Legacy pages will not use this yet as they are still relying on the `contentContainer` to translate for them.
+
+New pages **SHOULD** use this.
