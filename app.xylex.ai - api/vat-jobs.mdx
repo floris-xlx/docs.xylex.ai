@@ -1,0 +1,121 @@
+---
+title: 'VAT Jobs Management'
+api: 'GET, POST, PUT, DELETE https://app.xylex.ai/api/vat_jobs'
+---
+
+<Card title="Endpoint Description" icon="info" horizontal>
+  This endpoint allows for the management of VAT import hash jobs. It supports retrieving all jobs, adding a new job, updating an existing job, and deleting a job based on the provided hash.
+</Card>
+
+<ParamField query="hash" type="String" required>
+  The unique identifier for the VAT import hash job.
+</ParamField>
+
+<ResponseField status="200" description="Successfully retrieved VAT import hash jobs.">
+  <Schema type="object">
+    <Property name="success" type="boolean">
+      Indicates if the request was successful.
+    </Property>
+    <Property name="data" type="array">
+      List of VAT import hash jobs.
+    </Property>
+  </Schema>
+</ResponseField>
+
+<ResponseField status="400" description="Bad request due to missing or invalid parameters.">
+  <Schema type="object">
+    <Property name="success" type="boolean">
+      Indicates if the request was successful.
+    </Property>
+    <Property name="error" type="string">
+      Error message indicating the issue.
+    </Property>
+  </Schema>
+</ResponseField>
+
+<ResponseField status="404" description="Hash not found.">
+  <Schema type="object">
+    <Property name="success" type="boolean">
+      Indicates if the request was successful.
+    </Property>
+    <Property name="error" type="string">
+      Error message indicating the issue.
+    </Property>
+  </Schema>
+</ResponseField>
+
+<ResponseField status="500" description="Internal server error.">
+  <Schema type="object">
+    <Property name="success" type="boolean">
+      Indicates if the request was successful.
+    </Property>
+    <Property name="error" type="string">
+      Error message indicating the issue.
+    </Property>
+  </Schema>
+</ResponseField>
+
+<Example>
+  <Summary>Retrieve All VAT Jobs</Summary>
+  <Code>
+    {
+      "success": true,
+      "data": [
+        {
+          "hash": "abc123",
+          "progress": 50,
+          "total": 100,
+          "success": 40,
+          "failed": 10,
+          "loading": true
+        }
+      ]
+    }
+  </Code>
+</Example>
+
+<Example>
+  <Summary>Add a New VAT Job</Summary>
+  <Code>
+    {
+      "success": true,
+      "message": "Hash added successfully",
+      "data": {
+        "hash": "abc123",
+        "progress": 0,
+        "total": 0,
+        "success": 0,
+        "failed": 0,
+        "loading": false
+      }
+    }
+  </Code>
+</Example>
+
+<Example>
+  <Summary>Update an Existing VAT Job</Summary>
+  <Code>
+    {
+      "success": true,
+      "message": "Hash updated successfully",
+      "data": {
+        "hash": "abc123",
+        "progress": 75,
+        "total": 100,
+        "success": 70,
+        "failed": 5,
+        "loading": false
+      }
+    }
+  </Code>
+</Example>
+
+<Example>
+  <Summary>Delete a VAT Job</Summary>
+  <Code>
+    {
+      "success": true,
+      "message": "Hash deleted successfully"
+    }
+  </Code>
+</Example>

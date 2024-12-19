@@ -1,0 +1,35 @@
+---
+title: 'Known Bug: HSL Color Rendering in Safari'
+---
+
+<Card title="Bug Description" icon="bug" horizontal>
+  Safari has inconsistent rendering of HSL color values, which can lead to unexpected visual differences compared to other browsers. This issue arises due to Safari's unique handling of color spaces and rounding differences in HSL calculations.
+</Card>
+
+<Details>
+  <Summary>Why This Happens</Summary>
+  Safari's rendering engine interprets HSL values differently, particularly in edge cases involving rounding or color space conversions. This can result in colors appearing slightly off or inconsistent with the intended design.
+</Details>
+
+<Details>
+  <Summary>Recommended Solution</Summary>
+  Use HEX color values instead of HSL. HEX values are more reliably rendered across all browsers, including Safari, ensuring consistent visual output.
+</Details>
+
+<Example>
+  <Summary>Problematic HSL Example</Summary>
+  <Code>
+    {
+      "color": "hsl(210, 50%, 50%)"
+    }
+  </Code>
+</Example>
+
+<Example>
+  <Summary>Reliable HEX Example</Summary>
+  <Code>
+    {
+      "color": "#4a90e2"
+    }
+  </Code>
+</Example>

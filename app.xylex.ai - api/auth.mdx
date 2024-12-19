@@ -1,0 +1,52 @@
+---
+title: 'Auth Confirm Email'
+api: 'GET https://app.xylex.ai/api/auth/confirm_email'
+---
+
+<Card title="Endpoint Description" icon="info" horizontal>
+  This endpoint verifies the email confirmation token provided in the query parameters. If the token is valid, the email is confirmed successfully. Otherwise, the user is redirected to the login page.
+</Card>
+
+<ParamField query="token" type="String" required>
+  The email confirmation token to be verified.
+</ParamField>
+
+<ResponseField status="200" description="Email verification request sent successfully.">
+  <Schema type="object">
+    <Property name="message" type="string">
+      Success message indicating the verification request was sent.
+    </Property>
+  </Schema>
+</ResponseField>
+
+<ResponseField status="302" description="Redirect to the login page if the token is missing or invalid.">
+  <Header name="Location" type="string">
+    URL to the login page.
+  </Header>
+</ResponseField>
+
+<ResponseField status="500" description="Internal server error.">
+  <Schema type="object">
+    <Property name="error" type="string">
+      Error message.
+    </Property>
+  </Schema>
+</ResponseField>
+
+<Example>
+  <Summary>Successful Verification</Summary>
+  <Code>
+    {
+      "message": "Verification request sent successfully."
+    }
+  </Code>
+</Example>
+
+<Example>
+  <Summary>Missing or Invalid Token</Summary>
+  <Code>
+    {
+      "error": "No token provided or verification failed."
+    }
+  </Code>
+</Example>

@@ -46,11 +46,10 @@
                 "development"
             ]
         },
-                {
+        {
             "group": "Config",
             "pages": [
                 "config/env_vars"
-
             ]
         },
         {
@@ -61,33 +60,57 @@
                 "pages/supabase_client/event_logging"
             ]
         },
-        
         {
-          "group": "Builders",
-          "pages": [
-            "builders/create-invoice-record",
-            "builders/create-job",
-            "builders/create-notification"
-          ]
-
+            "group": "Builders",
+            "pages": [
+                "builders/create-invoice-record",
+                "builders/create-job",
+                "builders/create-notification",
+                "builders/create-user",
+                "builders/create-organization"
+            ]
         },
-                {
-          "group": "Translations",
-          "pages": [
-            "translations/provider",
-            "translations/locales",
-            "translations/text",
-            "translations/extract-text"
-          ]
-
+        {
+            "group": "Translations",
+            "pages": [
+                "translations/provider",
+                "translations/locales",
+                "translations/text",
+                "translations/extract-text"
+            ]
         },
-        
         {
             "group": "UI",
             "pages": [
                 "ui/xylex-provider",
                 "components/timeline",
-                "ui/listbox"
+                "ui/listbox",
+                "ui/known-bugs"
+            ]
+        },
+        {
+            "group": "Table XYLEXUI",
+            "pages": [
+                "ui/charts/xylex-chart",
+                "ui/tables/line-chart"
+            ]
+        },
+        {
+            "group": "Charts XYLEXUI",
+            "pages": [
+                "ui/tables/xylex-table"
+            ]
+        },
+        {
+            "group": "app.xylex.ai/api",
+            "pages": [
+                "app.xylex.ai - api/introduction",
+                "app.xylex.ai - api/aggregate-orders",
+                "app.xylex.ai - api/algo_pfp",
+                "app.xylex.ai - api/auth",
+                "app.xylex.ai - api/generate-import-pdf",
+                "app.xylex.ai - api/generate-order-invoice",
+                "app.xylex.ai - api/orders-chart-data"
             ]
         },
         {

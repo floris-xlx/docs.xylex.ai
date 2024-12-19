@@ -1,0 +1,88 @@
+---
+title: 'Orders Chart Data'
+api: 'GET https://app.xylex.ai/api/orders-chart-data'
+---
+
+<Card title="Endpoint Description" icon="info" horizontal>
+  This endpoint retrieves paid orders data for chart visualization based on the provided import hash. The data is used to generate insights and analytics for the orders.
+</Card>
+
+<ParamField query="importHash" type="String" required>
+  The unique identifier for the import batch to fetch paid orders data.
+</ParamField>
+
+<ResponseField status="200" description="Successfully retrieved paid orders data.">
+  <Schema type="object">
+    <Property name="success" type="boolean">
+      Indicates if the request was successful.
+    </Property>
+    <Property name="data" type="array">
+      List of paid orders data.
+    </Property>
+  </Schema>
+</ResponseField>
+
+<ResponseField status="400" description="Bad request due to missing or invalid importHash.">
+  <Schema type="object">
+    <Property name="success" type="boolean">
+      Indicates if the request was successful.
+    </Property>
+    <Property name="message" type="string">
+      Error message indicating the issue.
+    </Property>
+  </Schema>
+</ResponseField>
+
+<ResponseField status="500" description="Internal server error.">
+  <Schema type="object">
+    <Property name="success" type="boolean">
+      Indicates if the request was successful.
+    </Property>
+    <Property name="message" type="string">
+      Error message indicating the issue.
+    </Property>
+  </Schema>
+</ResponseField>
+
+<Example>
+  <Summary>Successful Response</Summary>
+  <Code>
+    {
+      "success": true,
+      "data": [
+        {
+          "orderId": "12345",
+          "amount": 150.75,
+          "currency": "USD",
+          "status": "Paid"
+        },
+        {
+          "orderId": "67890",
+          "amount": 200.00,
+          "currency": "EUR",
+          "status": "Paid"
+        }
+      ]
+    }
+  </Code>
+</Example>
+
+<Example>
+  <Summary>Missing importHash</Summary>
+  <Code>
+    {
+      "success": false,
+      "message": "importHash is required"
+    }
+  </Code>
+</Example>
+
+<Example>
+  <Summary>Internal Server Error</Summary>
+  <Code>
+    {
+      "success": false,
+      "message": "An unexpected error occurred"
+    }
+  </Code>
+</Example>

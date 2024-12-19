@@ -1,0 +1,176 @@
+---
+title: 'Generate Import PDF'
+api: 'POST https://app.xylex.ai/api/auth/generate-import-pdf'
+---
+
+<Card title="Endpoint Description" icon="info" horizontal>
+  This endpoint generates a PDF invoice based on the provided invoice data and uploads it to a specified storage location. The generated PDF includes details such as invoice terms, sender and recipient information, itemized details, and financial summaries.
+</Card>
+
+<ParamField query="invoice_language" type="String" required="false">
+  Language for the invoice. Defaults to "ENG".
+</ParamField>
+
+<ParamField query="invoice_terms" type="Object" required="true">
+  Invoice terms including invoice number, issue date, and due date.
+  <Schema>
+    <Property name="invoice_number" type="String" />
+    <Property name="issue_date" type="String" />
+    <Property name="due_date" type="String" />
+  </Schema>
+</ParamField>
+
+<ParamField query="your_details" type="Object" required="true">
+  Details of the sender.
+  <Schema>
+    <Property name="your_name" type="String" />
+    <Property name="your_email" type="String" />
+    <Property name="your_address" type="String" />
+    <Property name="your_city" type="String" />
+    <Property name="your_state" type="String" />
+    <Property name="your_zip" type="String" />
+    <Property name="your_country" type="String" />
+    <Property name="your_tax_id" type="String" />
+  </Schema>
+</ParamField>
+
+<ParamField query="company_details" type="Object" required="true">
+  Details of the recipient company.
+  <Schema>
+    <Property name="company_name" type="String" />
+    <Property name="email" type="String" />
+    <Property name="company_address" type="String" />
+    <Property name="company_city" type="String" />
+    <Property name="company_state" type="String" />
+    <Property name="company_zip" type="String" />
+    <Property name="company_country" type="String" />
+    <Property name="company_tax_id" type="String" />
+  </Schema>
+</ParamField>
+
+<ParamField query="payment_details" type="Object" required="true">
+  Payment details for the invoice.
+  <Schema>
+    <Property name="bank_name" type="String" />
+    <Property name="account_name" type="String" />
+    <Property name="account_number" type="String" />
+    <Property name="swift_code" type="String" />
+    <Property name="routing_code" type="String" />
+  </Schema>
+</ParamField>
+
+<ParamField query="invoice_item_details" type="Object" required="true">
+  Details of the items in the invoice.
+  <Schema>
+    <Property name="items" type="Array">
+      <Items>
+        <Property name="name" type="String" />
+        <Property name="receipt" type="String" />
+        <Property name="paid" type="Boolean" />
+        <Property name="amount" type="Number" />
+      </Items>
+    </Property>
+    <Property name="currency" type="String" />
+    <Property name="tax_rate" type="String" />
+    <Property name="note" type="String" />
+  </Schema>
+</ParamField>
+
+<ResponseField status="200" description="PDF generated and uploaded successfully.">
+  <Schema type="object">
+    <Property name="filePath" type="string">
+      URL to the uploaded PDF file.
+    </Property>
+  </Schema>
+</ResponseField>
+
+<ResponseField status="400" description="Bad request due to missing or invalid fields.">
+  <Schema type="object">
+    <Property name="error" type="string">
+      Error message.
+    </Property>
+  </Schema>
+</ResponseField>
+
+<ResponseField status="500" description="Internal server error.">
+  <Schema type="object">
+    <Property name="error" type="string">
+      Error message.
+    </Property>
+  </Schema>
+</ResponseField>
+
+<Example>
+  <Summary>Basic Invoice</Summary>
+  <Code>
+    {
+      "name": "John Doe",
+      "receipt": "INV-12345",
+      "paid": true,
+      "amount": 150.75,
+      "currency": "USD",
+      "tax_rate": "7%",
+      "note": "Thank you for your business."
+    }
+  </Code>
+</Example>
+
+<Example>
+  <Summary>Unpaid Invoice</Summary>
+  <Code>
+    {
+      "name": "Jane Smith",
+      "receipt": "INV-67890",
+      "paid": false,
+      "amount": 200.00,
+      "currency": "EUR",
+      "tax_rate": "20%",
+      "note": "Payment due within 30 days."
+    }
+  </Code>
+</Example>
+
+<Example>
+  <Summary>Invoice with No Tax</Summary>
+  <Code>
+    {
+      "name": "Acme Corp",
+      "receipt": "INV-54321",
+      "paid": true,
+      "amount": 500.00,
+      "currency": "GBP",
+      "tax_rate": "0%",
+      "note": "No tax applied as per agreement."
+    }
+  </Code>
+</Example>
+
+<Example>
+  <Summary>Large Invoice</Summary>
+  <Code>
+    {
+      "name": "Global Enterprises",
+      "receipt": "INV-98765",
+      "paid": false,
+      "amount": 10000.00,
+      "currency": "USD",
+      "tax_rate": "15%",
+      "note": "Please process payment promptly."
+    }
+  </Code>
+</Example>
+
+<Example>
+  <Summary>Minimal Fields</Summary>
+  <Code>
+    {
+      "name": "Minimal Example",
+      "receipt": "INV-00001",
+      "paid": false,
+      "amount": 50.00,
+      "currency": "USD",
+      "tax_rate": "5%",
+      "note": ""
+    }
+  </Code>
+</Example>
