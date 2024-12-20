@@ -19,41 +19,12 @@ Additionally, the function provides optional logging capabilities that are influ
 
 ---
 
-### Parameters
-
-The function accepts a single parameter object with the following keys:
-
-- **`data`** *(any, optional)*: The data to include in the response. Defaults to `null`.
-- **`success`** *(boolean, optional)*: Indicates whether the operation was successful. Defaults to `false`.
-- **`function_name`** *(string, optional)*: The name of the function generating the response. Defaults to an empty string (`''`).
-- **`message`** *(string, required)*: A descriptive message about the operation. This parameter is required.
-- **`console_log`** *(boolean, optional)*: If `true`, logs the response to the console. Defaults to `false`.
-- **`error`** *(boolean, optional)*: If `true`, indicates that the response represents an error. Defaults to `false`.
-
----
-
-### Return Value
-
-The function returns a standardized response object with the following structure:
-
-- **`success`** *(boolean)*: Indicates whether the operation was successful. If `error` is `true`, this field is always `false`.
-- **`message`** *(string)*: A descriptive message about the operation. If `function_name` is provided, it prefixes the message with the function name.
-- **`data`** *(any)*: The data included in the response. Defaults to `null`.
-- **`time`** *(number)*: A Unix timestamp (in seconds) representing the response's creation time.
-
----
-
-### Logging Behavior
-
-The function provides conditional logging:
-
-1. **`console_log` is `true`:**
-   - If `error` is `true`, the response is logged as an error (`console.error`).
-   - If the environment is not production (`env !== 'prod'`), the response is logged to the console (`console.log`).
-
-2. **`console_log` is `false`:** No logging occurs.
-
----
+Parameters
+<ParamField query="data" type="any" required={false}> The data to include in the response. Defaults to `null`. </ParamField> <ParamField query="success" type="boolean" required={false}> Indicates if the operation was successful. Defaults to `false`. </ParamField> <ParamField query="function_name" type="string" required={false}> The name of the function generating the response. Defaults to an empty string. </ParamField> <ParamField query="message" type="string" required> A descriptive message about the operation. This parameter is required. </ParamField> <ParamField query="console_log" type="boolean" required={false}> Whether to log the response to the console. Defaults to `false`. </ParamField> <ParamField query="error" type="boolean" required={false}> Indicates if the response represents an error. Defaults to `false`. </ParamField>
+Return Value
+<Card title="Response Object" icon="response" horizontal> The `Return` function generates a standardized response object containing the following properties: </Card> <ParamField query="success" type="boolean"> Indicates the success status of the operation. Always `false` if `error` is `true`. </ParamField> <ParamField query="message" type="string"> A descriptive message about the operation, prefixed with `function_name` if provided. </ParamField> <ParamField query="data" type="any"> The data included in the response, which defaults to `null`. </ParamField> <ParamField query="time" type="number"> A Unix timestamp (in seconds) representing when the response was generated. </ParamField>
+Logging Behavior
+<Card title="Logging Behavior" icon="logs" horizontal> If `console_log` is set to `true`: - Logs the response as an error (`console.error`) if `error` is `true`. - Logs the response in non-production environments (`env !== 'prod'`) if `error` is `false`. </Card>
 
 ### Import 
 
