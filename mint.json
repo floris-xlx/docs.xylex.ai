@@ -53,6 +53,12 @@
             ]
         },
         {
+            "group": "Return Builder",
+            "pages": [
+                "return/return-builder"
+            ]
+        },
+        {
             "group": "Supabase Client",
             "pages": [
                 "pages/supabase_client/usage",

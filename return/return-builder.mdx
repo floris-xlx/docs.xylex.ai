@@ -1,0 +1,111 @@
+Here’s the complete documentation page for the `Return` utility function, expanded to include an explanation of the code:
+
+---
+
+### `Return` Utility Function Documentation
+
+---
+
+### Introduction
+
+The `Return` utility function constructs and returns a standardized response object. This utility ensures consistency in response structures across different operations, making it easier to handle and log responses. It includes metadata such as:
+
+- **Success status** of the operation.
+- **Descriptive message** for the response.
+- **Optional data payload.**
+- **Timestamp** indicating when the response was generated.
+
+Additionally, the function provides optional logging capabilities that are influenced by the provided parameters and the environment configuration.
+
+---
+
+### Parameters
+
+The function accepts a single parameter object with the following keys:
+
+- **`data`** *(any, optional)*: The data to include in the response. Defaults to `null`.
+- **`success`** *(boolean, optional)*: Indicates whether the operation was successful. Defaults to `false`.
+- **`function_name`** *(string, optional)*: The name of the function generating the response. Defaults to an empty string (`''`).
+- **`message`** *(string, required)*: A descriptive message about the operation. This parameter is required.
+- **`console_log`** *(boolean, optional)*: If `true`, logs the response to the console. Defaults to `false`.
+- **`error`** *(boolean, optional)*: If `true`, indicates that the response represents an error. Defaults to `false`.
+
+---
+
+### Return Value
+
+The function returns a standardized response object with the following structure:
+
+- **`success`** *(boolean)*: Indicates whether the operation was successful. If `error` is `true`, this field is always `false`.
+- **`message`** *(string)*: A descriptive message about the operation. If `function_name` is provided, it prefixes the message with the function name.
+- **`data`** *(any)*: The data included in the response. Defaults to `null`.
+- **`time`** *(number)*: A Unix timestamp (in seconds) representing the response's creation time.
+
+---
+
+### Logging Behavior
+
+The function provides conditional logging:
+
+1. **`console_log` is `true`:**
+   - If `error` is `true`, the response is logged as an error (`console.error`).
+   - If the environment is not production (`env !== 'prod'`), the response is logged to the console (`console.log`).
+
+2. **`console_log` is `false`:** No logging occurs.
+
+---
+
+### Import 
+
+```ts 
+import { Return } from '@/utils/return';
+```
+
+
+### Example Usage
+
+Below are some examples demonstrating how to use the `Return` utility function.
+
+#### Example 1: Successful Response
+```javascript
+const response = Return({
+    data: { userId: 123 },
+    success: true,
+    function_name: 'getUserData',
+    message: 'User data retrieved successfully',
+    console_log: true
+});
+
+console.log(response);
+// Output: Logs response object to console
+```
+
+#### Example 2: Error Response
+```javascript
+const response = Return({
+    data: null,
+    success: false,
+    function_name: 'updateUser',
+    message: 'Failed to update user',
+    console_log: true,
+    error: true
+});
+
+console.error(response);
+// Output: Logs error response to console
+```
+
+#### Example 3: Response in Non-Production Environment
+```javascript
+process.env.NEXT_PUBLIC_XLX_ENV = 'dev';
+
+const response = Return({
+    data: { config: 'debug' },
+    success: true,
+    function_name: 'getConfig',
+    message: 'Configuration fetched',
+    console_log: true
+});
+
+// Logs response to console because the environment is not production
+```
