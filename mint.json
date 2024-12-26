@@ -77,6 +77,11 @@
             ]
         },
         {
+        "group": "Nav index generator",
+        "pages": [
+          "nav-lists/settings-nav"        
+        ]
+        },{
             "group": "Translations",
             "pages": [
                 "translations/provider",
