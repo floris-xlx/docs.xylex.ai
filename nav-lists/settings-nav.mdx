@@ -6,16 +6,19 @@ description: "How to add and update the nav tab items"
 To build nav index's used in the settings pages on the left and maintain the current `highlighted` state we use ZuStand
 
 ### Import the zustand store
+
 ```ts
 import { useNavIndexStore } from "@/store/store";
 ```
 
-### Get the nav list [account page as example]
+### Get the nav list \[account page as example]
+
 ```ts
 const { account_nav_list, setCurrentAccountNavListItem } = useNavIndexStore();
 ```
 
 ### Example structure of nav index
+
 ```json
 [
   {
@@ -42,9 +45,35 @@ const { account_nav_list, setCurrentAccountNavListItem } = useNavIndexStore();
 ```
 
 ### Updating the current state for the highlight
+
 ```ts
 useEffect(() => {
   setCurrentAccountNavListItem("/account/settings/notifications");
 }, []);
 ```
 
+### Example
+```ts
+"use client";
+
+import React, { useEffect } from "react";
+import { XylexProvider } from "@/components/layouts/Provider";
+import SectionHeader from "@/components/Headers/SectionHeader";
+import ContentContainer from "@/components/layouts/ContentNavContainer";
+import { useNavIndexStore } from "@/store/store";
+
+export default function SettingNotificationsPage() {
+  const { account_nav_list, setCurrentAccountNavListItem } = useNavIndexStore();
+  useEffect(() => {
+    setCurrentAccountNavListItem("/account/settings/notifications");
+  }, []);
+
+  return (
+    <XylexProvider>
+      <SectionHeader title={"Account Settings"} navList={account_nav_list} />
+
+      <ContentContainer navList={account_nav_list}></ContentContainer>
+    </XylexProvider>
+  );
+}
+```
