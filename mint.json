@@ -79,7 +79,8 @@
         {
         "group": "Nav index generator",
         "pages": [
-          "nav-lists/settings-nav"        
+          "nav-lists/settings-nav",
+          "nav-lists/example-structure"
         ]
         },
                 {
