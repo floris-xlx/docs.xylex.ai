@@ -1,0 +1,19 @@
+---
+title: 'use-pathname.ts'
+description: '`use-pathname.ts` usage'
+---
+Exercises the `window` api so it's strictly `client` only
+
+## Import
+```ts
+import { usePathname } from "@/hooks/window/use-pathname";
+```
+
+
+### Usage
+```ts
+const pathname = usePathname();
+console.log('pathname', pathname)
+------------------------------------
+>>> /demo/route
+```

@@ -81,7 +81,15 @@
         "pages": [
           "nav-lists/settings-nav"        
         ]
-        },{
+        },
+                {
+        "group": "Hooks",
+        "pages": [
+          "hooks/use-pathname"        
+        ]
+        },
+        
+        {
             "group": "Translations",
             "pages": [
                 "translations/provider",
