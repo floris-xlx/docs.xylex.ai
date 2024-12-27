@@ -3,6 +3,23 @@ title: 'Return error message'
 description: 'Handle the display of an error message to the user'
 ---
 
+
+### Architecture
+
+```mermaid
+flowchart LR
+  subgraph component_scope
+      direction TB
+      timerAmount[timerAmount]  -. calls false when timer over .-> setIsError[setIsError]
+      setIsError[setIsError] -. updates state .-> isError[isError]
+  end
+
+  isError -. exposes the state .->    parent_component
+  parent_component -. can update state from parent .-> setIsError
+
+  
+```
+
 ### Import
 
 ```ts
@@ -52,20 +69,4 @@ export const ExampleCard = ({
     />
   )
 }
-```
-
-### Architecture
-
-```mermaid
-flowchart LR
-  subgraph component_scope
-      direction TB
-      timerAmount[timerAmount]  -. calls false when timer over .-> setIsError[setIsError]
-      setIsError[setIsError] -. updates state .-> isError[isError]
-  end
-
-  isError -. exposes the state .->    parent_component
-  parent_component -. can update state from parent .-> setIsError
-
-  
 ```
