@@ -10,23 +10,29 @@ import { Error } from '@/ui';
 ```
 
 ### Props
+
 <ParamField path="content" type="string" required={true}>
   This is the error message that will be displayed to the user
 </ParamField>
+
 <ParamField path="setIsError" type="void" required={true}>
- this is the setter that will control the `isError` state
+  this is the setter that will control the `isError` state
 </ParamField>
+
 <ParamField path="isError" type="boolean" required={true}>
   This is the connected set state variable that is controlled by `setIsError`
 </ParamField>
+
 <ParamField path="height" default="25" type="number" required={false}>
   The expected line height of your error, (animations don't work on non-deterministic heights)
 </ParamField>
+
 <ParamField path="timerAmount" default="4000" type="number" required={false}>
- Controls how long the error is shown before hidden again
+  Controls how long the error is shown before hidden again
 </ParamField>
 
 ### Example code
+
 ```ts
 import { Error } from '@/ui';
 import React, { useState} from 'react';
@@ -46,4 +52,19 @@ export const ExampleCard = ({
     />
   )
 }
+```
+
+### Architecture
+```mermaid
+  flowchart LR
+    subgraph subgraph1
+        direction TB
+        top1[top] --> bottom1[bottom]
+    end
+    subgraph subgraph2
+        direction TB
+        top2[top] --> bottom2[bottom]
+    end
+    parent --> subgraph1
+    parent ---> top2
 ```
