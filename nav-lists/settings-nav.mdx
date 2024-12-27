@@ -53,6 +53,7 @@ useEffect(() => {
 ```
 
 ### Example
+
 ```ts
 "use client";
 
@@ -77,3 +78,45 @@ export default function SettingNotificationsPage() {
   );
 }
 ```
+
+You can also use the `use-pathname.ts` hook here to automatically get the relative route
+
+### Example with `use-pathname`
+```ts
+"use client";
+
+import React, { useEffect } from "react";
+
+import { XylexProvider } from "@/components/layouts/Provider";
+import SectionHeader from "@/components/Headers/SectionHeader";
+
+import ContentContainer from "@/components/layouts/ContentNavContainer";
+import AccountSettings from "@/components/layouts/AccountSettings";
+
+import { useNavIndexStore } from "@/store/store";
+import { usePathname } from "@/hooks/window/use-pathname";  // hook imported
+
+export default function AccountSettingsPage() {
+  const { account_nav_list, setCurrentAccountNavListItem } = useNavIndexStore();
+
+  useEffect(() => {
+    setCurrentAccountNavListItem(usePathname());  // hook imported
+  }, []);
+
+
+
+  return (
+    <XylexProvider>
+      <SectionHeader title={"Account Settings"} navList={account_nav_list} />
+
+      <ContentContainer navList={account_nav_list}>
+        <AccountSettings />
+      </ContentContainer>
+    </XylexProvider>
+  );
+}
+```
+
+
+
+
