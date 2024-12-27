@@ -3,6 +3,9 @@ title: "Nav lists of settings page"
 description: "How to add and update the nav tab items"
 ---
 
+#### Awaiting deprecation!!!
+In the future we will want this to be centrally controlled by a nav index controller hooked inside xylexProvider
+
 To build nav index's used in the settings pages on the left and maintain the current `highlighted` state we use ZuStand
 
 ### Import the zustand store
@@ -82,6 +85,7 @@ export default function SettingNotificationsPage() {
 You can also use the `use-pathname.ts` hook here to automatically get the relative route
 
 ### Example with `use-pathname`
+
 ```ts
 "use client";
 
@@ -116,7 +120,3 @@ export default function AccountSettingsPage() {
   );
 }
 ```
-
-
-
-
