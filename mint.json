@@ -105,7 +105,8 @@
                 "ui/xylex-provider",
                 "components/timeline",
                 "ui/listbox",
-                "ui/known-bugs"
+                "ui/known-bugs",
+                "ui/error"
             ]
         },
         {
