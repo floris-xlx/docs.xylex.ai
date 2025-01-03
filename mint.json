@@ -106,7 +106,8 @@
                 "components/timeline",
                 "ui/listbox",
                 "ui/known-bugs",
-                "ui/error"
+                "ui/error",
+                "ui/kpi"
             ]
         },
         {
