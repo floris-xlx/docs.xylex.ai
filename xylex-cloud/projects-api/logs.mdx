@@ -16,34 +16,3 @@ api: "POST https://xylex.dev/api/projects/logs"
   The file path of the log file to retrieve.
 </BodyField>
 
-<ResponseExample 
-```json Response
-[
-    {
-        "success": true
-    },
-    {
-        "logs": [
-            {
-                "1": "> tailwindui-protocol@0.1.0 start /home/floris-xlx/ui"
-            },
-            {
-                "2": "> next start -p 3027"
-            },
-            {
-                "3": "  ▲ Next.js 14.2.22"
-            },
-            {
-                "4": "  - Local:        http://localhost:3027"
-            },
-            {
-                "5": " ✓ Starting..."
-            },
-            {
-                "6": " ✓ Ready in 372ms"
-            }
-        ]
-    }
-]
-```
-</ResponseExample>
