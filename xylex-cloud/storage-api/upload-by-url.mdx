@@ -11,39 +11,23 @@ api: "POST https://xylex.dev/api/files/upload/url"
   query="organization_id"
   type="String"
   required
-  children="The organization ID to associate the uploaded file with (e.g., `xlx-o-ea5a1270-7b03-11ef-b14f-325096b39f47`)."
 >
-  The organization ID to associate the uploaded file.
+  The organization ID to associate the uploaded file with (e.g., `xlx-o-ea5a1270-7b03-11ef-b14f-325096b39f47`).
 </ParamField>
 
 <ParamField
   query="project_id"
   type="String"
   required
-  children="The project ID to associate the uploaded file with (e.g., `1`)."
 >
-  The project ID to associate the uploaded file.
+  The project ID to associate the uploaded file with (e.g., `1`).
 </ParamField>
 
 <ParamField
   query="file_url"
   type="String"
   required
-  children="The URL of the file to upload (e.g., `https://xylex.com/gais.mp4`)."
 >
-  The URL of the file to upload.
+  The URL of the file to upload (e.g., `https://xylex.com/gais.mp4`).
 </ParamField>
-<ResponseExample 
-```json Response
-{
-    "success": true,
-    "message": "File uploaded successfully",
-    "data": {
-        "file": {
-            "filename": "gais.mp4",
-            "url": "https://xylex-dev.com/xlx-o-ea5a1270-7b03-11ef-b14f-325096b39f47_1_gais.mp4"
-        }
-    }
-}
-```
-</ResponseExample>
+
