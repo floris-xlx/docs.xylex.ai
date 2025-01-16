@@ -139,7 +139,9 @@
         {
             "group": "Domains API",
             "pages": [
-                "xylex-cloud/domains-api/list-domains"
+                "xylex-cloud/domains-api/list-domains",
+                "xylex-cloud/domains-api/dns-records",
+                "xylex-cloud/domains-api/tld-validity"
             ]
         },
         {

@@ -1,0 +1,34 @@
+---
+title: "Query DNS records"
+api: "GET https://xylex.dev/api/domains/dns"
+---
+
+<Card title="Endpoint Description" icon="info" horizontal>
+  Retrieves DNS records for a specific domain. Requires a valid `domain` as a query parameter.
+</Card>
+
+<ParamField
+  query="domain"
+  type="String"
+  required
+  children="The domain name to retrieve DNS records for."
+>
+  The domain name to filter DNS records.
+</ParamField>
+
+<ResponseExample 
+```json Response
+{
+    "domain": "app.xylex.ai",
+    "records": {
+        "a": [
+            "65.109.36.32"
+        ],
+        "cname": []
+    },
+    "is_wildcard": true,
+    "wildcard": "app",
+    "tld": "ai"
+}
+```
+</ResponseExample>

@@ -1,0 +1,27 @@
+---
+title: "TLD Validity Check"
+api: "GET https://xylex.dev/api/domains/tld"
+---
+
+<Card title="Endpoint Description" icon="info" horizontal>
+  Checks the validity of a TLD (Top-Level Domain) for a given domain. Requires a valid `domain` as a query parameter.
+</Card>
+
+<ParamField
+  query="domain"
+  type="String"
+  required
+  children="The domain name to validate the TLD for."
+>
+  The domain name to validate the TLD.
+</ParamField>
+
+<ResponseExample 
+```json Response
+{
+    "tld": "ai",
+    "is_valid": true,
+    "domain": "xylex.ai"
+}
+```
+</ResponseExample>
