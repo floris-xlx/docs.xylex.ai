@@ -1,0 +1,19 @@
+---
+title: "IP Info"
+api: "GET https://xylex.dev/api/ip"
+---
+
+<Card title="Endpoint Description" icon="info" horizontal>
+  Retrieves information about a specified IP address. Requires a valid `ip` as a query parameter.
+</Card>
+
+<ParamField
+  query="ip"
+  type="String"
+  required
+  children="The IP address to retrieve information for (e.g., `85.223.31.226`)."
+>
+  The IP address to retrieve information for.
+</ParamField>
+
+<ResponseExample 
