@@ -134,6 +134,10 @@
       "pages": ["xylex-cloud/ip-api/ip-info"]
     },
     {
+        "group": "Servers API",
+        "pages": ["xylex-cloud/servers-api/list-servers"]
+      },
+    {
       "group": "Authenticator API",
       "pages": [
         "pages/authenticator/verify_code_secret",

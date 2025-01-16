@@ -1,0 +1,18 @@
+---
+title: "List Servers"
+api: "GET https://xylex.dev/api/servers?organization_id=xylex"
+---
+
+<Card title="Endpoint Description" icon="info" horizontal>
+  Fetches a list of servers associated with the specified organization. Requires a valid `organization_id` as a query parameter.
+</Card>
+
+<ParamField
+  query="organization_id"
+  type="String"
+  required
+  children="The organization ID to filter servers by (e.g., `xylex`)."
+>
+  The organization ID to filter servers.
+</ParamField>
+
