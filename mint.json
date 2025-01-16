@@ -123,7 +123,8 @@
         "xylex-cloud/domains-api/list-domains",
         "xylex-cloud/domains-api/dns-records",
         "xylex-cloud/domains-api/tld-validity",
-        "xylex-cloud/domains-api/ping-domain"
+        "xylex-cloud/domains-api/ping-domain",
+        "xylex-cloud/domains-api/favicon"
       ]
     },
     {

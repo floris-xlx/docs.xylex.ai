@@ -1,0 +1,18 @@
+---
+title: "Domain Favicon"
+api: "GET https://xylex.dev/api/domains/favicon?domain=https://app.xylex.ai"
+---
+
+<Card title="Endpoint Description" icon="info" horizontal>
+  Retrieves the favicon for a specified domain. Requires a valid `domain` as a query parameter.
+</Card>
+
+<ParamField
+  query="domain"
+  type="String"
+  required
+  children="The domain URL to retrieve the favicon for (e.g., `https://app.xylex.ai`)."
+>
+  The domain URL to retrieve the favicon for.
+</ParamField>
+
