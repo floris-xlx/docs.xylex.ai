@@ -124,15 +124,9 @@
             ]
         },
         {
-            "group": "app.xylex.ai/api",
+            "group": "Projects API",
             "pages": [
-                "app.xylex.ai - api/introduction",
-                "app.xylex.ai - api/aggregate-orders",
-                "app.xylex.ai - api/algo_pfp",
-                "app.xylex.ai - api/auth",
-                "app.xylex.ai - api/generate-import-pdf",
-                "app.xylex.ai - api/generate-order-invoice",
-                "app.xylex.ai - api/orders-chart-data"
+                "xylex-cloud/projects-api/list-projects",
             ]
         },
         {
