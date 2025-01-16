@@ -15,27 +15,3 @@ api: "GET https://xylex.dev/api/domains/ping"
 >
   The domain name to ping.
 </ParamField>
-
-<ResponseExample 
-```json Response
-{
-    "success": true,
-    "status": "success",
-    "message": "Ping executed successfully",
-    "data": {
-        "result": "success",
-        "details": "Pinging app.xylex.ai [65.109.36.32] with 32 bytes of data:
-        Reply from 65.109.36.32: bytes=32 time=35ms TTL=57
-        Reply from 65.109.36.32: bytes=32 time=34ms TTL=57
-        Reply from 65.109.36.32: bytes=32 time=36ms TTL=57
-        Reply from 65.109.36.32: bytes=32 time=36ms TTL=57
-        
-        Ping statistics for 65.109.36.32:
-            Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
-            Approximate round trip times in milli-seconds:
-                Minimum = 34ms, Maximum = 36ms, Average = 35ms
-                "
-    }
-}
-```
-</ResponseExample>
