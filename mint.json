@@ -141,7 +141,10 @@
     },
     {
       "group": "Storage API",
-      "pages": ["xylex-cloud/storage-api/list-files"]
+      "pages": [
+        "xylex-cloud/storage-api/list-files",
+        "xylex-cloud/storage-api/upload-by-url"
+      ]
     },
     {
       "group": "Authenticator API",
