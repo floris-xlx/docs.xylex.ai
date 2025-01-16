@@ -147,6 +147,12 @@
       ]
     },
     {
+      "group": "Postgres Adaptor API",
+      "pages": [
+        "xylex-cloud/postgres-adaptor-api/create-db"
+      ]
+    },
+    {
       "group": "Authenticator API",
       "pages": [
         "pages/authenticator/verify_code_secret",
