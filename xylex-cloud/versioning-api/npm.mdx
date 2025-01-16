@@ -1,0 +1,26 @@
+---
+title: 'NPM & Node version'
+api: 'GET https://xylex.dev/api/version'
+---
+
+<Card title="Endpoint Description" icon="info" horizontal>
+Returns the `npm` and `node` versions active on the target machine
+</Card>
+
+<Card title="SSH" icon="exclamation" horizontal>
+Not every `SSH` user will have the same permissions nor packages installed by `apt-get` so be mindful
+</Card>
+
+
+<ResponseExample 
+```json Response
+{
+    "data": {
+        "node": "v22.13.0",
+        "npm": "10.9.2"
+    },
+    "stderr": "",
+    "code": 0
+}
+```
+</ResponseExample>

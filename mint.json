@@ -131,6 +131,12 @@
             ]
         },
         {
+            "group": "Versioning API",
+            "pages": [
+                "xylex-cloud/versioning-api/npm"
+            ]
+        },
+        {
             "group": "Authenticator API",
             "pages": [
                 "pages/authenticator/verify_code_secret",
