@@ -1,0 +1,40 @@
+---
+title: "Verify DB Existence"
+api: "POST https://xylex.dev/api/db/postgresql/verify-db"
+---
+
+<Card title="Endpoint Description" icon="info" horizontal>
+  Verifies the existence of a specified PostgreSQL database. Requires a valid
+  `database_name` in the request body.
+</Card>
+
+<BodyField
+  name="database_name"
+  type="String"
+  required
+  children="The name of the database to verify (e.g., `guys_db`)."
+>
+  The name of the database to verify.
+</BodyField>
+
+<Card title="DB does exist" icon="check-circle" horizontal>
+  <CodeBlock>
+    {{
+      exists: true,
+      status: 200,
+      database_name: "guys_db",
+      message: 'Database "guys_db" exists.',
+    }}
+  </CodeBlock>
+</Card>
+
+<Card title="DB Does not exist" icon="cross" horizontal>
+  <CodeBlock>
+    {{
+      exists: false,
+      status: 404,
+      database_name: "guys_db1",
+      message: 'Database "guys_db1" does not exist.',
+    }}
+  </CodeBlock>
+</Card>
