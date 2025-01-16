@@ -1,0 +1,53 @@
+---
+title: "List Files"
+api: "GET https://xylex.dev/api/files/list?organization_id=xlx-o-ea5a1270-7b03-11ef-b14f-325096b39f47&project_id=1"
+---
+
+<Card title="Endpoint Description" icon="info" horizontal>
+  Fetches a list of files associated with the specified organization and
+  project. Requires valid `organization_id` and `project_id` as query
+  parameters.
+</Card>
+
+<ParamField
+  query="organization_id"
+  type="String"
+  required
+  children="The organization ID to filter files by (e.g., `xlx-o-ea5a1270-7b03-11ef-b14f-325096b39f47`)."
+>
+  The organization ID to filter files.
+</ParamField>
+
+<ParamField
+  query="project_id"
+  type="String"
+  required
+  children="The project ID to filter files by (e.g., `1`)."
+>
+  The project ID to filter files.
+</ParamField>
+
+<ResponseExample 
+```json Response
+{
+    "success": true,
+    "message": "Files listed successfully",
+    "data": {
+        "files": [
+            {
+                "filename": "file_1.mp4",
+                "url": "https://xylex-dev.com/xlx-o-ea5a1270-7b03-11ef-b14f-325096b39f47_1_file_1.mp4",
+                "size": 316459,
+                "lastModified": "2025-01-16T05:22:34.001Z"
+            },
+            {
+                 "filename": "file_2.mp4",
+                "url": "https://xylex-dev.com/xlx-o-ea5a1270-7b03-11ef-b14f-325096b39f47_1_file_2.mp4",
+                "size": 316459,
+                "lastModified": "2025-01-16T05:27:30.446Z"
+            }
+        ]
+    }
+}
+```
+</ResponseExample>

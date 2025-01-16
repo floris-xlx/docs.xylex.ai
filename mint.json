@@ -136,9 +136,13 @@
       "pages": ["xylex-cloud/ip-api/ip-info"]
     },
     {
-        "group": "Servers API",
-        "pages": ["xylex-cloud/servers-api/list-servers"]
-      },
+      "group": "Servers API",
+      "pages": ["xylex-cloud/servers-api/list-servers"]
+    },
+    {
+      "group": "Storage API",
+      "pages": ["xylex-cloud/storage-api/list-files"]
+    },
     {
       "group": "Authenticator API",
       "pages": [
