@@ -16,37 +16,3 @@ api: "POST https://xylex.dev/api/db/postgresql/setup"
   The name of the database to create.
 </ParamField>
 
-<ResponseExample 
-```json Response
-{
-    "success": false,
-    "status": 422,
-    "database_name": "test1",
-    "error": "Database test1 already exists",
-    "code": 422
-}
-```
-</ResponseExample>
-
-<ResponseExample 
-```json Response
-{
-    "success": false,
-    "status": 403,
-    "database_name": "test2",
-    "error": "Permission denied while creating the database.",
-    "code": 403
-}
-```
-</ResponseExample>
-<ResponseExample 
-```json Response
-{
-    "success": true,
-    "status": 200,
-    "message": "successfully created test2 database.",
-    "database_name": "test1",
-    "code": 200
-}
-```
-</ResponseExample>
