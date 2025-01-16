@@ -109,7 +109,8 @@
       "group": "Projects API",
       "pages": [
         "xylex-cloud/projects-api/list-projects",
-        "xylex-cloud/projects-api/redeploy-project"
+        "xylex-cloud/projects-api/redeploy-project",
+        "xylex-cloud/projects-api/logs"
       ]
     },
     {

@@ -1,0 +1,49 @@
+---
+title: "Project Logs"
+api: "POST https://xylex.dev/api/projects/logs"
+---
+
+<Card title="Endpoint Description" icon="info" horizontal>
+  Retrieves logs for a specified project. Requires a valid `log_file_path` in the request body.
+</Card>
+
+<BodyField
+  name="log_file_path"
+  type="String"
+  required
+  children="The file path of the log file to retrieve (e.g., `/home/floris-xlx/.pm2/logs/suitsbooks.nl-error.log`)."
+>
+  The file path of the log file to retrieve.
+</BodyField>
+
+<ResponseExample 
+```json Response
+[
+    {
+        "success": true
+    },
+    {
+        "logs": [
+            {
+                "1": "> tailwindui-protocol@0.1.0 start /home/floris-xlx/ui"
+            },
+            {
+                "2": "> next start -p 3027"
+            },
+            {
+                "3": "  ▲ Next.js 14.2.22"
+            },
+            {
+                "4": "  - Local:        http://localhost:3027"
+            },
+            {
+                "5": " ✓ Starting..."
+            },
+            {
+                "6": " ✓ Ready in 372ms"
+            }
+        ]
+    }
+]
+```
+</ResponseExample>
