@@ -137,6 +137,12 @@
             ]
         },
         {
+            "group": "Domains API",
+            "pages": [
+                "xylex-cloud/domains-api/list-domains"
+            ]
+        },
+        {
             "group": "Authenticator API",
             "pages": [
                 "pages/authenticator/verify_code_secret",

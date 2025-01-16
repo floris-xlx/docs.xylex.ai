@@ -1,0 +1,99 @@
+---
+title: "List domains"
+api: "GET https://xylex.dev/api/domains"
+---
+
+<Card title="Endpoint Description" icon="info" horizontal>
+  Fetches a list of domains associated with the specified organization. Requires
+  a valid `organization_id` as a query parameter.
+</Card>
+
+<ParamField
+  query="organization_id"
+  type="String"
+  required
+  children="The unique identifier of the organization whose domains are being queried."
+>
+  The organization ID to filter domains.
+</ParamField>
+
+<ResponseExample 
+```json Response
+{
+    "domains": [
+        {
+            "id": 2,
+            "created_at": "2025-01-12T16:24:34.034001+00:00",
+            "domain": "xylex.ai",
+            "port": null,
+            "local_hostname": null,
+            "wildcard": null,
+            "tld": "ai",
+            "project_id": null,
+            "ssl_cert": null,
+            "ssl_cn": null,
+            "ssl_renewal": null,
+            "ssl_created_at": null,
+            "ssl_exp_date": null,
+            "author_user_id": null,
+            "name_registrar": null,
+            "organization_id": "xylex"
+        },
+        {
+            "id": 3,
+            "created_at": "2025-01-12T18:07:36.194915+00:00",
+            "domain": "api.xylex.ai",
+            "port": null,
+            "local_hostname": null,
+            "wildcard": null,
+            "tld": "ai",
+            "project_id": null,
+            "ssl_cert": null,
+            "ssl_cn": null,
+            "ssl_renewal": null,
+            "ssl_created_at": null,
+            "ssl_exp_date": null,
+            "author_user_id": "5abff35c-41ce-4ec5-b26f-dee7f9f36833",
+            "name_registrar": null,
+            "organization_id": "xylex"
+        },
+        {
+            "id": 4,
+            "created_at": "2025-01-12T18:13:44.773669+00:00",
+            "domain": "suitsbooks.nl",
+            "port": null,
+            "local_hostname": null,
+            "wildcard": null,
+            "tld": "nl",
+            "project_id": null,
+            "ssl_cert": null,
+            "ssl_cn": null,
+            "ssl_renewal": null,
+            "ssl_created_at": null,
+            "ssl_exp_date": null,
+            "author_user_id": "5abff35c-41ce-4ec5-b26f-dee7f9f36833",
+            "name_registrar": null,
+            "organization_id": "xylex"
+        },
+        {
+            "id": 5,
+            "created_at": "2025-01-16T03:33:31.20925+00:00",
+            "domain": "xylex.cloud",
+            "port": null,
+            "local_hostname": null,
+            "wildcard": null,
+            "tld": "cloud",
+            "project_id": null,
+            "ssl_cert": null,
+            "ssl_cn": null,
+            "ssl_renewal": null,
+            "ssl_created_at": null,
+            "ssl_exp_date": null,
+            "author_user_id": "5abff35c-41ce-4ec5-b26f-dee7f9f36833",
+            "name_registrar": null,
+            "organization_id": "xylex"
+        }
+    ]
+}
+```
+</ResponseExample>
