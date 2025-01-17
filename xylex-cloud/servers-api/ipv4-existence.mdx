@@ -1,0 +1,42 @@
+---
+title: "Verify IPv4 Existence"
+api: "GET http://localhost:3000/api/servers/ipv4?ipv4=85.223.31.226"
+---
+
+<Card title="Endpoint Description" icon="info" horizontal>
+  Verifies the existence of a specified IPv4 address. Requires a valid `ipv4`
+  query parameter in the request URL.
+</Card>
+
+<QueryField
+  name="ipv4"
+  type="String"
+  required
+  children="The IPv4 address to verify (e.g., `85.223.31.226`)."
+>
+  The IPv4 address to verify.
+</QueryField>
+
+<Card title="IPv4 does exist" icon="check-circle" horizontal>
+  <CodeBlock>
+    {{
+      success: true,
+      data: {
+        exists: true,
+        ipv4: "85.223.31.226"
+      }
+    }}
+  </CodeBlock>
+</Card>
+
+<Card title="IPv4 does not exist" icon="cross" horizontal>
+  <CodeBlock>
+    {{
+      success: true,
+      data: {
+        exists: false,
+        ipv4: "85.223.31.227"
+      }
+    }}
+  </CodeBlock>
+</Card>

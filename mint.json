@@ -137,7 +137,7 @@
     },
     {
       "group": "Servers API",
-      "pages": ["xylex-cloud/servers-api/list-servers"]
+      "pages": ["xylex-cloud/servers-api/list-servers", "xylex-cloud/servers-api/ipv4-existence"]
     },
     {
       "group": "Storage API",
