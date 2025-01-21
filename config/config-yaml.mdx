@@ -26,15 +26,11 @@ auth:
   be handled automatically
 </Card>
 
-
-<Card title="`server.port (number)`">
-This defines what port the `next-server` runs which is then routed thru our `Proxy`   
-</Card>
-<Card title="`auth.route_after_login (string = '/account')`">
-This defines where the user is sent after an authorizational state is gotten, defaults to `/account`
-</Card>
-
-
-
-
-
+<ParamField path="server.port" type="number">
+  This defines what port the `next-server` runs which is then routed thru our
+  `Proxy`
+</ParamField>
+<ParamField path="auth.route_after_login" type="string">
+  This defines where the user is sent after an authorizational state is gotten,
+  defaults to `/account`
+</ParamField>
