@@ -1,0 +1,26 @@
+---
+title: "config.yaml"
+description: "Configure all the details ithout "
+---
+
+Changable in the top level
+
+````
+config.ymla`
+
+### Yaml variables
+```yaml
+project:
+  name: 'xylex.cloud'
+  repository: 'https://github.com/floris-xlx/xylex.dev/settings'
+
+server:
+  port: 3034
+
+auth:
+  route_after_login: '/account'
+````
+
+#### `auth.route_after_login` (string = '/account')
+
+This defines where the user is sent after an authorizational state is gotten, defaults to `/account`

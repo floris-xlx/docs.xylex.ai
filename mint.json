@@ -44,7 +44,7 @@
     },
     {
       "group": "Config",
-      "pages": ["config/env_vars"]
+      "pages": ["config/env_vars", "config/config-yaml"]
     },
     {
       "group": "Return Builder",
@@ -97,6 +97,7 @@
         "ui/kpi"
       ]
     },
+
     {
       "group": "Table XYLEXUI",
       "pages": ["ui/charts/xylex-chart", "ui/tables/line-chart"]
@@ -137,7 +138,10 @@
     },
     {
       "group": "Servers API",
-      "pages": ["xylex-cloud/servers-api/list-servers", "xylex-cloud/servers-api/ipv4-existence"]
+      "pages": [
+        "xylex-cloud/servers-api/list-servers",
+        "xylex-cloud/servers-api/ipv4-existence"
+      ]
     },
     {
       "group": "Storage API",
@@ -148,7 +152,10 @@
     },
     {
       "group": "Postgres Adaptor API",
-      "pages": ["xylex-cloud/postgres-adaptor-api/create-db", "xylex-cloud/postgres-adaptor-api/verify-db-existence"]
+      "pages": [
+        "xylex-cloud/postgres-adaptor-api/create-db",
+        "xylex-cloud/postgres-adaptor-api/verify-db-existence"
+      ]
     },
     {
       "group": "Authenticator API",
