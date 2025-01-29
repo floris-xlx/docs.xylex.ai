@@ -167,6 +167,13 @@
       ]
     },
     {
+      "group": "Integrations API",
+      "pages": [
+        "xylex-cloud/integrations-api/list-integrations",
+        "xylex-cloud/integrations-api/list-integration-categories"
+      ]
+    },
+    {
       "group": "Authenticator API",
       "pages": [
         "pages/authenticator/verify_code_secret",

@@ -1,0 +1,87 @@
+---
+title: "List integrations"
+api: "GET https://xylex.cloud/api/integrations"
+---
+
+<Card title="Endpoint Description" icon="info" horizontal>
+Lists all the globally enabled integration providers
+</Card>
+
+<ParamField
+  query="force_rehydrate"
+  type="Boolean"
+>
+  Will force to rehydrate the cache on the `dragonfly` server
+</ParamField>
+
+
+## Example response `force_rehydrate=false`
+```json
+{
+    "success": true,
+    "integrations": [
+        {
+            "id": 1,
+            "created_at": "2025-01-26T17:29:22.516555+00:00",
+            "name": "revolut_personal",
+            "integration_id": "48d857d4-0c47-4ae3-90a2-6068236a31e5",
+            "description": null,
+            "icon": "revolut",
+            "vendor_url": "https://www.revolut.com/",
+            "latest_version": null,
+            "status": null,
+            "status_message": null,
+            "category": "banking",
+            "pricing": 0,
+            "developer": "SuitsBooks",
+            "privacy_policy_url": "https://www.revolut.com/privacy-policy/",
+            "terms_of_service_url": "https://www.revolut.com/legal/",
+            "support_url": "https://help.revolut.com/help/",
+            "support_email": null,
+            "documentation_url": null,
+            "total_installs": 0,
+            "pricing_strategy": null,
+            "permissions": null,
+            "url_slug": null,
+            "additional_information": null,
+            "redirect_url": null,
+            "installed_version": null,
+            "contact_email": null,
+            "logo": null,
+            "overview": null,
+            "url": null
+        },
+        {
+            "id": 10,
+            "created_at": "2025-01-29T12:22:30.134358+00:00",
+            "name": "gais",
+            "integration_id": "1ffccc6f-51bf-4157-9230-e2efa327b103",
+            "description": "",
+            "icon": null,
+            "vendor_url": null,
+            "latest_version": null,
+            "status": "",
+            "status_message": "",
+            "category": "",
+            "pricing": 0,
+            "developer": "",
+            "privacy_policy_url": "",
+            "terms_of_service_url": "",
+            "support_url": "",
+            "support_email": "",
+            "documentation_url": "",
+            "total_installs": 0,
+            "pricing_strategy": null,
+            "permissions": null,
+            "url_slug": "meow",
+            "additional_information": "",
+            "redirect_url": "",
+            "installed_version": null,
+            "contact_email": "",
+            "logo": "https://ams3.digitaloceanspaces.com/xylex-cloud/system/integrations/gais.png",
+            "overview": "",
+            "url": ""
+        }
+    ]
+}
+```
