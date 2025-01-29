@@ -148,7 +148,8 @@
       "group": "Servers API",
       "pages": [
         "xylex-cloud/servers-api/list-servers",
-        "xylex-cloud/servers-api/ipv4-existence"
+        "xylex-cloud/servers-api/ipv4-existence",
+        "xylex-cloud/servers-api/add-server"
       ]
     },
     {

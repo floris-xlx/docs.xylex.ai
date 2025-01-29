@@ -1,0 +1,111 @@
+---
+title: "Add server"
+api: "POST https://xylex.cloud/api/servers/add"
+---
+
+<Card title="Endpoint Description" icon="info" horizontal>
+Add a server to the index registry
+</Card>
+
+<ParamField
+  query="hostname"
+  type="String"
+  required
+>
+  hostname can be an IPv4 or a domain
+</ParamField>
+<ParamField
+  query="ipv4"
+  type="String"
+  required
+>
+  IPv4 value
+</ParamField>
+<ParamField
+  query="name"
+  type="String"
+  required
+>
+  Subjective name of the server
+</ParamField>
+<ParamField
+  query="location"
+  type="String"
+  required
+>
+  Geographical location 
+</ParamField>
+<ParamField
+  query="status"
+  type="String"
+  required
+>
+  Can either be `online` or `offline`
+</ParamField>
+<ParamField
+  query="organization_id"
+  type="String"
+  required
+>
+  Organization `uuid` has to exist
+</ParamField>
+<ParamField
+  query="ssh_hostname"
+  type="String"
+  required
+>
+  Server domain or IPv4
+</ParamField>
+<ParamField
+  query="ssh_username"
+  type="String"
+  required
+>
+  Has to be a Root user or `root` sudouser
+</ParamField>
+<ParamField
+  query="ssh_password"
+  type="String"
+  required
+>
+  open key or password
+</ParamField>
+<ParamField
+  query="timezone"
+  type="String"
+  required
+>
+  CET or UTC+x or UTC-x
+</ParamField>
+<ParamField
+  query="in_eu"
+  type="Boolean"
+  required
+>
+  Due to data storage reasons
+</ParamField>
+
+
+
+## Example body
+```json
+{
+    "hostname": "217.160.18.7",
+    "ipv4": "217.160.18.7",
+    "name": "strato_mediamtx_server",
+    "location": "germany",
+    "status": "online",
+    "organization_id": "6386a2e0-1709-48a4-8b1e-d797bb27b814",
+    "ssh_hostname": "217.160.18.7",
+    "ssh_username": "root",
+    "ssh_password": "floris",
+    "timezone": "cet",
+    "in_eu": true
+}
+```
+## Success response
+```json
+{
+    "success": true
+}
+```
