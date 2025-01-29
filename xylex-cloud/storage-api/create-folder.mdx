@@ -1,0 +1,26 @@
+---
+title: "Create folder"
+api: "POST https://xylex.cloud/api/files/create-folder"
+---
+
+<Card title="Endpoint Description" icon="info" horizontal>
+  Retrieves information about a specified IP address. Requires a valid `ip` as a query parameter.
+</Card>
+
+<ParamField
+  query="dir"
+  type="String"
+  required
+>
+  The relative directory path `/` from the bucket
+</ParamField>
+
+
+## Example body request
+```json 
+{
+    "folder_name": "folder",
+    "project_id": "test_project",
+    "organization_id": "xlx-o-ea5a1270-7b03-11ef-b14f-325096b39f47"
+}
+```
