@@ -1,0 +1,32 @@
+---
+title: "Metrics"
+api: "GET https://xylex.cloud/api/system/metrics"
+---
+
+<Card title="Endpoint Description" icon="info" horizontal>
+ Retrieves a NeoFetch like system metrics index
+</Card>
+
+```json
+{
+    "success": true,
+    "data": {
+        "os": "Ubuntu 22.04.5 LTS x86_64",
+        "host": "1.0",
+        "kernel": "5.15.0-102-generic",
+        "uptime": "294 days, 18 hours, 18 mins",
+        "packages": "1398 (dpkg), 8 (snap)",
+        "shell": "bash 5.1.16",
+        "resolution": "1280x1024",
+        "cpu": "AMD Ryzen 5 3600 (12) @ 3.600GHz",
+        "gpu": "2b:00.0 ASPEED Technology, Inc. ASPEED Graphics Family",
+        "memory": {
+            "allocated_memory": 14376,
+            "free_memory": 49840,
+            "total_memory": 64216,
+            "format": "MiB"
+        },
+        "neofetch_version": "7.1.0"
+    }
+}
+```

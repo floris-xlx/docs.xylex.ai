@@ -133,6 +133,10 @@
       "pages": ["xylex-cloud/networking-api/query-ports"]
     },
     {
+      "group": "Systems API",
+      "pages": ["xylex-cloud/systems-api/metrics"]
+    },
+    {
       "group": "IP API",
       "pages": ["xylex-cloud/ip-api/ip-info"]
     },
