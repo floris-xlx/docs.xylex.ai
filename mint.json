@@ -157,7 +157,8 @@
       "pages": [
         "xylex-cloud/storage-api/list-files",
         "xylex-cloud/storage-api/upload-by-url",
-        "xylex-cloud/storage-api/create-folder"
+        "xylex-cloud/storage-api/create-folder",
+        "xylex-cloud/storage-api/setup-bucket"
       ]
     },
     {
