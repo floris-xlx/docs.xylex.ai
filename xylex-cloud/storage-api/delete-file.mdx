@@ -1,0 +1,38 @@
+---
+title: "Delete file"
+api: "DELETE https://xylex.cloud/api/files/delete-file"
+---
+
+<Card title="Endpoint Description" icon="info" horizontal>
+Deletes a file in the designated bucket
+</Card>
+
+<ParamField
+  query="organization_id"
+  type="String"
+  required
+>
+  `organization_id` that's targeted
+</ParamField>
+<ParamField
+  query="project_id"
+  type="String"
+  required
+>
+  `project_id` that's targeted
+</ParamField>
+<ParamField
+  query="file_name"
+  type="String"
+  required
+>
+  `file_name` that's targeted
+</ParamField>
+<ParamField
+  query="dir"
+  type="String"
+  required
+>
+  relative `dir` that's targeted
+</ParamField>
+
