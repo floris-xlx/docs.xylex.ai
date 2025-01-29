@@ -1,0 +1,71 @@
+---
+title: "Processes"
+api: "GET https://xylex.cloud/api/system/processes"
+---
+
+<Card title="Endpoint Description" icon="info" horizontal>
+Retrieves all current processes from a `root` scope
+</Card>
+
+<ParamField
+  query="pid"
+  type="Number"
+  required
+>
+  A process ID to filter with
+</ParamField>
+
+<ParamField
+  query="command"
+  type="String"
+  required
+>
+  A `execCommand` to filter with
+</ParamField>
+
+```json
+{
+    "success": true,
+    "processes": [
+        {
+            "pid": 216412,
+            "ppid": 1,
+            "%cpu": 0,
+            "%mem": 0.1,
+            "vsz": 1243120,
+            "rss": 73952,
+            "tt": "?",
+            "stat": "Sl",
+            "started": "Aug",
+            "time": null,
+            "command": "python3 ./api.py"
+        },
+        {
+            "pid": 490789,
+            "ppid": 1,
+            "%cpu": 0,
+            "%mem": 0,
+            "vsz": 7372,
+            "rss": 2728,
+            "tt": "?",
+            "stat": "S",
+            "started": "Jul",
+            "time": null,
+            "command": "/bin/bash ./run.sh"
+        },
+        {
+            "pid": 753885,
+            "ppid": 490789,
+            "%cpu": 0,
+            "%mem": 0,
+            "vsz": 7372,
+            "rss": 2908,
+            "tt": "?",
+            "stat": "S",
+            "started": "Nov",
+            "time": null,
+            "command": "/bin/bash /home/floris-xlx/ci_cd/actions-runner/run-helper.sh"
+        },
+    ]
+}
+```

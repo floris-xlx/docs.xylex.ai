@@ -134,7 +134,10 @@
     },
     {
       "group": "Systems API",
-      "pages": ["xylex-cloud/systems-api/metrics"]
+      "pages": [
+        "xylex-cloud/systems-api/metrics",
+        "xylex-cloud/systems-api/processes"
+      ]
     },
     {
       "group": "IP API",
