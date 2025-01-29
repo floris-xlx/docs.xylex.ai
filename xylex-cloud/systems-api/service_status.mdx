@@ -1,0 +1,37 @@
+---
+title: "Processes"
+api: "GET https://xylex.cloud/api/system/services/status"
+---
+
+<Card title="Endpoint Description" icon="info" horizontal>
+Calls to query if a service is online or offline
+</Card>
+
+<ParamField
+  query="service"
+  type="String"
+>
+  Service name to query with
+</ParamField>
+
+
+## Service is online
+```json
+{
+    "success": true,
+    "service": {
+        "pid": 3299164,
+        "status": "active",
+        "service": "nginx"
+    }
+}
+```
+## Service is offline
+{
+    "success": true,
+    "service": {
+        "pid": 0,
+        "status": "inactive",
+        "service": "nginx1"
+    }
+}

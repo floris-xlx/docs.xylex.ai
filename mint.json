@@ -136,7 +136,8 @@
       "group": "Systems API",
       "pages": [
         "xylex-cloud/systems-api/metrics",
-        "xylex-cloud/systems-api/processes"
+        "xylex-cloud/systems-api/processes",
+        "xylex-cloud/systems-api/service_status"
       ]
     },
     {
