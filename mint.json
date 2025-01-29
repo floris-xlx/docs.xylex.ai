@@ -159,7 +159,8 @@
         "xylex-cloud/storage-api/upload-by-url",
         "xylex-cloud/storage-api/create-folder",
         "xylex-cloud/storage-api/setup-bucket",
-        "xylex-cloud/storage-api/delete-file"
+        "xylex-cloud/storage-api/delete-file",
+        "xylex-cloud/storage-api/upload-public-file"
       ]
     },
     {
