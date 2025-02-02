@@ -1,0 +1,63 @@
+---
+title: "Terminal Styling"
+description: "Raw styling with CSS"
+---
+
+### Font
+
+There's a special font that get's injected into the raw `tbody` tag, a `mono` font much like the linux nvim terminal fonts.
+These are injected globally to ensure a sterile similair look thru all tables.
+```css
+tbody {
+  font-family: var(--font-geist-mono) !important;
+  font-size: 13px !important;
+  line-height: 24px !important;
+  font-weight: 400 !important;
+  color: var(--text-) !important;
+}
+
+th {
+  border-radius: 6px !important;
+  font-weight: 400 !important;
+  font-size: 13px !important;
+  line-height: 24px !important;
+}
+```
+
+
+### Styling light mode
+
+```css
+@layer base {
+  :root {
+    /* terminal colors */
+    --xlx-terminal-primary: #000;
+    --xlx-terminal-secondary: #666666;
+    --xlx-terminal-error-background: #fff8f8;
+    --xlx-terminal-error-background-hover: #ffefef;
+    --xlx-terminal-error-background-selected: #ffe5e5;
+    --xlx-terminal-error-column-seperator-color: #f9c6c6;
+    --xlx-terminal-error-text-color: #cd2b31;
+    --xlx-terminal-selected-border-color: #f9c6c6;
+    --xlx-terminal-badges-redirection: hsla(212,100%,48%);
+    --xlx-terminal-badges-success: hsla(131,41%,46%,1);
+}
+```
+
+### Styling dark mode
+
+```css
+@layer base {
+  :root {
+    /* terminal colors */
+    --xlx-terminal-primary: #fff;
+    --xlx-terminal-secondary: #A1A1A1;
+    --xlx-terminal-error-background: #291415;
+    --xlx-terminal-error-background-hover: #3c181a;
+    --xlx-terminal-error-background-selected: #481a1d;
+    --xlx-terminal-error-column-seperator-color: #671e22;
+    --xlx-terminal-error-text-color: #ff6369;
+    --xlx-terminal-badges-redirection: hsla(212,100%,48%);
+    --xlx-terminal-badges-success: hsla(131,41%,46%,1);
+}
+```

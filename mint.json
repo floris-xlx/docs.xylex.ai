@@ -107,6 +107,10 @@
       "pages": ["ui/tables/xylex-table"]
     },
     {
+      "group": "Log Explorer",
+      "pages": ["log_explorer/styling"]
+    },
+    {
       "group": "Projects API",
       "pages": [
         "xylex-cloud/projects-api/list-projects",
