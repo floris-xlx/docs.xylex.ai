@@ -12,7 +12,9 @@
     "tabs": [
       {
         "tab": "XYLEX CLOUD API",
-        "openapi": "https://raw.githubusercontent.com/floris-xlx/docs.xylex.ai/refs/heads/main/openapi.yaml"
+        "openapi": {
+          "source": "https://raw.githubusercontent.com/floris-xlx/docs.xylex.ai/refs/heads/main/openapi.yaml"
+        }
       },
       {
         "tab": "XYLEX APP API",
@@ -91,8 +93,9 @@
             "group": "Projects API",
             "pages": [
               "xylex-cloud/projects-api/list-projects",
-              "xylex-cloud/projects-api/redeploy-project",
-              "xylex-cloud/projects-api/logs"
+              "projects-api/redeploy-project",
+              "xylex-cloud/projects-api/logs",
+              "projects-api/project-metadata"
             ]
           },
           {
@@ -141,14 +144,18 @@
               "xylex-cloud/storage-api/create-folder",
               "xylex-cloud/storage-api/setup-bucket",
               "xylex-cloud/storage-api/delete-file",
-              "xylex-cloud/storage-api/upload-public-file"
+              "xylex-cloud/storage-api/upload-public-file",
+              "file-api/media-generate-thumbnail"
             ]
           },
           {
-            "group": "Postgres Adaptor API",
+            "group": "Postgres API",
             "pages": [
               "xylex-cloud/postgres-adaptor-api/create-db",
-              "xylex-cloud/postgres-adaptor-api/verify-db-existence"
+              "xylex-cloud/postgres-adaptor-api/verify-db-existence",
+              "postgres-api/connector",
+              "postgres-api/list-dbs-by-organization_id",
+              "postgres-api/list-tables"
             ]
           },
           {
@@ -159,6 +166,14 @@
               "xylex-cloud/integrations-api/add-integration-category",
               "xylex-cloud/integrations-api/delete-integration-category"
             ]
+          },
+          {
+            "group": "XBP API",
+            "pages": ["xbp-api/github-logs"]
+          },
+          {
+            "group": "NGINX API",
+            "pages": ["nginx-api/nginx-site-config-file-proxy-filtered"]
           },
           {
             "group": "Authenticator API",
