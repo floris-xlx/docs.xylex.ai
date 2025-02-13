@@ -231,30 +231,9 @@
           }
         ]
       }
-    ],
-
-    "anchors": [
-      {
-        "anchor": "Documentation",
-        "icon": "book-open",
-        
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Open a ticket",
-          "href": "https://nightly.docs.xylex.ai",
-          "icon": "ticket"
-        },
-        {
-          "anchor": "Support discord",
-          "href": "https://discord.gg/xylex",
-          "icon": "discord"
-        }
-      ]
-    }
+    ]
   },
+
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
