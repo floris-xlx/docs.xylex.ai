@@ -12,7 +12,7 @@
     "tabs": [
       {
         "tab": "XYLEX CLOUD API",
-        "openapi": "https://petstore3.swagger.io/api/v3/openapi.json"
+        "openapi": "https://raw.githubusercontent.com/floris-xlx/docs.xylex.ai/refs/heads/main/openapi.yaml"
       },
       {
         "tab": "XYLEX APP API",
